@@ -7,16 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
 
 namespace ProjectUAS_AZHUU
 {
-    public partial class Register : Form
+    public partial class ForgotPassword : Form
     {
-        public Register()
+        public ForgotPassword()
         {
             InitializeComponent();
         }
-
     }
 }
