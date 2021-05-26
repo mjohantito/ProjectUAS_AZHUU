@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_AZHUU
 {
-    public partial class FormDaftarPenumpang : System.Windows.Forms.Form
+    public partial class Form2 : Form
     {
-        public FormDaftarPenumpang()
+        public Form2()
         {
             InitializeComponent();
         }

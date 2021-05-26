@@ -1,6 +1,6 @@
 ﻿namespace ProjectUAS_AZHUU
 {
-    partial class Form1
+    partial class FormDaftarPenumpang
     {
         /// <summary>
         /// Required designer variable.
@@ -409,7 +409,7 @@
             this.groupBoxPenumpang3.TabIndex = 36;
             this.groupBoxPenumpang3.TabStop = false;
             // 
-            // Form1
+            // FormDaftarPenumpang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -428,8 +428,8 @@
             this.Controls.Add(this.tBoxNamaProfile);
             this.Controls.Add(this.cBoxTitleProfile);
             this.Controls.Add(this.labelDtlPesan);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "FormDaftarPenumpang";
+            this.Text = "Daftar Penumpang";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBoxPenumpang1.ResumeLayout(false);
