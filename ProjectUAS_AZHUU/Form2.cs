@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_AZHUU
 {
-    public partial class Form2 : Form
+    public partial class FormCheckout : Form
     {
-        public Form2()
+        public FormCheckout()
         {
             InitializeComponent();
         }

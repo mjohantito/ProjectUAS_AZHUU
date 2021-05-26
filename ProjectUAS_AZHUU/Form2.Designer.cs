@@ -1,7 +1,7 @@
 ﻿
 namespace ProjectUAS_AZHUU
 {
-    partial class Form2
+    partial class FormCheckout
     {
         /// <summary>
         /// Required designer variable.
@@ -192,7 +192,7 @@ namespace ProjectUAS_AZHUU
             this.textBox1.Size = new System.Drawing.Size(311, 38);
             this.textBox1.TabIndex = 15;
             // 
-            // Form2
+            // FormCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,8 +213,8 @@ namespace ProjectUAS_AZHUU
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelCart);
-            this.Name = "Form2";
-            this.Text = "Form2";
+            this.Name = "FormCheckout";
+            this.Text = "CheckOut";
             this.ResumeLayout(false);
             this.PerformLayout();
 
