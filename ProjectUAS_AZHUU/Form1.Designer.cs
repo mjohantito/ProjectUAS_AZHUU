@@ -61,7 +61,14 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelJumlahPembayaran = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBoxPenumpang1 = new System.Windows.Forms.GroupBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBoxPenumpang2 = new System.Windows.Forms.GroupBox();
+            this.groupBoxPenumpang3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
+            this.groupBoxPenumpang1.SuspendLayout();
+            this.groupBoxPenumpang2.SuspendLayout();
+            this.groupBoxPenumpang3.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelDtlPesan
@@ -124,21 +131,21 @@
             // cBoxTitlePenumpang1
             // 
             this.cBoxTitlePenumpang1.FormattingEnabled = true;
-            this.cBoxTitlePenumpang1.Location = new System.Drawing.Point(27, 329);
+            this.cBoxTitlePenumpang1.Location = new System.Drawing.Point(14, 40);
             this.cBoxTitlePenumpang1.Name = "cBoxTitlePenumpang1";
             this.cBoxTitlePenumpang1.Size = new System.Drawing.Size(121, 24);
             this.cBoxTitlePenumpang1.TabIndex = 7;
             // 
             // tBoxNamaPenumpang1
             // 
-            this.tBoxNamaPenumpang1.Location = new System.Drawing.Point(27, 373);
+            this.tBoxNamaPenumpang1.Location = new System.Drawing.Point(14, 84);
             this.tBoxNamaPenumpang1.Name = "tBoxNamaPenumpang1";
             this.tBoxNamaPenumpang1.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang1.TabIndex = 8;
             // 
             // tBoxKTPPenumpang1
             // 
-            this.tBoxKTPPenumpang1.Location = new System.Drawing.Point(27, 415);
+            this.tBoxKTPPenumpang1.Location = new System.Drawing.Point(14, 126);
             this.tBoxKTPPenumpang1.Name = "tBoxKTPPenumpang1";
             this.tBoxKTPPenumpang1.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang1.TabIndex = 9;
@@ -146,7 +153,7 @@
             // labelPenumpang1
             // 
             this.labelPenumpang1.AutoSize = true;
-            this.labelPenumpang1.Location = new System.Drawing.Point(24, 297);
+            this.labelPenumpang1.Location = new System.Drawing.Point(11, 8);
             this.labelPenumpang1.Name = "labelPenumpang1";
             this.labelPenumpang1.Size = new System.Drawing.Size(108, 17);
             this.labelPenumpang1.TabIndex = 10;
@@ -155,7 +162,7 @@
             // labelPenumpang2
             // 
             this.labelPenumpang2.AutoSize = true;
-            this.labelPenumpang2.Location = new System.Drawing.Point(24, 457);
+            this.labelPenumpang2.Location = new System.Drawing.Point(9, 4);
             this.labelPenumpang2.Name = "labelPenumpang2";
             this.labelPenumpang2.Size = new System.Drawing.Size(108, 17);
             this.labelPenumpang2.TabIndex = 14;
@@ -163,14 +170,14 @@
             // 
             // tBoxKTPPenumpang2
             // 
-            this.tBoxKTPPenumpang2.Location = new System.Drawing.Point(27, 575);
+            this.tBoxKTPPenumpang2.Location = new System.Drawing.Point(12, 122);
             this.tBoxKTPPenumpang2.Name = "tBoxKTPPenumpang2";
             this.tBoxKTPPenumpang2.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang2.TabIndex = 13;
             // 
             // tBoxNamaPenumpang2
             // 
-            this.tBoxNamaPenumpang2.Location = new System.Drawing.Point(27, 533);
+            this.tBoxNamaPenumpang2.Location = new System.Drawing.Point(12, 80);
             this.tBoxNamaPenumpang2.Name = "tBoxNamaPenumpang2";
             this.tBoxNamaPenumpang2.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang2.TabIndex = 12;
@@ -178,7 +185,7 @@
             // cBoxTitlePenumpang2
             // 
             this.cBoxTitlePenumpang2.FormattingEnabled = true;
-            this.cBoxTitlePenumpang2.Location = new System.Drawing.Point(27, 489);
+            this.cBoxTitlePenumpang2.Location = new System.Drawing.Point(12, 36);
             this.cBoxTitlePenumpang2.Name = "cBoxTitlePenumpang2";
             this.cBoxTitlePenumpang2.Size = new System.Drawing.Size(121, 24);
             this.cBoxTitlePenumpang2.TabIndex = 11;
@@ -186,7 +193,7 @@
             // labelPenumpang3
             // 
             this.labelPenumpang3.AutoSize = true;
-            this.labelPenumpang3.Location = new System.Drawing.Point(705, 297);
+            this.labelPenumpang3.Location = new System.Drawing.Point(4, 7);
             this.labelPenumpang3.Name = "labelPenumpang3";
             this.labelPenumpang3.Size = new System.Drawing.Size(108, 17);
             this.labelPenumpang3.TabIndex = 18;
@@ -194,14 +201,14 @@
             // 
             // tBoxKTPPenumpang3
             // 
-            this.tBoxKTPPenumpang3.Location = new System.Drawing.Point(708, 415);
+            this.tBoxKTPPenumpang3.Location = new System.Drawing.Point(7, 125);
             this.tBoxKTPPenumpang3.Name = "tBoxKTPPenumpang3";
             this.tBoxKTPPenumpang3.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang3.TabIndex = 17;
             // 
             // tBoxNamaPenumpang3
             // 
-            this.tBoxNamaPenumpang3.Location = new System.Drawing.Point(708, 373);
+            this.tBoxNamaPenumpang3.Location = new System.Drawing.Point(7, 83);
             this.tBoxNamaPenumpang3.Name = "tBoxNamaPenumpang3";
             this.tBoxNamaPenumpang3.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang3.TabIndex = 16;
@@ -209,7 +216,7 @@
             // cBoxTitlePenumang3
             // 
             this.cBoxTitlePenumang3.FormattingEnabled = true;
-            this.cBoxTitlePenumang3.Location = new System.Drawing.Point(708, 329);
+            this.cBoxTitlePenumang3.Location = new System.Drawing.Point(7, 39);
             this.cBoxTitlePenumang3.Name = "cBoxTitlePenumang3";
             this.cBoxTitlePenumang3.Size = new System.Drawing.Size(121, 24);
             this.cBoxTitlePenumang3.TabIndex = 15;
@@ -217,7 +224,7 @@
             // buttonHapusPenumpang1
             // 
             this.buttonHapusPenumpang1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHapusPenumpang1.Location = new System.Drawing.Point(419, 297);
+            this.buttonHapusPenumpang1.Location = new System.Drawing.Point(406, 8);
             this.buttonHapusPenumpang1.Name = "buttonHapusPenumpang1";
             this.buttonHapusPenumpang1.Size = new System.Drawing.Size(29, 23);
             this.buttonHapusPenumpang1.TabIndex = 19;
@@ -227,7 +234,7 @@
             // buttonHapusPenumpang2
             // 
             this.buttonHapusPenumpang2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHapusPenumpang2.Location = new System.Drawing.Point(419, 457);
+            this.buttonHapusPenumpang2.Location = new System.Drawing.Point(404, 4);
             this.buttonHapusPenumpang2.Name = "buttonHapusPenumpang2";
             this.buttonHapusPenumpang2.Size = new System.Drawing.Size(29, 23);
             this.buttonHapusPenumpang2.TabIndex = 20;
@@ -237,7 +244,7 @@
             // buttonHapusPenumpang3
             // 
             this.buttonHapusPenumpang3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonHapusPenumpang3.Location = new System.Drawing.Point(1101, 297);
+            this.buttonHapusPenumpang3.Location = new System.Drawing.Point(400, 7);
             this.buttonHapusPenumpang3.Name = "buttonHapusPenumpang3";
             this.buttonHapusPenumpang3.Size = new System.Drawing.Size(29, 23);
             this.buttonHapusPenumpang3.TabIndex = 21;
@@ -354,29 +361,66 @@
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             // 
+            // groupBoxPenumpang1
+            // 
+            this.groupBoxPenumpang1.Controls.Add(this.buttonHapusPenumpang1);
+            this.groupBoxPenumpang1.Controls.Add(this.labelPenumpang1);
+            this.groupBoxPenumpang1.Controls.Add(this.tBoxKTPPenumpang1);
+            this.groupBoxPenumpang1.Controls.Add(this.tBoxNamaPenumpang1);
+            this.groupBoxPenumpang1.Controls.Add(this.cBoxTitlePenumpang1);
+            this.groupBoxPenumpang1.Location = new System.Drawing.Point(13, 289);
+            this.groupBoxPenumpang1.Name = "groupBoxPenumpang1";
+            this.groupBoxPenumpang1.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang1.TabIndex = 33;
+            this.groupBoxPenumpang1.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Location = new System.Drawing.Point(13, 610);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(8, 8);
+            this.groupBox3.TabIndex = 34;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
+            // 
+            // groupBoxPenumpang2
+            // 
+            this.groupBoxPenumpang2.Controls.Add(this.buttonHapusPenumpang2);
+            this.groupBoxPenumpang2.Controls.Add(this.labelPenumpang2);
+            this.groupBoxPenumpang2.Controls.Add(this.tBoxKTPPenumpang2);
+            this.groupBoxPenumpang2.Controls.Add(this.tBoxNamaPenumpang2);
+            this.groupBoxPenumpang2.Controls.Add(this.cBoxTitlePenumpang2);
+            this.groupBoxPenumpang2.Location = new System.Drawing.Point(13, 453);
+            this.groupBoxPenumpang2.Name = "groupBoxPenumpang2";
+            this.groupBoxPenumpang2.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang2.TabIndex = 35;
+            this.groupBoxPenumpang2.TabStop = false;
+            // 
+            // groupBoxPenumpang3
+            // 
+            this.groupBoxPenumpang3.Controls.Add(this.buttonHapusPenumpang3);
+            this.groupBoxPenumpang3.Controls.Add(this.labelPenumpang3);
+            this.groupBoxPenumpang3.Controls.Add(this.tBoxKTPPenumpang3);
+            this.groupBoxPenumpang3.Controls.Add(this.tBoxNamaPenumpang3);
+            this.groupBoxPenumpang3.Controls.Add(this.cBoxTitlePenumang3);
+            this.groupBoxPenumpang3.Location = new System.Drawing.Point(701, 290);
+            this.groupBoxPenumpang3.Name = "groupBoxPenumpang3";
+            this.groupBoxPenumpang3.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang3.TabIndex = 36;
+            this.groupBoxPenumpang3.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.groupBoxPenumpang3);
+            this.Controls.Add(this.groupBoxPenumpang2);
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBoxPenumpang1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.buttonTambahPenumpang);
-            this.Controls.Add(this.buttonHapusPenumpang3);
-            this.Controls.Add(this.buttonHapusPenumpang2);
-            this.Controls.Add(this.buttonHapusPenumpang1);
-            this.Controls.Add(this.labelPenumpang3);
-            this.Controls.Add(this.tBoxKTPPenumpang3);
-            this.Controls.Add(this.tBoxNamaPenumpang3);
-            this.Controls.Add(this.cBoxTitlePenumang3);
-            this.Controls.Add(this.labelPenumpang2);
-            this.Controls.Add(this.tBoxKTPPenumpang2);
-            this.Controls.Add(this.tBoxNamaPenumpang2);
-            this.Controls.Add(this.cBoxTitlePenumpang2);
-            this.Controls.Add(this.labelPenumpang1);
-            this.Controls.Add(this.tBoxKTPPenumpang1);
-            this.Controls.Add(this.tBoxNamaPenumpang1);
-            this.Controls.Add(this.cBoxTitlePenumpang1);
             this.Controls.Add(this.buttonUbahProfile);
             this.Controls.Add(this.labelDetailPenumpang);
             this.Controls.Add(this.tBoxTeleponProfile);
@@ -388,6 +432,12 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBoxPenumpang1.ResumeLayout(false);
+            this.groupBoxPenumpang1.PerformLayout();
+            this.groupBoxPenumpang2.ResumeLayout(false);
+            this.groupBoxPenumpang2.PerformLayout();
+            this.groupBoxPenumpang3.ResumeLayout(false);
+            this.groupBoxPenumpang3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -428,6 +478,10 @@
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Label labelJumlahPembayaran;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBoxPenumpang1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBoxPenumpang2;
+        private System.Windows.Forms.GroupBox groupBoxPenumpang3;
     }
 }
 
