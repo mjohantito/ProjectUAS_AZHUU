@@ -41,12 +41,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.rbutMale = new System.Windows.Forms.RadioButton();
             this.rbutFemale = new System.Windows.Forms.RadioButton();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpBirthdate = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.butRegister = new System.Windows.Forms.Button();
             this.labError = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.labSignin = new System.Windows.Forms.Label();
+            this.butBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -161,12 +162,12 @@
             this.rbutFemale.Text = "Female";
             this.rbutFemale.UseVisualStyleBackColor = true;
             // 
-            // dateTimePicker1
+            // dtpBirthdate
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(548, 480);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(289, 20);
-            this.dateTimePicker1.TabIndex = 13;
+            this.dtpBirthdate.Location = new System.Drawing.Point(548, 480);
+            this.dtpBirthdate.Name = "dtpBirthdate";
+            this.dtpBirthdate.Size = new System.Drawing.Size(289, 20);
+            this.dtpBirthdate.TabIndex = 13;
             // 
             // label7
             // 
@@ -177,14 +178,14 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Birthdate";
             // 
-            // button1
+            // butRegister
             // 
-            this.button1.Location = new System.Drawing.Point(723, 571);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(112, 34);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "Register";
-            this.button1.UseVisualStyleBackColor = true;
+            this.butRegister.Location = new System.Drawing.Point(723, 571);
+            this.butRegister.Name = "butRegister";
+            this.butRegister.Size = new System.Drawing.Size(112, 34);
+            this.butRegister.TabIndex = 15;
+            this.butRegister.Text = "Register";
+            this.butRegister.UseVisualStyleBackColor = true;
             // 
             // labError
             // 
@@ -214,17 +215,27 @@
             this.labSignin.TabIndex = 18;
             this.labSignin.Text = "Here";
             // 
+            // butBack
+            // 
+            this.butBack.Location = new System.Drawing.Point(15, 25);
+            this.butBack.Name = "butBack";
+            this.butBack.Size = new System.Drawing.Size(28, 23);
+            this.butBack.TabIndex = 19;
+            this.butBack.Text = "<";
+            this.butBack.UseVisualStyleBackColor = true;
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 681);
+            this.Controls.Add(this.butBack);
             this.Controls.Add(this.labSignin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.labError);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.butRegister);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpBirthdate);
             this.Controls.Add(this.rbutFemale);
             this.Controls.Add(this.rbutMale);
             this.Controls.Add(this.label6);
@@ -240,6 +251,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Register";
             this.Text = "Register";
+            this.Load += new System.EventHandler(this.Register_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -260,12 +272,13 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton rbutMale;
         private System.Windows.Forms.RadioButton rbutFemale;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpBirthdate;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button butRegister;
         private System.Windows.Forms.Label labError;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labSignin;
+        private System.Windows.Forms.Button butBack;
     }
 }
 

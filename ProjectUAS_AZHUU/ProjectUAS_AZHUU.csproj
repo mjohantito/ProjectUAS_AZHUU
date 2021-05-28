@@ -59,11 +59,35 @@
     <Compile Include="DaftarPenumpang.Designer.cs">
       <DependentUpon>DaftarPenumpang.cs</DependentUpon>
     </Compile>
+    <Compile Include="ForgotPasswordEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordEmail.Designer.cs">
+      <DependentUpon>ForgotPasswordEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForgotPasswordNoTelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgotPasswordNoTelp.Designer.cs">
+      <DependentUpon>ForgotPasswordNoTelp.cs</DependentUpon>
+    </Compile>
     <Compile Include="MyOrder.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MyOrder.Designer.cs">
       <DependentUpon>MyOrder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewPassword.Designer.cs">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
@@ -85,8 +109,20 @@
     <EmbeddedResource Include="DaftarPenumpang.resx">
       <DependentUpon>DaftarPenumpang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordEmail.resx">
+      <DependentUpon>ForgotPasswordEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgotPasswordNoTelp.resx">
+      <DependentUpon>ForgotPasswordNoTelp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MyOrder.resx">
       <DependentUpon>MyOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewPassword.resx">
+      <DependentUpon>NewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
