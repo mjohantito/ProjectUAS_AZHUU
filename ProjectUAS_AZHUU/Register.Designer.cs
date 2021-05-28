@@ -80,6 +80,7 @@
             this.tboxPhone.Name = "tboxPhone";
             this.tboxPhone.Size = new System.Drawing.Size(289, 20);
             this.tboxPhone.TabIndex = 3;
+            this.tboxPhone.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tboxPhone_KeyPress);
             // 
             // tboxPassword
             // 
@@ -87,6 +88,7 @@
             this.tboxPassword.Name = "tboxPassword";
             this.tboxPassword.Size = new System.Drawing.Size(289, 20);
             this.tboxPassword.TabIndex = 4;
+            this.tboxPassword.TextChanged += new System.EventHandler(this.tboxPassword_TextChanged);
             // 
             // tboxConfirmPassword
             // 
@@ -94,6 +96,7 @@
             this.tboxConfirmPassword.Name = "tboxConfirmPassword";
             this.tboxConfirmPassword.Size = new System.Drawing.Size(289, 20);
             this.tboxConfirmPassword.TabIndex = 5;
+            this.tboxConfirmPassword.TextChanged += new System.EventHandler(this.tboxConfirmPassword_TextChanged);
             // 
             // label2
             // 
@@ -186,6 +189,7 @@
             this.butRegister.TabIndex = 15;
             this.butRegister.Text = "Register";
             this.butRegister.UseVisualStyleBackColor = true;
+            this.butRegister.Click += new System.EventHandler(this.butRegister_Click);
             // 
             // labError
             // 
