@@ -47,23 +47,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ForgotPassword.cs">
+    <Compile Include="CheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ForgotPassword.Designer.cs">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <Compile Include="CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DaftarPenumpang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DaftarPenumpang.Designer.cs">
+      <DependentUpon>DaftarPenumpang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyOrder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyOrder.Designer.cs">
+      <DependentUpon>MyOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Register.Designer.cs">
       <DependentUpon>Register.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,14 +79,17 @@
     <Compile Include="Sign-In.Designer.cs">
       <DependentUpon>Sign-In.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ForgotPassword.resx">
-      <DependentUpon>ForgotPassword.cs</DependentUpon>
+    <EmbeddedResource Include="CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DaftarPenumpang.resx">
+      <DependentUpon>DaftarPenumpang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyOrder.resx">
+      <DependentUpon>MyOrder.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Register.resx">
       <DependentUpon>Register.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

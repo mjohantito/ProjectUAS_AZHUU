@@ -1,6 +1,6 @@
 ﻿namespace ProjectUAS_AZHUU
 {
-    partial class FormDaftarPenumpang
+    partial class ForgotPassword
     {
         /// <summary>
         /// Required designer variable.
