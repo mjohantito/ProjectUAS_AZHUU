@@ -21,7 +21,7 @@ namespace ProjectUAS_AZHUU
         MySqlConnection sqlConnect;
         MySqlCommand sqlCommand;
         MySqlDataAdapter sqlAdapter;
-        string connectString = "server=localhost;uid=root;pwd=;database=premier_league;";
+        string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
         string birthdate = "0000-00-00";
@@ -35,6 +35,9 @@ namespace ProjectUAS_AZHUU
         {
             try
             {
+                //check email sudah terdaftar / belum
+
+
 
                 if (tboxFullName.Text == "" || tboxEmail.Text == "" || tboxPhone.Text == "" || tboxPassword.Text == "" || tboxConfirmPassword.Text == "" || rbutFemale.Checked == false || rbutMale.Checked == false || birthdate == "0000-00-00")
                 {
@@ -44,6 +47,8 @@ namespace ProjectUAS_AZHUU
                 {
                     MessageBox.Show("Password doesn't Match!");
                 }
+
+                // if lolos, input ke database, trus di lempat ke profile
             }
             catch (Exception ex)
             {
@@ -85,6 +90,20 @@ namespace ProjectUAS_AZHUU
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void labSignin_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var formsignin = new Sign_In();
+                formsignin.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+
                 MessageBox.Show(ex.Message);
             }
         }

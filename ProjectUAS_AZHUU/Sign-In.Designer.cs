@@ -80,6 +80,7 @@
             this.butSignIn.TabIndex = 16;
             this.butSignIn.Text = "Sign-In";
             this.butSignIn.UseVisualStyleBackColor = true;
+            this.butSignIn.Click += new System.EventHandler(this.butSignIn_Click);
             // 
             // labRegister
             // 

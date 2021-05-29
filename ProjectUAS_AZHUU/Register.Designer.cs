@@ -218,6 +218,7 @@
             this.labSignin.Size = new System.Drawing.Size(30, 13);
             this.labSignin.TabIndex = 18;
             this.labSignin.Text = "Here";
+            this.labSignin.Click += new System.EventHandler(this.labSignin_Click);
             // 
             // butBack
             // 
