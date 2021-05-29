@@ -147,5 +147,23 @@
   <ItemGroup>
     <None Include="Resources\khusus 10 Juni 2021.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NCAA Twitter Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spiritual Desktop Wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\aaaaaaaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newwwww.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

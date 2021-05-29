@@ -65,16 +65,20 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBoxPenumpang2 = new System.Windows.Forms.GroupBox();
             this.groupBoxPenumpang3 = new System.Windows.Forms.GroupBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
             this.groupBoxPenumpang3.SuspendLayout();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelDtlPesan
             // 
             this.labelDtlPesan.AutoSize = true;
-            this.labelDtlPesan.Location = new System.Drawing.Point(24, 25);
+            this.labelDtlPesan.Location = new System.Drawing.Point(112, 66);
             this.labelDtlPesan.Name = "labelDtlPesan";
             this.labelDtlPesan.Size = new System.Drawing.Size(126, 17);
             this.labelDtlPesan.TabIndex = 0;
@@ -83,28 +87,28 @@
             // cBoxTitleProfile
             // 
             this.cBoxTitleProfile.FormattingEnabled = true;
-            this.cBoxTitleProfile.Location = new System.Drawing.Point(27, 61);
+            this.cBoxTitleProfile.Location = new System.Drawing.Point(109, 93);
             this.cBoxTitleProfile.Name = "cBoxTitleProfile";
             this.cBoxTitleProfile.Size = new System.Drawing.Size(121, 24);
             this.cBoxTitleProfile.TabIndex = 1;
             // 
             // tBoxNamaProfile
             // 
-            this.tBoxNamaProfile.Location = new System.Drawing.Point(165, 61);
+            this.tBoxNamaProfile.Location = new System.Drawing.Point(247, 93);
             this.tBoxNamaProfile.Name = "tBoxNamaProfile";
             this.tBoxNamaProfile.Size = new System.Drawing.Size(357, 22);
             this.tBoxNamaProfile.TabIndex = 2;
             // 
             // tBoxEmailProfile
             // 
-            this.tBoxEmailProfile.Location = new System.Drawing.Point(27, 104);
+            this.tBoxEmailProfile.Location = new System.Drawing.Point(109, 136);
             this.tBoxEmailProfile.Name = "tBoxEmailProfile";
             this.tBoxEmailProfile.Size = new System.Drawing.Size(495, 22);
             this.tBoxEmailProfile.TabIndex = 3;
             // 
             // tBoxTeleponProfile
             // 
-            this.tBoxTeleponProfile.Location = new System.Drawing.Point(27, 149);
+            this.tBoxTeleponProfile.Location = new System.Drawing.Point(109, 181);
             this.tBoxTeleponProfile.Name = "tBoxTeleponProfile";
             this.tBoxTeleponProfile.Size = new System.Drawing.Size(495, 22);
             this.tBoxTeleponProfile.TabIndex = 4;
@@ -112,7 +116,7 @@
             // labelDetailPenumpang
             // 
             this.labelDetailPenumpang.AutoSize = true;
-            this.labelDetailPenumpang.Location = new System.Drawing.Point(27, 227);
+            this.labelDetailPenumpang.Location = new System.Drawing.Point(109, 278);
             this.labelDetailPenumpang.Name = "labelDetailPenumpang";
             this.labelDetailPenumpang.Size = new System.Drawing.Size(148, 17);
             this.labelDetailPenumpang.TabIndex = 5;
@@ -121,7 +125,7 @@
             // buttonUbahProfile
             // 
             this.buttonUbahProfile.BackColor = System.Drawing.Color.Transparent;
-            this.buttonUbahProfile.Location = new System.Drawing.Point(447, 190);
+            this.buttonUbahProfile.Location = new System.Drawing.Point(529, 222);
             this.buttonUbahProfile.Name = "buttonUbahProfile";
             this.buttonUbahProfile.Size = new System.Drawing.Size(75, 23);
             this.buttonUbahProfile.TabIndex = 6;
@@ -253,9 +257,9 @@
             // 
             // buttonTambahPenumpang
             // 
-            this.buttonTambahPenumpang.BackColor = System.Drawing.Color.Yellow;
+            this.buttonTambahPenumpang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.buttonTambahPenumpang.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambahPenumpang.Location = new System.Drawing.Point(962, 457);
+            this.buttonTambahPenumpang.Location = new System.Drawing.Point(862, 457);
             this.buttonTambahPenumpang.Name = "buttonTambahPenumpang";
             this.buttonTambahPenumpang.Size = new System.Drawing.Size(168, 23);
             this.buttonTambahPenumpang.TabIndex = 22;
@@ -264,9 +268,9 @@
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1032, 599);
+            this.button1.Location = new System.Drawing.Point(708, 502);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(186, 52);
             this.button1.TabIndex = 23;
@@ -355,7 +359,7 @@
             this.groupBox1.Controls.Add(this.labelNamaPO);
             this.groupBox1.Controls.Add(this.labelJurusan);
             this.groupBox1.Controls.Add(this.labelBusShuttle);
-            this.groupBox1.Location = new System.Drawing.Point(741, 18);
+            this.groupBox1.Location = new System.Drawing.Point(667, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(434, 236);
             this.groupBox1.TabIndex = 32;
@@ -368,9 +372,9 @@
             this.groupBoxPenumpang1.Controls.Add(this.tBoxKTPPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.tBoxNamaPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.cBoxTitlePenumpang1);
-            this.groupBoxPenumpang1.Location = new System.Drawing.Point(13, 289);
+            this.groupBoxPenumpang1.Location = new System.Drawing.Point(102, 300);
             this.groupBoxPenumpang1.Name = "groupBoxPenumpang1";
-            this.groupBoxPenumpang1.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang1.Size = new System.Drawing.Size(509, 162);
             this.groupBoxPenumpang1.TabIndex = 33;
             this.groupBoxPenumpang1.TabStop = false;
             // 
@@ -390,9 +394,9 @@
             this.groupBoxPenumpang2.Controls.Add(this.tBoxKTPPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.tBoxNamaPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.cBoxTitlePenumpang2);
-            this.groupBoxPenumpang2.Location = new System.Drawing.Point(13, 453);
+            this.groupBoxPenumpang2.Location = new System.Drawing.Point(102, 468);
             this.groupBoxPenumpang2.Name = "groupBoxPenumpang2";
-            this.groupBoxPenumpang2.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang2.Size = new System.Drawing.Size(509, 162);
             this.groupBoxPenumpang2.TabIndex = 35;
             this.groupBoxPenumpang2.TabStop = false;
             // 
@@ -403,24 +407,42 @@
             this.groupBoxPenumpang3.Controls.Add(this.tBoxKTPPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.tBoxNamaPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.cBoxTitlePenumang3);
-            this.groupBoxPenumpang3.Location = new System.Drawing.Point(701, 290);
+            this.groupBoxPenumpang3.Location = new System.Drawing.Point(575, 300);
             this.groupBoxPenumpang3.Name = "groupBoxPenumpang3";
             this.groupBoxPenumpang3.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang3.TabIndex = 36;
             this.groupBoxPenumpang3.TabStop = false;
             // 
-            // FormDaftarPenumpang
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBoxPenumpang3);
+            this.panel1.Controls.Add(this.button1);
+            this.panel1.Controls.Add(this.buttonTambahPenumpang);
+            this.panel1.Location = new System.Drawing.Point(99, 51);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1076, 595);
+            this.panel1.TabIndex = 38;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.newwwww;
+            this.pictureBox1.Location = new System.Drawing.Point(-7, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1271, 676);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
+            // 
+            // ForgotPassword
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.groupBoxPenumpang3);
             this.Controls.Add(this.groupBoxPenumpang2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBoxPenumpang1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.buttonTambahPenumpang);
             this.Controls.Add(this.buttonUbahProfile);
             this.Controls.Add(this.labelDetailPenumpang);
             this.Controls.Add(this.tBoxTeleponProfile);
@@ -428,7 +450,9 @@
             this.Controls.Add(this.tBoxNamaProfile);
             this.Controls.Add(this.cBoxTitleProfile);
             this.Controls.Add(this.labelDtlPesan);
-            this.Name = "FormDaftarPenumpang";
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox1);
+            this.Name = "ForgotPassword";
             this.Text = "Daftar Penumpang";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -438,6 +462,8 @@
             this.groupBoxPenumpang2.PerformLayout();
             this.groupBoxPenumpang3.ResumeLayout(false);
             this.groupBoxPenumpang3.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,6 +508,8 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBoxPenumpang2;
         private System.Windows.Forms.GroupBox groupBoxPenumpang3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 

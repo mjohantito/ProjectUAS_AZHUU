@@ -18,5 +18,19 @@ namespace ProjectUAS_AZHUU
             InitializeComponent();
         }
 
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tboxEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tboxPhone_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
