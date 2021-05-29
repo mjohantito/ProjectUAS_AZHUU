@@ -171,6 +171,7 @@
             this.dtpBirthdate.Name = "dtpBirthdate";
             this.dtpBirthdate.Size = new System.Drawing.Size(289, 20);
             this.dtpBirthdate.TabIndex = 13;
+            this.dtpBirthdate.ValueChanged += new System.EventHandler(this.dtpBirthdate_ValueChanged);
             // 
             // label7
             // 

@@ -51,7 +51,8 @@ namespace ProjectUAS_AZHUU
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtLogin);
 
-                if(dtLogin.Rows[0][0].ToString() == "1") // masih salah
+
+                if(dtLogin.Rows.Count == 1) // masih salah
                 {
                     cekemail = 1;
                 }
@@ -62,7 +63,7 @@ namespace ProjectUAS_AZHUU
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtpassword);
 
-                if(dtpassword.Rows[0][0].ToString() == "1") // masih salahhh
+                if(dtpassword.Rows.Count == 1) // masih salahhh
                 {
                     cekpassword = 1;
                 }
@@ -70,7 +71,7 @@ namespace ProjectUAS_AZHUU
 
                 if(cekemail == 0)
                 {
-                    labError.Text = "Email Tidak Terdafter!";
+                    labError.Text = "Email Tidak Terdaftar!";
                 }
                 else if (cekpassword == 0)
                 {
