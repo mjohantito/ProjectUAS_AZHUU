@@ -51,7 +51,7 @@
             this.buttonHapusPenumpang2 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang3 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.buttonContinue = new System.Windows.Forms.Button();
             this.labelBusShuttle = new System.Windows.Forms.Label();
             this.labelJurusan = new System.Windows.Forms.Label();
             this.labelNamaPO = new System.Windows.Forms.Label();
@@ -262,16 +262,16 @@
             this.buttonTambahPenumpang.Text = "Klik untuk Tambah Penumpang";
             this.buttonTambahPenumpang.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // buttonContinue
             // 
-            this.button1.BackColor = System.Drawing.Color.Yellow;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(1032, 599);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(186, 52);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "CHECKOUT";
-            this.button1.UseVisualStyleBackColor = false;
+            this.buttonContinue.BackColor = System.Drawing.Color.Yellow;
+            this.buttonContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonContinue.Location = new System.Drawing.Point(1032, 599);
+            this.buttonContinue.Name = "buttonContinue";
+            this.buttonContinue.Size = new System.Drawing.Size(186, 52);
+            this.buttonContinue.TabIndex = 23;
+            this.buttonContinue.Text = "CONTINUE";
+            this.buttonContinue.UseVisualStyleBackColor = false;
             // 
             // labelBusShuttle
             // 
@@ -287,45 +287,45 @@
             this.labelJurusan.AutoSize = true;
             this.labelJurusan.Location = new System.Drawing.Point(31, 59);
             this.labelJurusan.Name = "labelJurusan";
-            this.labelJurusan.Size = new System.Drawing.Size(46, 17);
+            this.labelJurusan.Size = new System.Drawing.Size(182, 17);
             this.labelJurusan.TabIndex = 25;
-            this.labelJurusan.Text = "label2";
+            this.labelJurusan.Text = "Soekarno Hatta --> BNI City";
             // 
             // labelNamaPO
             // 
             this.labelNamaPO.AutoSize = true;
             this.labelNamaPO.Location = new System.Drawing.Point(31, 100);
             this.labelNamaPO.Name = "labelNamaPO";
-            this.labelNamaPO.Size = new System.Drawing.Size(46, 17);
+            this.labelNamaPO.Size = new System.Drawing.Size(120, 17);
             this.labelNamaPO.TabIndex = 26;
-            this.labelNamaPO.Text = "label3";
+            this.labelNamaPO.Text = "PO Hanajay Oi Oi";
             // 
             // labelNamaPenumpang1
             // 
             this.labelNamaPenumpang1.AutoSize = true;
             this.labelNamaPenumpang1.Location = new System.Drawing.Point(100, 130);
             this.labelNamaPenumpang1.Name = "labelNamaPenumpang1";
-            this.labelNamaPenumpang1.Size = new System.Drawing.Size(46, 17);
+            this.labelNamaPenumpang1.Size = new System.Drawing.Size(119, 17);
             this.labelNamaPenumpang1.TabIndex = 27;
-            this.labelNamaPenumpang1.Text = "label4";
+            this.labelNamaPenumpang1.Text = "- Briaan Putrantio";
             // 
             // labelNamaPenumpang2
             // 
             this.labelNamaPenumpang2.AutoSize = true;
             this.labelNamaPenumpang2.Location = new System.Drawing.Point(100, 147);
             this.labelNamaPenumpang2.Name = "labelNamaPenumpang2";
-            this.labelNamaPenumpang2.Size = new System.Drawing.Size(46, 17);
+            this.labelNamaPenumpang2.Size = new System.Drawing.Size(104, 17);
             this.labelNamaPenumpang2.TabIndex = 28;
-            this.labelNamaPenumpang2.Text = "label5";
+            this.labelNamaPenumpang2.Text = "- Yohan Wijaya";
             // 
             // labelNamaPenumpang3
             // 
             this.labelNamaPenumpang3.AutoSize = true;
             this.labelNamaPenumpang3.Location = new System.Drawing.Point(100, 164);
             this.labelNamaPenumpang3.Name = "labelNamaPenumpang3";
-            this.labelNamaPenumpang3.Size = new System.Drawing.Size(46, 17);
+            this.labelNamaPenumpang3.Size = new System.Drawing.Size(134, 17);
             this.labelNamaPenumpang3.TabIndex = 29;
-            this.labelNamaPenumpang3.Text = "label6";
+            this.labelNamaPenumpang3.Text = "- Manuel Johan Tito";
             // 
             // labelTotal
             // 
@@ -341,9 +341,9 @@
             this.labelJumlahPembayaran.AutoSize = true;
             this.labelJumlahPembayaran.Location = new System.Drawing.Point(343, 199);
             this.labelJumlahPembayaran.Name = "labelJumlahPembayaran";
-            this.labelJumlahPembayaran.Size = new System.Drawing.Size(46, 17);
+            this.labelJumlahPembayaran.Size = new System.Drawing.Size(87, 17);
             this.labelJumlahPembayaran.TabIndex = 31;
-            this.labelJumlahPembayaran.Text = "label8";
+            this.labelJumlahPembayaran.Text = "IDR 954.000";
             // 
             // groupBox1
             // 
@@ -419,7 +419,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBoxPenumpang1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonContinue);
             this.Controls.Add(this.buttonTambahPenumpang);
             this.Controls.Add(this.buttonUbahProfile);
             this.Controls.Add(this.labelDetailPenumpang);
@@ -468,7 +468,7 @@
         private System.Windows.Forms.Button buttonHapusPenumpang2;
         private System.Windows.Forms.Button buttonHapusPenumpang3;
         private System.Windows.Forms.Button buttonTambahPenumpang;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button buttonContinue;
         private System.Windows.Forms.Label labelBusShuttle;
         private System.Windows.Forms.Label labelJurusan;
         private System.Windows.Forms.Label labelNamaPO;
