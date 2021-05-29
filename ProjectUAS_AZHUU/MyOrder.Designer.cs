@@ -52,7 +52,19 @@ namespace ProjectUAS_AZHUU
             this.labelID2 = new System.Windows.Forms.Label();
             this.labelTotalPembayaran = new System.Windows.Forms.Label();
             this.labelTotal = new System.Windows.Forms.Label();
-            this.buttonContinueTOPay = new System.Windows.Forms.Button();
+            this.buttonContinueToPay = new System.Windows.Forms.Button();
+            this.labelJamDOrder1 = new System.Windows.Forms.Label();
+            this.labelTanggalDOrder1 = new System.Windows.Forms.Label();
+            this.labelWaktuPerjalanan = new System.Windows.Forms.Label();
+            this.labelTanggalDOrder2 = new System.Windows.Forms.Label();
+            this.labelJamDOrder2 = new System.Windows.Forms.Label();
+            this.labelTerminalBerangkat = new System.Windows.Forms.Label();
+            this.labelTerminalTujuan = new System.Windows.Forms.Label();
+            this.labelPenumpang = new System.Windows.Forms.Label();
+            this.labelPenumpang1 = new System.Windows.Forms.Label();
+            this.labelPenumpang2 = new System.Windows.Forms.Label();
+            this.labelEmailPenumpang2 = new System.Windows.Forms.Label();
+            this.labelEmailPenumpang1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelMyOrder
@@ -61,7 +73,7 @@ namespace ProjectUAS_AZHUU
             this.labelMyOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMyOrder.Location = new System.Drawing.Point(100, 56);
             this.labelMyOrder.Name = "labelMyOrder";
-            this.labelMyOrder.Size = new System.Drawing.Size(157, 39);
+            this.labelMyOrder.Size = new System.Drawing.Size(154, 38);
             this.labelMyOrder.TabIndex = 0;
             this.labelMyOrder.Text = "My Order";
             // 
@@ -155,7 +167,7 @@ namespace ProjectUAS_AZHUU
             this.labelTanggal2.Name = "labelTanggal2";
             this.labelTanggal2.Size = new System.Drawing.Size(161, 17);
             this.labelTanggal2.TabIndex = 13;
-            this.labelTanggal2.Text = "Kamis, 15 Agustus 2021";
+            this.labelTanggal2.Text = "Kamis, 20 Agustus 2021";
             // 
             // labelStatusJalan2
             // 
@@ -201,7 +213,7 @@ namespace ProjectUAS_AZHUU
             this.labelJam2.Name = "labelJam2";
             this.labelJam2.Size = new System.Drawing.Size(73, 17);
             this.labelJam2.TabIndex = 15;
-            this.labelJam2.Text = "16.45 WIB";
+            this.labelJam2.Text = "20.48 WIB";
             // 
             // labelDetailOrder
             // 
@@ -209,7 +221,7 @@ namespace ProjectUAS_AZHUU
             this.labelDetailOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDetailOrder.Location = new System.Drawing.Point(620, 56);
             this.labelDetailOrder.Name = "labelDetailOrder";
-            this.labelDetailOrder.Size = new System.Drawing.Size(200, 39);
+            this.labelDetailOrder.Size = new System.Drawing.Size(193, 38);
             this.labelDetailOrder.TabIndex = 16;
             this.labelDetailOrder.Text = "Detail Order";
             // 
@@ -267,21 +279,143 @@ namespace ProjectUAS_AZHUU
             this.labelTotal.TabIndex = 22;
             this.labelTotal.Text = "IDR 978.000";
             // 
-            // buttonContinueTOPay
+            // buttonContinueToPay
             // 
-            this.buttonContinueTOPay.Location = new System.Drawing.Point(967, 137);
-            this.buttonContinueTOPay.Name = "buttonContinueTOPay";
-            this.buttonContinueTOPay.Size = new System.Drawing.Size(186, 31);
-            this.buttonContinueTOPay.TabIndex = 23;
-            this.buttonContinueTOPay.Text = "Continue To Pay";
-            this.buttonContinueTOPay.UseVisualStyleBackColor = true;
+            this.buttonContinueToPay.Location = new System.Drawing.Point(967, 137);
+            this.buttonContinueToPay.Name = "buttonContinueToPay";
+            this.buttonContinueToPay.Size = new System.Drawing.Size(186, 31);
+            this.buttonContinueToPay.TabIndex = 23;
+            this.buttonContinueToPay.Text = "Continue To Pay";
+            this.buttonContinueToPay.UseVisualStyleBackColor = true;
+            // 
+            // labelJamDOrder1
+            // 
+            this.labelJamDOrder1.AutoSize = true;
+            this.labelJamDOrder1.Location = new System.Drawing.Point(627, 244);
+            this.labelJamDOrder1.Name = "labelJamDOrder1";
+            this.labelJamDOrder1.Size = new System.Drawing.Size(73, 17);
+            this.labelJamDOrder1.TabIndex = 24;
+            this.labelJamDOrder1.Text = "16.54 WIB";
+            // 
+            // labelTanggalDOrder1
+            // 
+            this.labelTanggalDOrder1.AutoSize = true;
+            this.labelTanggalDOrder1.Location = new System.Drawing.Point(633, 261);
+            this.labelTanggalDOrder1.Name = "labelTanggalDOrder1";
+            this.labelTanggalDOrder1.Size = new System.Drawing.Size(52, 17);
+            this.labelTanggalDOrder1.TabIndex = 25;
+            this.labelTanggalDOrder1.Text = "15 Ags";
+            // 
+            // labelWaktuPerjalanan
+            // 
+            this.labelWaktuPerjalanan.AutoSize = true;
+            this.labelWaktuPerjalanan.Location = new System.Drawing.Point(647, 315);
+            this.labelWaktuPerjalanan.Name = "labelWaktuPerjalanan";
+            this.labelWaktuPerjalanan.Size = new System.Drawing.Size(104, 17);
+            this.labelWaktuPerjalanan.TabIndex = 26;
+            this.labelWaktuPerjalanan.Text = "1 Jam 21 Menit";
+            // 
+            // labelTanggalDOrder2
+            // 
+            this.labelTanggalDOrder2.AutoSize = true;
+            this.labelTanggalDOrder2.Location = new System.Drawing.Point(633, 387);
+            this.labelTanggalDOrder2.Name = "labelTanggalDOrder2";
+            this.labelTanggalDOrder2.Size = new System.Drawing.Size(52, 17);
+            this.labelTanggalDOrder2.TabIndex = 28;
+            this.labelTanggalDOrder2.Text = "15 Ags";
+            // 
+            // labelJamDOrder2
+            // 
+            this.labelJamDOrder2.AutoSize = true;
+            this.labelJamDOrder2.Location = new System.Drawing.Point(627, 366);
+            this.labelJamDOrder2.Name = "labelJamDOrder2";
+            this.labelJamDOrder2.Size = new System.Drawing.Size(73, 17);
+            this.labelJamDOrder2.TabIndex = 27;
+            this.labelJamDOrder2.Text = "18.15 WIB";
+            // 
+            // labelTerminalBerangkat
+            // 
+            this.labelTerminalBerangkat.AutoSize = true;
+            this.labelTerminalBerangkat.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTerminalBerangkat.Location = new System.Drawing.Point(835, 244);
+            this.labelTerminalBerangkat.Name = "labelTerminalBerangkat";
+            this.labelTerminalBerangkat.Size = new System.Drawing.Size(199, 29);
+            this.labelTerminalBerangkat.TabIndex = 29;
+            this.labelTerminalBerangkat.Text = "Terminal 1 CGK";
+            // 
+            // labelTerminalTujuan
+            // 
+            this.labelTerminalTujuan.AutoSize = true;
+            this.labelTerminalTujuan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTerminalTujuan.Location = new System.Drawing.Point(835, 366);
+            this.labelTerminalTujuan.Name = "labelTerminalTujuan";
+            this.labelTerminalTujuan.Size = new System.Drawing.Size(107, 29);
+            this.labelTerminalTujuan.TabIndex = 30;
+            this.labelTerminalTujuan.Text = "BNI City";
+            // 
+            // labelPenumpang
+            // 
+            this.labelPenumpang.AutoSize = true;
+            this.labelPenumpang.Location = new System.Drawing.Point(638, 441);
+            this.labelPenumpang.Name = "labelPenumpang";
+            this.labelPenumpang.Size = new System.Drawing.Size(84, 17);
+            this.labelPenumpang.TabIndex = 31;
+            this.labelPenumpang.Text = "Penumpang";
+            // 
+            // labelPenumpang1
+            // 
+            this.labelPenumpang1.AutoSize = true;
+            this.labelPenumpang1.Location = new System.Drawing.Point(668, 474);
+            this.labelPenumpang1.Name = "labelPenumpang1";
+            this.labelPenumpang1.Size = new System.Drawing.Size(97, 17);
+            this.labelPenumpang1.TabIndex = 32;
+            this.labelPenumpang1.Text = "1. Ms .Yohayy";
+            // 
+            // labelPenumpang2
+            // 
+            this.labelPenumpang2.AutoSize = true;
+            this.labelPenumpang2.Location = new System.Drawing.Point(668, 506);
+            this.labelPenumpang2.Name = "labelPenumpang2";
+            this.labelPenumpang2.Size = new System.Drawing.Size(73, 17);
+            this.labelPenumpang2.TabIndex = 33;
+            this.labelPenumpang2.Text = "2. Mr. Oioi";
+            // 
+            // labelEmailPenumpang2
+            // 
+            this.labelEmailPenumpang2.AutoSize = true;
+            this.labelEmailPenumpang2.Location = new System.Drawing.Point(993, 506);
+            this.labelEmailPenumpang2.Name = "labelEmailPenumpang2";
+            this.labelEmailPenumpang2.Size = new System.Drawing.Size(139, 17);
+            this.labelEmailPenumpang2.TabIndex = 35;
+            this.labelEmailPenumpang2.Text = "oioi3333@gmail.com";
+            // 
+            // labelEmailPenumpang1
+            // 
+            this.labelEmailPenumpang1.AutoSize = true;
+            this.labelEmailPenumpang1.Location = new System.Drawing.Point(993, 474);
+            this.labelEmailPenumpang1.Name = "labelEmailPenumpang1";
+            this.labelEmailPenumpang1.Size = new System.Drawing.Size(154, 17);
+            this.labelEmailPenumpang1.TabIndex = 34;
+            this.labelEmailPenumpang1.Text = "yohayy123@gmail.com";
             // 
             // FormMyOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.buttonContinueTOPay);
+            this.Controls.Add(this.labelEmailPenumpang2);
+            this.Controls.Add(this.labelEmailPenumpang1);
+            this.Controls.Add(this.labelPenumpang2);
+            this.Controls.Add(this.labelPenumpang1);
+            this.Controls.Add(this.labelPenumpang);
+            this.Controls.Add(this.labelTerminalTujuan);
+            this.Controls.Add(this.labelTerminalBerangkat);
+            this.Controls.Add(this.labelTanggalDOrder2);
+            this.Controls.Add(this.labelJamDOrder2);
+            this.Controls.Add(this.labelWaktuPerjalanan);
+            this.Controls.Add(this.labelTanggalDOrder1);
+            this.Controls.Add(this.labelJamDOrder1);
+            this.Controls.Add(this.buttonContinueToPay);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.labelTotalPembayaran);
             this.Controls.Add(this.labelID2);
@@ -337,6 +471,18 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label labelID2;
         private System.Windows.Forms.Label labelTotalPembayaran;
         private System.Windows.Forms.Label labelTotal;
-        private System.Windows.Forms.Button buttonContinueTOPay;
+        private System.Windows.Forms.Button buttonContinueToPay;
+        private System.Windows.Forms.Label labelJamDOrder1;
+        private System.Windows.Forms.Label labelTanggalDOrder1;
+        private System.Windows.Forms.Label labelWaktuPerjalanan;
+        private System.Windows.Forms.Label labelTanggalDOrder2;
+        private System.Windows.Forms.Label labelJamDOrder2;
+        private System.Windows.Forms.Label labelTerminalBerangkat;
+        private System.Windows.Forms.Label labelTerminalTujuan;
+        private System.Windows.Forms.Label labelPenumpang;
+        private System.Windows.Forms.Label labelPenumpang1;
+        private System.Windows.Forms.Label labelPenumpang2;
+        private System.Windows.Forms.Label labelEmailPenumpang2;
+        private System.Windows.Forms.Label labelEmailPenumpang1;
     }
 }
