@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.tboxFullName = new System.Windows.Forms.TextBox();
             this.tboxEmail = new System.Windows.Forms.TextBox();
             this.tboxPhone = new System.Windows.Forms.TextBox();
@@ -41,111 +40,117 @@
             this.label6 = new System.Windows.Forms.Label();
             this.rbutMale = new System.Windows.Forms.RadioButton();
             this.rbutFemale = new System.Windows.Forms.RadioButton();
-            this.dtpBirthdate = new System.Windows.Forms.DateTimePicker();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
-            this.butRegister = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.labError = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.labSignin = new System.Windows.Forms.Label();
-            this.butBack = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 30F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(409, 38);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(428, 44);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Register for Free";
             // 
             // tboxFullName
             // 
-            this.tboxFullName.Location = new System.Drawing.Point(548, 133);
+            this.tboxFullName.Location = new System.Drawing.Point(188, 241);
+            this.tboxFullName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxFullName.Name = "tboxFullName";
-            this.tboxFullName.Size = new System.Drawing.Size(289, 20);
+            this.tboxFullName.Size = new System.Drawing.Size(214, 22);
             this.tboxFullName.TabIndex = 1;
             // 
             // tboxEmail
             // 
-            this.tboxEmail.Location = new System.Drawing.Point(548, 185);
+            this.tboxEmail.Location = new System.Drawing.Point(188, 307);
+            this.tboxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxEmail.Name = "tboxEmail";
-            this.tboxEmail.Size = new System.Drawing.Size(289, 20);
+            this.tboxEmail.Size = new System.Drawing.Size(214, 22);
             this.tboxEmail.TabIndex = 2;
+            this.tboxEmail.TextChanged += new System.EventHandler(this.tboxEmail_TextChanged);
             // 
             // tboxPhone
             // 
-            this.tboxPhone.Location = new System.Drawing.Point(548, 239);
+            this.tboxPhone.Location = new System.Drawing.Point(188, 377);
+            this.tboxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxPhone.Name = "tboxPhone";
-            this.tboxPhone.Size = new System.Drawing.Size(289, 20);
+            this.tboxPhone.Size = new System.Drawing.Size(214, 22);
             this.tboxPhone.TabIndex = 3;
+            this.tboxPhone.TextChanged += new System.EventHandler(this.tboxPhone_TextChanged);
             // 
             // tboxPassword
             // 
-            this.tboxPassword.Location = new System.Drawing.Point(548, 296);
+            this.tboxPassword.Location = new System.Drawing.Point(188, 447);
+            this.tboxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxPassword.Name = "tboxPassword";
-            this.tboxPassword.Size = new System.Drawing.Size(289, 20);
+            this.tboxPassword.Size = new System.Drawing.Size(214, 22);
             this.tboxPassword.TabIndex = 4;
             // 
             // tboxConfirmPassword
             // 
-            this.tboxConfirmPassword.Location = new System.Drawing.Point(548, 358);
+            this.tboxConfirmPassword.Location = new System.Drawing.Point(186, 520);
+            this.tboxConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tboxConfirmPassword.Name = "tboxConfirmPassword";
-            this.tboxConfirmPassword.Size = new System.Drawing.Size(289, 20);
+            this.tboxConfirmPassword.Size = new System.Drawing.Size(214, 22);
             this.tboxConfirmPassword.TabIndex = 5;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(417, 136);
+            this.label2.Location = new System.Drawing.Point(46, 246);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 13);
+            this.label2.Size = new System.Drawing.Size(71, 17);
             this.label2.TabIndex = 6;
             this.label2.Text = "Full Name";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(417, 188);
+            this.label3.Location = new System.Drawing.Point(46, 310);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(42, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Email";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(417, 242);
+            this.label4.Location = new System.Drawing.Point(46, 377);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 13);
+            this.label4.Size = new System.Drawing.Size(103, 17);
             this.label4.TabIndex = 8;
             this.label4.Text = "Phone Number";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(417, 299);
+            this.label5.Location = new System.Drawing.Point(46, 447);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(53, 13);
+            this.label5.Size = new System.Drawing.Size(69, 17);
             this.label5.TabIndex = 9;
             this.label5.Text = "Password";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(417, 361);
+            this.label6.Location = new System.Drawing.Point(46, 523);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.Size = new System.Drawing.Size(121, 17);
             this.label6.TabIndex = 10;
             this.label6.Text = "Confirm Password";
             // 
             // rbutMale
             // 
             this.rbutMale.AutoSize = true;
-            this.rbutMale.Location = new System.Drawing.Point(559, 415);
+            this.rbutMale.Location = new System.Drawing.Point(188, 563);
+            this.rbutMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbutMale.Name = "rbutMale";
-            this.rbutMale.Size = new System.Drawing.Size(48, 17);
+            this.rbutMale.Size = new System.Drawing.Size(59, 21);
             this.rbutMale.TabIndex = 11;
             this.rbutMale.TabStop = true;
             this.rbutMale.Text = "Male";
@@ -154,54 +159,61 @@
             // rbutFemale
             // 
             this.rbutFemale.AutoSize = true;
-            this.rbutFemale.Location = new System.Drawing.Point(723, 415);
+            this.rbutFemale.Location = new System.Drawing.Point(327, 563);
+            this.rbutFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.rbutFemale.Name = "rbutFemale";
-            this.rbutFemale.Size = new System.Drawing.Size(59, 17);
+            this.rbutFemale.Size = new System.Drawing.Size(75, 21);
             this.rbutFemale.TabIndex = 12;
             this.rbutFemale.TabStop = true;
             this.rbutFemale.Text = "Female";
             this.rbutFemale.UseVisualStyleBackColor = true;
             // 
-            // dtpBirthdate
+            // dateTimePicker1
             // 
-            this.dtpBirthdate.Location = new System.Drawing.Point(548, 480);
-            this.dtpBirthdate.Name = "dtpBirthdate";
-            this.dtpBirthdate.Size = new System.Drawing.Size(289, 20);
-            this.dtpBirthdate.TabIndex = 13;
+            this.dateTimePicker1.Location = new System.Drawing.Point(186, 615);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(227, 22);
+            this.dateTimePicker1.TabIndex = 13;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(417, 486);
+            this.label7.Location = new System.Drawing.Point(46, 620);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.Size = new System.Drawing.Size(65, 17);
             this.label7.TabIndex = 14;
             this.label7.Text = "Birthdate";
             // 
-            // butRegister
+            // button1
             // 
-            this.butRegister.Location = new System.Drawing.Point(723, 571);
-            this.butRegister.Name = "butRegister";
-            this.butRegister.Size = new System.Drawing.Size(112, 34);
-            this.butRegister.TabIndex = 15;
-            this.butRegister.Text = "Register";
-            this.butRegister.UseVisualStyleBackColor = true;
+            this.button1.BackColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(160, 685);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(149, 42);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Register";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // labError
             // 
             this.labError.AutoSize = true;
-            this.labError.Location = new System.Drawing.Point(545, 541);
+            this.labError.Location = new System.Drawing.Point(387, 649);
+            this.labError.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labError.Name = "labError";
-            this.labError.Size = new System.Drawing.Size(10, 13);
+            this.labError.Size = new System.Drawing.Size(13, 17);
             this.labError.TabIndex = 16;
             this.labError.Text = "-";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 659);
+            this.label8.Location = new System.Drawing.Point(16, 811);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(152, 13);
+            this.label8.Size = new System.Drawing.Size(200, 17);
             this.label8.TabIndex = 17;
             this.label8.Text = "Already have account? Sign in";
             // 
@@ -209,33 +221,46 @@
             // 
             this.labSignin.AutoSize = true;
             this.labSignin.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labSignin.Location = new System.Drawing.Point(159, 660);
+            this.labSignin.Location = new System.Drawing.Point(212, 812);
+            this.labSignin.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labSignin.Name = "labSignin";
-            this.labSignin.Size = new System.Drawing.Size(30, 13);
+            this.labSignin.Size = new System.Drawing.Size(39, 17);
             this.labSignin.TabIndex = 18;
             this.labSignin.Text = "Here";
             // 
-            // butBack
+            // pictureBox1
             // 
-            this.butBack.Location = new System.Drawing.Point(15, 25);
-            this.butBack.Name = "butBack";
-            this.butBack.Size = new System.Drawing.Size(28, 23);
-            this.butBack.TabIndex = 19;
-            this.butBack.Text = "<";
-            this.butBack.UseVisualStyleBackColor = true;
+            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.NCAA_Twitter_Post;
+            this.pictureBox1.Location = new System.Drawing.Point(-1, -16);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1683, 855);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 19;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.Image = global::ProjectUAS_AZHUU.Properties.Resources.azuuuuuu;
+            this.pictureBox2.Location = new System.Drawing.Point(87, -7);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(296, 259);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1264, 681);
-            this.Controls.Add(this.butBack);
+            this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.labSignin);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.labError);
-            this.Controls.Add(this.butRegister);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.dtpBirthdate);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.rbutFemale);
             this.Controls.Add(this.rbutMale);
             this.Controls.Add(this.label6);
@@ -248,18 +273,19 @@
             this.Controls.Add(this.tboxPhone);
             this.Controls.Add(this.tboxEmail);
             this.Controls.Add(this.tboxFullName);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Register";
             this.Text = "Register";
-            this.Load += new System.EventHandler(this.Register_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tboxFullName;
         private System.Windows.Forms.TextBox tboxEmail;
         private System.Windows.Forms.TextBox tboxPhone;
@@ -272,13 +298,14 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.RadioButton rbutMale;
         private System.Windows.Forms.RadioButton rbutFemale;
-        private System.Windows.Forms.DateTimePicker dtpBirthdate;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button butRegister;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labError;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label labSignin;
-        private System.Windows.Forms.Button butBack;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

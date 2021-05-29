@@ -63,6 +63,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aaaaaaaa {
+            get {
+                object obj = ResourceManager.GetObject("aaaaaaaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap azuuuuuu {
             get {
                 object obj = ResourceManager.GetObject("azuuuuuu", resourceCulture);
@@ -86,6 +96,56 @@ namespace ProjectUAS_AZHUU.Properties {
         internal static System.Drawing.Bitmap khusus_10_Juni_2021 {
             get {
                 object obj = ResourceManager.GetObject("khusus 10 Juni 2021", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NCAA_Twitter_Post {
+            get {
+                object obj = ResourceManager.GetObject("NCAA Twitter Post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap newwwww {
+            get {
+                object obj = ResourceManager.GetObject("newwwww", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Slate_Gray_Polaroid_Dark_Collage_Religious__Spiritual_Desktop_Wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Slate_Gray_Polaroid_Dark_Collage_Religious__Spiritual_Desktop_Wallpaper1 {
+            get {
+                object obj = ResourceManager.GetObject("Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Spiritual_Desktop_Wallpaper {
+            get {
+                object obj = ResourceManager.GetObject("Spiritual Desktop Wallpaper", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

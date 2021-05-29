@@ -37,7 +37,7 @@
             this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.khusus_10_Juni_2021;
             this.pictureBox1.Location = new System.Drawing.Point(-21, -4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1260, 640);
+            this.pictureBox1.Size = new System.Drawing.Size(1292, 731);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
