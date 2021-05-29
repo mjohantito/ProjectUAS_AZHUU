@@ -71,6 +71,7 @@
             this.tboxPassword.Name = "tboxPassword";
             this.tboxPassword.Size = new System.Drawing.Size(289, 20);
             this.tboxPassword.TabIndex = 10;
+            this.tboxPassword.TextChanged += new System.EventHandler(this.tboxPassword_TextChanged);
             // 
             // butSignIn
             // 

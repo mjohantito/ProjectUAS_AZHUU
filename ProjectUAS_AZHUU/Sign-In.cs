@@ -90,5 +90,17 @@ namespace ProjectUAS_AZHUU
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void tboxPassword_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                tboxPassword.PasswordChar = '*';
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

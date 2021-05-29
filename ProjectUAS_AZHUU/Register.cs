@@ -25,7 +25,7 @@ namespace ProjectUAS_AZHUU
         string sqlQuery;
 
         string birthdate = "0000-00-00";
-        string gender;
+        string gender = "";
 
         private void Register_Load(object sender, EventArgs e)
         {
@@ -43,8 +43,9 @@ namespace ProjectUAS_AZHUU
             {
                 sqlConnect = new MySqlConnection(connectString);
 
+
                 DataTable dtcekemail = new DataTable();
-                sqlQuery = "select user_email from user_azhuu where user_email == '"+tboxEmail.Text+"'";
+                sqlQuery = "select user_email from user_azhuu where user_email = '"+tboxEmail.Text+"'";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtcekemail);
@@ -59,8 +60,7 @@ namespace ProjectUAS_AZHUU
                     gender = "F";
                 }
 
-
-                if (tboxFullName.Text == "" || tboxEmail.Text == "" || tboxPhone.Text == "" || tboxPassword.Text == "" || tboxConfirmPassword.Text == "" || rbutFemale.Checked == false || rbutMale.Checked == false || birthdate == "0000-00-00")
+                if (tboxFullName.Text == "" || tboxEmail.Text == "" || tboxPhone.Text == "" || tboxPassword.Text == "" || tboxConfirmPassword.Text == "" || gender == "" || birthdate == "0000-00-00")
                 {
                     labError.Text = "ada data yang kosong!";
                     ijinregister = 0;
@@ -79,7 +79,7 @@ namespace ProjectUAS_AZHUU
                 if(ijinregister == 1)
                 {
                     sqlQuery = "insert into user_azhuu values ('0','"+tboxFullName.Text+"','0','"+birthdate+"','"+gender.ToString()+"','"+tboxEmail.Text+"','"+tboxConfirmPassword.Text+"','"+tboxPhone.Text+"','0')";
-                    // email masih belum bisa masuk
+                    
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
