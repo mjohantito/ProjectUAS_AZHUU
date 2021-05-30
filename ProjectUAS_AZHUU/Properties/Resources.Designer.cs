@@ -93,6 +93,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Homepage {
+            get {
+                object obj = ResourceManager.GetObject("Homepage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap khusus_10_Juni_2021 {
             get {
                 object obj = ResourceManager.GetObject("khusus 10 Juni 2021", resourceCulture);
@@ -106,6 +116,16 @@ namespace ProjectUAS_AZHUU.Properties {
         internal static System.Drawing.Bitmap NCAA_Twitter_Post {
             get {
                 object obj = ResourceManager.GetObject("NCAA Twitter Post", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap NCAA_Twitter_Post1 {
+            get {
+                object obj = ResourceManager.GetObject("NCAA Twitter Post1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
