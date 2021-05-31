@@ -71,6 +71,12 @@
     <Compile Include="ForgotPasswordNoTelp.Designer.cs">
       <DependentUpon>ForgotPasswordNoTelp.cs</DependentUpon>
     </Compile>
+    <Compile Include="Homepagebelumlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Homepagebelumlogin.Designer.cs">
+      <DependentUpon>Homepagebelumlogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="homepagesudahlogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -127,6 +133,9 @@
     <EmbeddedResource Include="ForgotPasswordNoTelp.resx">
       <DependentUpon>ForgotPasswordNoTelp.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Homepagebelumlogin.resx">
+      <DependentUpon>Homepagebelumlogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="homepagesudahlogin.resx">
       <DependentUpon>homepagesudahlogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +188,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Purple Space Opera Education Presentation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Business Report Twitter wadawd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

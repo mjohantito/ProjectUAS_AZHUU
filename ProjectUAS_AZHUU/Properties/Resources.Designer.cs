@@ -93,6 +93,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Business_Report_Twitter_wadawd {
+            get {
+                object obj = ResourceManager.GetObject("Business Report Twitter wadawd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Homepage {
             get {
                 object obj = ResourceManager.GetObject("Homepage", resourceCulture);
