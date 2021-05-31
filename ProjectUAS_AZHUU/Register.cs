@@ -60,7 +60,7 @@ namespace ProjectUAS_AZHUU
                     gender = "F";
                 }
 
-                if (tboxFullName.Text == "" || tboxEmail.Text == "" || tboxPhone.Text == "" || tboxPassword.Text == "" || tboxConfirmPassword.Text == "" || gender == "" || birthdate == "0000-00-00")
+                if (tboxNIK.Text == "" || tboxFullName.Text == "" || tboxEmail.Text == "" || tboxPhone.Text == "" || tboxPassword.Text == "" || tboxConfirmPassword.Text == "" || gender == "" || birthdate == "0000-00-00")
                 {
                     labError.Text = "ada data yang kosong!";
                     ijinregister = 0;
@@ -78,15 +78,20 @@ namespace ProjectUAS_AZHUU
 
                 if(ijinregister == 1)
                 {
-                    sqlQuery = "insert into user_azhuu values ('0','"+tboxFullName.Text+"','0','"+birthdate+"','"+gender.ToString()+"','"+tboxEmail.Text+"','"+tboxConfirmPassword.Text+"','"+tboxPhone.Text+"','0')";
+                    sqlQuery = "insert into user_azhuu values ('"+tboxNIK.Text+"','"+tboxFullName.Text+"','0','"+birthdate+"','"+gender.ToString()+"','"+tboxEmail.Text+"','"+tboxConfirmPassword.Text+"','"+tboxPhone.Text+"','0')";
                     
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
-                    this.Close();
                     MessageBox.Show("selamat, sudah terdaftar!");
-                    //lempar ke homepage
+
+
+                    //lempar ke profile
+                    this.Hide();
+                    var formprifil = new Profile();
+                    formprifil.ShowDialog();
+                    
                 }
 
             }
@@ -155,51 +160,6 @@ namespace ProjectUAS_AZHUU
             {
                 MessageBox.Show(ex.Message);
             }
-        }
-
-        private void tboxFullName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tboxEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tboxPhone_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void rbutMale_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

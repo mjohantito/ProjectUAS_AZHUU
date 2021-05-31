@@ -80,7 +80,22 @@ namespace ProjectUAS_AZHUU
                 else
                 {
                     this.Hide();
-                    //lempar ke form homepage
+                    DataTable dtcektitle = new DataTable();
+                    sqlQuery = "select user_title from user_azhuu where user_email = '"+tboxEmail.Text+"'";
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                    sqlAdapter.Fill(dtcektitle);
+
+                    if(dtcektitle.Rows[0]["user_title"].ToString() == "0") // user title kosong, di lempar ke profile, else di lempar ke home page
+                    {
+                        var formprifil = new Profile();
+                        formprifil.ShowDialog();
+                    }
+                    else
+                    {
+                        var formhomepage = new HomePage();
+                        formhomepage.ShowDialog();
+                    }
                 }
 
 
