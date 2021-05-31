@@ -127,31 +127,34 @@
   <data name="azuuuuuu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\azuuuuuu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aaaaaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aaaaaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tyu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tyu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="aaaaaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aaaaaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newwwww" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newwwww.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Homepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Homepage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NCAA Twitter Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NCAA Twitter Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NCAA Twitter Post1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NCAA Twitter Post1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Homepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Homepage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Purple Space Opera Education Presentation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Purple Space Opera Education Presentation.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

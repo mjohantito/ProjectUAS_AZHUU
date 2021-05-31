@@ -143,6 +143,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Purple_Space_Opera_Education_Presentation {
+            get {
+                object obj = ResourceManager.GetObject("Purple Space Opera Education Presentation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Slate_Gray_Polaroid_Dark_Collage_Religious__Spiritual_Desktop_Wallpaper {
             get {
                 object obj = ResourceManager.GetObject("Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper", resourceCulture);
