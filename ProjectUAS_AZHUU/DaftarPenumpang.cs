@@ -16,5 +16,18 @@ namespace ProjectUAS_AZHUU
         {
             InitializeComponent();
         }
+
+        private void buttonContinue_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormCheckout formCheckout = new FormCheckout();
+                formCheckout.Show();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

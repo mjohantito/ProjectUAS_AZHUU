@@ -272,6 +272,7 @@
             this.buttonContinue.TabIndex = 23;
             this.buttonContinue.Text = "CONTINUE";
             this.buttonContinue.UseVisualStyleBackColor = false;
+            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
             // labelBusShuttle
             // 
