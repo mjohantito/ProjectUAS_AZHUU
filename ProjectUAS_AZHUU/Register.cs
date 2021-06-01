@@ -27,6 +27,8 @@ namespace ProjectUAS_AZHUU
         string birthdate = "0000-00-00";
         string gender = "";
 
+        
+
         private void Register_Load(object sender, EventArgs e)
         {
 
@@ -85,6 +87,8 @@ namespace ProjectUAS_AZHUU
                     sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
                     MessageBox.Show("selamat, sudah terdaftar!");
+                    HomePage.nikkk = tboxNIK.Text;
+                    
 
 
                     //lempar ke profile
@@ -140,6 +144,7 @@ namespace ProjectUAS_AZHUU
         {
             try
             {
+                this.Hide();
                 var formsignin = new Sign_In();
                 formsignin.ShowDialog();
             }
@@ -159,6 +164,14 @@ namespace ProjectUAS_AZHUU
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tboxNIK_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
             }
         }
     }

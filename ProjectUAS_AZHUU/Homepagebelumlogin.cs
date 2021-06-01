@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ProjectUAS_AZHUU
 {
@@ -17,7 +18,7 @@ namespace ProjectUAS_AZHUU
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void Homepagebelumlogin_Load(object sender, EventArgs e)
         {
 
         }

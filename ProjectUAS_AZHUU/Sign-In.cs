@@ -24,6 +24,8 @@ namespace ProjectUAS_AZHUU
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
+        
+
         private void Sign_In_Load(object sender, EventArgs e)
         {
 
@@ -81,12 +83,13 @@ namespace ProjectUAS_AZHUU
                 {
                     this.Hide();
                     DataTable dtcektitle = new DataTable();
-                    sqlQuery = "select user_title from user_azhuu where user_email = '"+tboxEmail.Text+"'";
+                    sqlQuery = "select user_title,user_nik from user_azhuu where user_email = '"+tboxEmail.Text+"'";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlAdapter = new MySqlDataAdapter(sqlCommand);
                     sqlAdapter.Fill(dtcektitle);
 
-                    if(dtcektitle.Rows[0]["user_title"].ToString() == "0") // user title kosong, di lempar ke profile, else di lempar ke home page
+                    HomePage.nikkk = dtcektitle.Rows[0]["user_nik"].ToString();
+                    if (dtcektitle.Rows[0]["user_title"].ToString() == "0") // user title kosong, di lempar ke profile, else di lempar ke home page
                     {
                         var formprifil = new Profile();
                         formprifil.ShowDialog();
