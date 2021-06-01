@@ -53,27 +53,29 @@
             // butBack
             // 
             this.butBack.Location = new System.Drawing.Point(12, 16);
-            this.butBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butBack.Margin = new System.Windows.Forms.Padding(4);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(39, 28);
             this.butBack.TabIndex = 32;
             this.butBack.Text = "<";
             this.butBack.UseVisualStyleBackColor = true;
+            this.butBack.Click += new System.EventHandler(this.butBack_Click);
             // 
             // butContinue
             // 
             this.butContinue.Location = new System.Drawing.Point(799, 672);
-            this.butContinue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butContinue.Margin = new System.Windows.Forms.Padding(4);
             this.butContinue.Name = "butContinue";
             this.butContinue.Size = new System.Drawing.Size(100, 28);
             this.butContinue.TabIndex = 31;
             this.butContinue.Text = "CONTINUE";
             this.butContinue.UseVisualStyleBackColor = true;
+            this.butContinue.Click += new System.EventHandler(this.butContinue_Click);
             // 
             // tbNoTelp
             // 
             this.tbNoTelp.Location = new System.Drawing.Point(577, 591);
-            this.tbNoTelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbNoTelp.Margin = new System.Windows.Forms.Padding(4);
             this.tbNoTelp.Name = "tbNoTelp";
             this.tbNoTelp.Size = new System.Drawing.Size(535, 22);
             this.tbNoTelp.TabIndex = 30;
@@ -125,7 +127,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForgotPasswordNoTelp";
             this.Text = "ForgotPasswordNoTelp";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

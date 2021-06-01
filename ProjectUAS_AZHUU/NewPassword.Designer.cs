@@ -31,10 +31,10 @@
             this.labError = new System.Windows.Forms.Label();
             this.butBack = new System.Windows.Forms.Button();
             this.butContinue = new System.Windows.Forms.Button();
-            this.tbNoTelp = new System.Windows.Forms.TextBox();
+            this.tbpasword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbconfirm = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,30 +55,32 @@
             // butBack
             // 
             this.butBack.Location = new System.Drawing.Point(17, 21);
-            this.butBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butBack.Margin = new System.Windows.Forms.Padding(4);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(39, 28);
             this.butBack.TabIndex = 38;
             this.butBack.Text = "<";
             this.butBack.UseVisualStyleBackColor = true;
+            this.butBack.Click += new System.EventHandler(this.butBack_Click);
             // 
             // butContinue
             // 
             this.butContinue.Location = new System.Drawing.Point(799, 768);
-            this.butContinue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butContinue.Margin = new System.Windows.Forms.Padding(4);
             this.butContinue.Name = "butContinue";
             this.butContinue.Size = new System.Drawing.Size(100, 28);
             this.butContinue.TabIndex = 37;
             this.butContinue.Text = "CONTINUE";
             this.butContinue.UseVisualStyleBackColor = true;
+            this.butContinue.Click += new System.EventHandler(this.butContinue_Click);
             // 
-            // tbNoTelp
+            // tbpasword
             // 
-            this.tbNoTelp.Location = new System.Drawing.Point(583, 616);
-            this.tbNoTelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.tbNoTelp.Name = "tbNoTelp";
-            this.tbNoTelp.Size = new System.Drawing.Size(535, 22);
-            this.tbNoTelp.TabIndex = 36;
+            this.tbpasword.Location = new System.Drawing.Point(583, 616);
+            this.tbpasword.Margin = new System.Windows.Forms.Padding(4);
+            this.tbpasword.Name = "tbpasword";
+            this.tbpasword.Size = new System.Drawing.Size(535, 22);
+            this.tbpasword.TabIndex = 36;
             // 
             // label1
             // 
@@ -102,13 +104,13 @@
             this.label2.TabIndex = 34;
             this.label2.Text = "New Password";
             // 
-            // textBox1
+            // tbconfirm
             // 
-            this.textBox1.Location = new System.Drawing.Point(583, 676);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(535, 22);
-            this.textBox1.TabIndex = 41;
+            this.tbconfirm.Location = new System.Drawing.Point(583, 676);
+            this.tbconfirm.Margin = new System.Windows.Forms.Padding(4);
+            this.tbconfirm.Name = "tbconfirm";
+            this.tbconfirm.Size = new System.Drawing.Size(535, 22);
+            this.tbconfirm.TabIndex = 41;
             // 
             // label3
             // 
@@ -136,16 +138,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1685, 838);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbconfirm);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.labError);
             this.Controls.Add(this.butBack);
             this.Controls.Add(this.butContinue);
-            this.Controls.Add(this.tbNoTelp);
+            this.Controls.Add(this.tbpasword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "NewPassword";
             this.Text = "NewPassword";
             this.Load += new System.EventHandler(this.NewPassword_Load);
@@ -160,10 +162,10 @@
         private System.Windows.Forms.Label labError;
         private System.Windows.Forms.Button butBack;
         private System.Windows.Forms.Button butContinue;
-        private System.Windows.Forms.TextBox tbNoTelp;
+        private System.Windows.Forms.TextBox tbpasword;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbconfirm;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
     }

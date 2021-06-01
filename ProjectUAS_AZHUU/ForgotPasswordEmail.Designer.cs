@@ -32,7 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.butContinue = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.back = new System.Windows.Forms.Button();
             this.labError = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,7 +63,7 @@
             // tbEmail
             // 
             this.tbEmail.Location = new System.Drawing.Point(595, 610);
-            this.tbEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tbEmail.Name = "tbEmail";
             this.tbEmail.Size = new System.Drawing.Size(535, 22);
             this.tbEmail.TabIndex = 24;
@@ -71,22 +71,24 @@
             // butContinue
             // 
             this.butContinue.Location = new System.Drawing.Point(817, 691);
-            this.butContinue.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butContinue.Margin = new System.Windows.Forms.Padding(4);
             this.butContinue.Name = "butContinue";
             this.butContinue.Size = new System.Drawing.Size(100, 28);
             this.butContinue.TabIndex = 25;
             this.butContinue.Text = "CONTINUE";
             this.butContinue.UseVisualStyleBackColor = true;
+            this.butContinue.Click += new System.EventHandler(this.butContinue_Click);
             // 
-            // button2
+            // back
             // 
-            this.button2.Location = new System.Drawing.Point(16, 15);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(39, 28);
-            this.button2.TabIndex = 26;
-            this.button2.Text = "<";
-            this.button2.UseVisualStyleBackColor = true;
+            this.back.Location = new System.Drawing.Point(16, 15);
+            this.back.Margin = new System.Windows.Forms.Padding(4);
+            this.back.Name = "back";
+            this.back.Size = new System.Drawing.Size(39, 28);
+            this.back.TabIndex = 26;
+            this.back.Text = "<";
+            this.back.UseVisualStyleBackColor = true;
+            this.back.Click += new System.EventHandler(this.button2_Click);
             // 
             // labError
             // 
@@ -116,13 +118,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1685, 838);
             this.Controls.Add(this.labError);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.back);
             this.Controls.Add(this.butContinue);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForgotPasswordEmail";
             this.Text = "ForgotPasswordEmail";
             this.Load += new System.EventHandler(this.ForgotPasswordEmail_Load);
@@ -136,10 +138,10 @@
 
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Button butContinue;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button back;
         private System.Windows.Forms.Label labError;
         private System.Windows.Forms.PictureBox pictureBox1;
+        public System.Windows.Forms.TextBox tbEmail;
     }
 }
