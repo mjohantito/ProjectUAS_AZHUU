@@ -63,6 +63,36 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1111ssfefsef {
+            get {
+                object obj = ResourceManager.GetObject("1111ssfefsef", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _123 {
+            get {
+                object obj = ResourceManager.GetObject("123", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1234 {
+            get {
+                object obj = ResourceManager.GetObject("1234", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap aaaaaaaa {
             get {
                 object obj = ResourceManager.GetObject("aaaaaaaa", resourceCulture);
@@ -93,6 +123,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap BREAKING_NEWS {
+            get {
+                object obj = ResourceManager.GetObject("BREAKING NEWS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Business_Report_Twitter_wadawd {
             get {
                 object obj = ResourceManager.GetObject("Business Report Twitter wadawd", resourceCulture);
@@ -116,6 +156,46 @@ namespace ProjectUAS_AZHUU.Properties {
         internal static System.Drawing.Bitmap Homepage {
             get {
                 object obj = ResourceManager.GetObject("Homepage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hpbaru {
+            get {
+                object obj = ResourceManager.GetObject("hpbaru", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hppppppp {
+            get {
+                object obj = ResourceManager.GetObject("hppppppp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap info_penumpang {
+            get {
+                object obj = ResourceManager.GetObject("info penumpang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Instagram_Story_Promo_Selamat_Hari_Valentine_Hadiah_Bunga_Warna_warni {
+            get {
+                object obj = ResourceManager.GetObject("Instagram Story Promo Selamat Hari Valentine Hadiah Bunga Warna-warni", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

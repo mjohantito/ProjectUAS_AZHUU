@@ -40,8 +40,7 @@ namespace ProjectUAS_AZHUU
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(masuk);
 
-
-            if (cekemail == 0)
+            if (masuk.Rows.Count == 0)
             {
                 labError.Text = "Email Tidak Terdaftar!";
             }

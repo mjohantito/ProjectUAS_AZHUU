@@ -216,5 +216,29 @@
   <ItemGroup>
     <None Include="Resources\Search.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info penumpang.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hpbaru.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hppppppp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Instagram Story Promo Selamat Hari Valentine Hadiah Bunga Warna-warni.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1111ssfefsef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BREAKING NEWS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1234.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

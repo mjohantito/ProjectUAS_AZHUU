@@ -130,6 +130,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ForgotPasswordNoTelp";
             this.Text = "ForgotPasswordNoTelp";
+            this.Load += new System.EventHandler(this.ForgotPasswordNoTelp_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

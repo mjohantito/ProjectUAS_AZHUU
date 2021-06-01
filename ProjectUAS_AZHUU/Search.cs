@@ -16,5 +16,10 @@ namespace ProjectUAS_AZHUU
         {
             InitializeComponent();
         }
+
+        private void Search_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

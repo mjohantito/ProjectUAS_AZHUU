@@ -48,9 +48,10 @@ namespace ProjectUAS_AZHUU
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(masuk1);
-            if (cekemail == 0)
+
+            if (masuk1.Rows.Count == 0)
             {
-                labError.Text = "Email Tidak Terdaftar!";
+                labError.Text = "nomor telfon salah";
             }
             else
             {
@@ -64,6 +65,11 @@ namespace ProjectUAS_AZHUU
         {
             var pwnotelp = new ForgotPasswordEmail();
             pwnotelp.ShowDialog();
+        }
+
+        private void ForgotPasswordNoTelp_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
