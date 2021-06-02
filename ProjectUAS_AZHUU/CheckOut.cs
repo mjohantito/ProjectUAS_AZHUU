@@ -16,5 +16,18 @@ namespace ProjectUAS_AZHUU
         {
             InitializeComponent();
         }
+
+        private void buttonPay_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                FormMyOrder formMyOrder = new FormMyOrder();
+                formMyOrder.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
