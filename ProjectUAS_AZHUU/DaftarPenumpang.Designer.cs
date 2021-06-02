@@ -1,6 +1,6 @@
 ﻿namespace ProjectUAS_AZHUU
 {
-    partial class ForgotPassword
+    partial class DaftarPenumpang
     {
         /// <summary>
         /// Required designer variable.
@@ -50,7 +50,7 @@
             this.buttonHapusPenumpang1 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang2 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang3 = new System.Windows.Forms.Button();
-            this.buttonTambahPenumpang = new System.Windows.Forms.Button();
+            this.buttonTambahPenumpang1 = new System.Windows.Forms.Button();
             this.buttonContinue = new System.Windows.Forms.Button();
             this.labelBusShuttle = new System.Windows.Forms.Label();
             this.labelJurusan = new System.Windows.Forms.Label();
@@ -66,11 +66,20 @@
             this.groupBoxPenumpang2 = new System.Windows.Forms.GroupBox();
             this.groupBoxPenumpang3 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.groupBoxPenumpang4 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
+            this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
             this.groupBoxPenumpang3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.groupBoxPenumpang4.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelDtlPesan
@@ -253,27 +262,28 @@
             this.buttonHapusPenumpang3.Text = "X";
             this.buttonHapusPenumpang3.UseVisualStyleBackColor = false;
             // 
-            // buttonTambahPenumpang
+            // buttonTambahPenumpang1
             // 
-            this.buttonTambahPenumpang.BackColor = System.Drawing.Color.Yellow;
-            this.buttonTambahPenumpang.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambahPenumpang.Location = new System.Drawing.Point(970, 499);
-            this.buttonTambahPenumpang.Name = "buttonTambahPenumpang";
-            this.buttonTambahPenumpang.Size = new System.Drawing.Size(168, 23);
-            this.buttonTambahPenumpang.TabIndex = 22;
-            this.buttonTambahPenumpang.Text = "Klik untuk Tambah Penumpang";
-            this.buttonTambahPenumpang.UseVisualStyleBackColor = false;
+            this.buttonTambahPenumpang1.BackColor = System.Drawing.Color.Yellow;
+            this.buttonTambahPenumpang1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTambahPenumpang1.Location = new System.Drawing.Point(386, 449);
+            this.buttonTambahPenumpang1.Name = "buttonTambahPenumpang1";
+            this.buttonTambahPenumpang1.Size = new System.Drawing.Size(168, 23);
+            this.buttonTambahPenumpang1.TabIndex = 22;
+            this.buttonTambahPenumpang1.Text = "Klik untuk Tambah Penumpang";
+            this.buttonTambahPenumpang1.UseVisualStyleBackColor = false;
             // 
             // buttonContinue
             // 
             this.buttonContinue.BackColor = System.Drawing.Color.Yellow;
             this.buttonContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonContinue.Location = new System.Drawing.Point(1032, 599);
+            this.buttonContinue.Location = new System.Drawing.Point(1064, 524);
             this.buttonContinue.Name = "buttonContinue";
             this.buttonContinue.Size = new System.Drawing.Size(186, 52);
             this.buttonContinue.TabIndex = 23;
             this.buttonContinue.Text = "CONTINUE";
             this.buttonContinue.UseVisualStyleBackColor = false;
+            this.buttonContinue.Click += new System.EventHandler(this.buttonContinue_Click);
             // 
             // labelBusShuttle
             // 
@@ -357,9 +367,9 @@
             this.groupBox1.Controls.Add(this.labelNamaPO);
             this.groupBox1.Controls.Add(this.labelJurusan);
             this.groupBox1.Controls.Add(this.labelBusShuttle);
-            this.groupBox1.Location = new System.Drawing.Point(687, 61);
+            this.groupBox1.Location = new System.Drawing.Point(682, 32);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(434, 236);
+            this.groupBox1.Size = new System.Drawing.Size(434, 233);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             // 
@@ -405,7 +415,7 @@
             this.groupBoxPenumpang3.Controls.Add(this.tBoxKTPPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.tBoxNamaPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.cBoxTitlePenumang3);
-            this.groupBoxPenumpang3.Location = new System.Drawing.Point(687, 325);
+            this.groupBoxPenumpang3.Location = new System.Drawing.Point(605, 285);
             this.groupBoxPenumpang3.Name = "groupBoxPenumpang3";
             this.groupBoxPenumpang3.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang3.TabIndex = 36;
@@ -421,18 +431,97 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
-            // ForgotPassword
+            // groupBoxPenumpang4
+            // 
+            this.groupBoxPenumpang4.Controls.Add(this.button1);
+            this.groupBoxPenumpang4.Controls.Add(this.label1);
+            this.groupBoxPenumpang4.Controls.Add(this.textBox1);
+            this.groupBoxPenumpang4.Controls.Add(this.textBox2);
+            this.groupBoxPenumpang4.Controls.Add(this.comboBox1);
+            this.groupBoxPenumpang4.Location = new System.Drawing.Point(605, 474);
+            this.groupBoxPenumpang4.Name = "groupBoxPenumpang4";
+            this.groupBoxPenumpang4.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang4.TabIndex = 37;
+            this.groupBoxPenumpang4.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(400, 7);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(29, 23);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(4, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 17);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "PENUMPANG 3";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(7, 125);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(422, 22);
+            this.textBox1.TabIndex = 17;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(7, 83);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(422, 22);
+            this.textBox2.TabIndex = 16;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(7, 39);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 24);
+            this.comboBox1.TabIndex = 15;
+            // 
+            // buttonTambahPenumpang2
+            // 
+            this.buttonTambahPenumpang2.BackColor = System.Drawing.Color.Yellow;
+            this.buttonTambahPenumpang2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTambahPenumpang2.Location = new System.Drawing.Point(386, 638);
+            this.buttonTambahPenumpang2.Name = "buttonTambahPenumpang2";
+            this.buttonTambahPenumpang2.Size = new System.Drawing.Size(168, 23);
+            this.buttonTambahPenumpang2.TabIndex = 38;
+            this.buttonTambahPenumpang2.Text = "Klik untuk Tambah Penumpang";
+            this.buttonTambahPenumpang2.UseVisualStyleBackColor = false;
+            // 
+            // buttonTambahPenumpang3
+            // 
+            this.buttonTambahPenumpang3.BackColor = System.Drawing.Color.Yellow;
+            this.buttonTambahPenumpang3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonTambahPenumpang3.Location = new System.Drawing.Point(892, 449);
+            this.buttonTambahPenumpang3.Name = "buttonTambahPenumpang3";
+            this.buttonTambahPenumpang3.Size = new System.Drawing.Size(168, 23);
+            this.buttonTambahPenumpang3.TabIndex = 39;
+            this.buttonTambahPenumpang3.Text = "Klik untuk Tambah Penumpang";
+            this.buttonTambahPenumpang3.UseVisualStyleBackColor = false;
+            // 
+            // DaftarPenumpang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.buttonTambahPenumpang3);
+            this.Controls.Add(this.buttonTambahPenumpang2);
+            this.Controls.Add(this.groupBoxPenumpang4);
             this.Controls.Add(this.groupBoxPenumpang3);
             this.Controls.Add(this.groupBoxPenumpang2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBoxPenumpang1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.buttonContinue);
-            this.Controls.Add(this.buttonTambahPenumpang);
+            this.Controls.Add(this.buttonTambahPenumpang1);
             this.Controls.Add(this.buttonUbahProfile);
             this.Controls.Add(this.labelDetailPenumpang);
             this.Controls.Add(this.tBoxTeleponProfile);
@@ -441,8 +530,9 @@
             this.Controls.Add(this.cBoxTitleProfile);
             this.Controls.Add(this.labelDtlPesan);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "ForgotPassword";
+            this.Name = "DaftarPenumpang";
             this.Text = "Daftar Penumpang";
+            this.Load += new System.EventHandler(this.DaftarPenumpang_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBoxPenumpang1.ResumeLayout(false);
@@ -452,6 +542,8 @@
             this.groupBoxPenumpang3.ResumeLayout(false);
             this.groupBoxPenumpang3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.groupBoxPenumpang4.ResumeLayout(false);
+            this.groupBoxPenumpang4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,7 +573,7 @@
         private System.Windows.Forms.Button buttonHapusPenumpang1;
         private System.Windows.Forms.Button buttonHapusPenumpang2;
         private System.Windows.Forms.Button buttonHapusPenumpang3;
-        private System.Windows.Forms.Button buttonTambahPenumpang;
+        private System.Windows.Forms.Button buttonTambahPenumpang1;
         private System.Windows.Forms.Button buttonContinue;
         private System.Windows.Forms.Label labelBusShuttle;
         private System.Windows.Forms.Label labelJurusan;
@@ -497,6 +589,14 @@
         private System.Windows.Forms.GroupBox groupBoxPenumpang2;
         private System.Windows.Forms.GroupBox groupBoxPenumpang3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.GroupBox groupBoxPenumpang4;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button buttonTambahPenumpang2;
+        private System.Windows.Forms.Button buttonTambahPenumpang3;
     }
 }
 

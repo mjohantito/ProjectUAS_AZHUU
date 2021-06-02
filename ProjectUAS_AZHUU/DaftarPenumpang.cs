@@ -10,11 +10,28 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_AZHUU
 {
-    public partial class ForgotPassword : Form
+    public partial class DaftarPenumpang : Form
     {
-        public ForgotPassword()
+        public DaftarPenumpang()
         {
             InitializeComponent();
+        }
+
+        private void buttonContinue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DaftarPenumpang_Load(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
