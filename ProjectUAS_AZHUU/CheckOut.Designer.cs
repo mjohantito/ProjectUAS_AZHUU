@@ -45,6 +45,7 @@ namespace ProjectUAS_AZHUU
             this.label1 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonPay = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // labelCart
@@ -171,7 +172,7 @@ namespace ProjectUAS_AZHUU
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(601, 395);
+            this.label1.Location = new System.Drawing.Point(588, 183);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 32);
             this.label1.TabIndex = 13;
@@ -181,7 +182,7 @@ namespace ProjectUAS_AZHUU
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(604, 524);
+            this.label14.Location = new System.Drawing.Point(591, 312);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(201, 32);
             this.label14.TabIndex = 14;
@@ -190,16 +191,29 @@ namespace ProjectUAS_AZHUU
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(822, 395);
+            this.textBox1.Location = new System.Drawing.Point(809, 183);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(311, 38);
             this.textBox1.TabIndex = 15;
+            // 
+            // buttonPay
+            // 
+            this.buttonPay.BackColor = System.Drawing.Color.Yellow;
+            this.buttonPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPay.Location = new System.Drawing.Point(1064, 609);
+            this.buttonPay.Name = "buttonPay";
+            this.buttonPay.Size = new System.Drawing.Size(186, 52);
+            this.buttonPay.TabIndex = 24;
+            this.buttonPay.Text = "PAY";
+            this.buttonPay.UseVisualStyleBackColor = false;
+            this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
             // 
             // FormCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.buttonPay);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label1);
@@ -241,5 +255,6 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button buttonPay;
     }
 }
