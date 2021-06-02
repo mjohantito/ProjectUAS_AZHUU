@@ -58,7 +58,7 @@
             // tboxFullName
             // 
             this.tboxFullName.Location = new System.Drawing.Point(197, 394);
-            this.tboxFullName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxFullName.Margin = new System.Windows.Forms.Padding(4);
             this.tboxFullName.Name = "tboxFullName";
             this.tboxFullName.Size = new System.Drawing.Size(236, 22);
             this.tboxFullName.TabIndex = 1;
@@ -66,7 +66,7 @@
             // tboxEmail
             // 
             this.tboxEmail.Location = new System.Drawing.Point(197, 438);
-            this.tboxEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxEmail.Margin = new System.Windows.Forms.Padding(4);
             this.tboxEmail.Name = "tboxEmail";
             this.tboxEmail.Size = new System.Drawing.Size(236, 22);
             this.tboxEmail.TabIndex = 2;
@@ -74,7 +74,7 @@
             // tboxPhone
             // 
             this.tboxPhone.Location = new System.Drawing.Point(197, 484);
-            this.tboxPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxPhone.Margin = new System.Windows.Forms.Padding(4);
             this.tboxPhone.Name = "tboxPhone";
             this.tboxPhone.Size = new System.Drawing.Size(236, 22);
             this.tboxPhone.TabIndex = 3;
@@ -83,7 +83,7 @@
             // tboxPassword
             // 
             this.tboxPassword.Location = new System.Drawing.Point(197, 528);
-            this.tboxPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tboxPassword.Name = "tboxPassword";
             this.tboxPassword.Size = new System.Drawing.Size(236, 22);
             this.tboxPassword.TabIndex = 4;
@@ -92,7 +92,7 @@
             // tboxConfirmPassword
             // 
             this.tboxConfirmPassword.Location = new System.Drawing.Point(197, 577);
-            this.tboxConfirmPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxConfirmPassword.Margin = new System.Windows.Forms.Padding(4);
             this.tboxConfirmPassword.Name = "tboxConfirmPassword";
             this.tboxConfirmPassword.Size = new System.Drawing.Size(236, 22);
             this.tboxConfirmPassword.TabIndex = 5;
@@ -152,7 +152,7 @@
             // 
             this.rbutMale.AutoSize = true;
             this.rbutMale.Location = new System.Drawing.Point(197, 623);
-            this.rbutMale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbutMale.Margin = new System.Windows.Forms.Padding(4);
             this.rbutMale.Name = "rbutMale";
             this.rbutMale.Size = new System.Drawing.Size(59, 21);
             this.rbutMale.TabIndex = 11;
@@ -164,7 +164,7 @@
             // 
             this.rbutFemale.AutoSize = true;
             this.rbutFemale.Location = new System.Drawing.Point(357, 623);
-            this.rbutFemale.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rbutFemale.Margin = new System.Windows.Forms.Padding(4);
             this.rbutFemale.Name = "rbutFemale";
             this.rbutFemale.Size = new System.Drawing.Size(75, 21);
             this.rbutFemale.TabIndex = 12;
@@ -175,7 +175,7 @@
             // dtpBirthdate
             // 
             this.dtpBirthdate.Location = new System.Drawing.Point(197, 665);
-            this.dtpBirthdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpBirthdate.Margin = new System.Windows.Forms.Padding(4);
             this.dtpBirthdate.Name = "dtpBirthdate";
             this.dtpBirthdate.Size = new System.Drawing.Size(236, 22);
             this.dtpBirthdate.TabIndex = 13;
@@ -194,13 +194,14 @@
             // butRegister
             // 
             this.butRegister.Location = new System.Drawing.Point(244, 731);
-            this.butRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butRegister.Margin = new System.Windows.Forms.Padding(4);
             this.butRegister.Name = "butRegister";
             this.butRegister.Size = new System.Drawing.Size(149, 42);
             this.butRegister.TabIndex = 15;
             this.butRegister.Text = "Register";
             this.butRegister.UseVisualStyleBackColor = true;
             this.butRegister.Click += new System.EventHandler(this.butRegister_Click);
+            this.butRegister.MouseHover += new System.EventHandler(this.butRegister_MouseHover);
             // 
             // labError
             // 
@@ -237,7 +238,7 @@
             // butBack
             // 
             this.butBack.Location = new System.Drawing.Point(20, 31);
-            this.butBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.butBack.Margin = new System.Windows.Forms.Padding(4);
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(37, 28);
             this.butBack.TabIndex = 19;
@@ -279,7 +280,7 @@
             // tboxNIK
             // 
             this.tboxNIK.Location = new System.Drawing.Point(197, 348);
-            this.tboxNIK.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tboxNIK.Margin = new System.Windows.Forms.Padding(4);
             this.tboxNIK.Name = "tboxNIK";
             this.tboxNIK.Size = new System.Drawing.Size(236, 22);
             this.tboxNIK.TabIndex = 22;
@@ -314,7 +315,7 @@
             this.Controls.Add(this.tboxFullName);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Register";
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Register_Load);

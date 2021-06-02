@@ -38,13 +38,13 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btsignin = new System.Windows.Forms.Button();
+            this.btsignup = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -151,65 +151,55 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(273, 22);
             this.dateTimePicker1.TabIndex = 16;
             // 
-            // textBox3
+            // btsignin
             // 
-            this.textBox3.Location = new System.Drawing.Point(203, 337);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(304, 22);
-            this.textBox3.TabIndex = 5;
-            this.textBox3.Text = "email";
+            this.btsignin.BackColor = System.Drawing.Color.Yellow;
+            this.btsignin.Location = new System.Drawing.Point(38, 43);
+            this.btsignin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btsignin.Name = "btsignin";
+            this.btsignin.Size = new System.Drawing.Size(156, 36);
+            this.btsignin.TabIndex = 7;
+            this.btsignin.Text = "Sign-in";
+            this.btsignin.UseVisualStyleBackColor = false;
+            this.btsignin.MouseHover += new System.EventHandler(this.btsignin_MouseHover);
             // 
-            // textBox4
+            // btsignup
             // 
-            this.textBox4.Location = new System.Drawing.Point(203, 375);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(304, 22);
-            this.textBox4.TabIndex = 6;
-            this.textBox4.Text = "password";
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.Yellow;
-            this.button4.Location = new System.Drawing.Point(203, 434);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(125, 23);
-            this.button4.TabIndex = 7;
-            this.button4.Text = "Sign-in";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // button5
-            // 
-            this.button5.BackColor = System.Drawing.Color.Yellow;
-            this.button5.Location = new System.Drawing.Point(373, 434);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 23);
-            this.button5.TabIndex = 8;
-            this.button5.Text = "Sign-up";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btsignup.BackColor = System.Drawing.Color.Yellow;
+            this.btsignup.Location = new System.Drawing.Point(38, 105);
+            this.btsignup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btsignup.Name = "btsignup";
+            this.btsignup.Size = new System.Drawing.Size(156, 35);
+            this.btsignup.TabIndex = 8;
+            this.btsignup.Text = "Sign-up";
+            this.btsignup.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.hpbaru;
-            this.pictureBox1.Location = new System.Drawing.Point(12, -55);
+            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.hppppppp;
+            this.pictureBox1.Location = new System.Drawing.Point(-65, -19);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1753, 905);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.btsignin);
+            this.panel2.Controls.Add(this.btsignup);
+            this.panel2.Location = new System.Drawing.Point(89, 206);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(233, 188);
+            this.panel2.TabIndex = 9;
+            // 
             // Homepagebelumlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1685, 838);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -219,8 +209,8 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -237,9 +227,8 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btsignin;
+        private System.Windows.Forms.Button btsignup;
+        private System.Windows.Forms.Panel panel2;
     }
 }

@@ -73,6 +73,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12123 {
+            get {
+                object obj = ResourceManager.GetObject("12123", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _123 {
             get {
                 object obj = ResourceManager.GetObject("123", resourceCulture);
@@ -86,6 +96,16 @@ namespace ProjectUAS_AZHUU.Properties {
         internal static System.Drawing.Bitmap _1234 {
             get {
                 object obj = ResourceManager.GetObject("1234", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1234432 {
+            get {
+                object obj = ResourceManager.GetObject("1234432", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -246,6 +266,16 @@ namespace ProjectUAS_AZHUU.Properties {
         internal static System.Drawing.Bitmap phone_number {
             get {
                 object obj = ResourceManager.GetObject("phone number", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap profil {
+            get {
+                object obj = ResourceManager.GetObject("profil", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

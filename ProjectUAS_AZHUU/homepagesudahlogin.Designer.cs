@@ -59,7 +59,7 @@
             this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Location = new System.Drawing.Point(497, 396);
+            this.panel1.Location = new System.Drawing.Point(497, 402);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(640, 222);
@@ -153,10 +153,11 @@
             // 
             // pictureBox3
             // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::ProjectUAS_AZHUU.Properties.Resources._1234;
-            this.pictureBox3.Location = new System.Drawing.Point(795, 262);
+            this.pictureBox3.Location = new System.Drawing.Point(794, 271);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(355, 92);
+            this.pictureBox3.Size = new System.Drawing.Size(361, 92);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 3;
             this.pictureBox3.TabStop = false;
@@ -165,7 +166,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::ProjectUAS_AZHUU.Properties.Resources._1111ssfefsef;
-            this.pictureBox2.Location = new System.Drawing.Point(133, 396);
+            this.pictureBox2.Location = new System.Drawing.Point(133, 402);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(358, 222);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,7 +180,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(-1, -2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1271, 697);
+            this.pictureBox1.Size = new System.Drawing.Size(1280, 720);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;

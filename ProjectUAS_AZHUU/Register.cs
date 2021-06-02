@@ -174,5 +174,11 @@ namespace ProjectUAS_AZHUU
                 e.Handled = true;
             }
         }
+
+        private void butRegister_MouseHover(object sender, EventArgs e)
+        {
+
+            butRegister.BackColor = Color.Yellow;
+        }
     }
 }
