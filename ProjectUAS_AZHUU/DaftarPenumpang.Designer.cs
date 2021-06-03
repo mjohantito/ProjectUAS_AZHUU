@@ -135,7 +135,7 @@
             // labelDetailPenumpang
             // 
             this.labelDetailPenumpang.AutoSize = true;
-            this.labelDetailPenumpang.Location = new System.Drawing.Point(40, 248);
+            this.labelDetailPenumpang.Location = new System.Drawing.Point(25, 231);
             this.labelDetailPenumpang.Name = "labelDetailPenumpang";
             this.labelDetailPenumpang.Size = new System.Drawing.Size(148, 17);
             this.labelDetailPenumpang.TabIndex = 5;
@@ -300,7 +300,7 @@
             // 
             this.buttonTambahPenumpang1.BackColor = System.Drawing.Color.Yellow;
             this.buttonTambahPenumpang1.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambahPenumpang1.Location = new System.Drawing.Point(386, 449);
+            this.buttonTambahPenumpang1.Location = new System.Drawing.Point(333, 432);
             this.buttonTambahPenumpang1.Name = "buttonTambahPenumpang1";
             this.buttonTambahPenumpang1.Size = new System.Drawing.Size(168, 23);
             this.buttonTambahPenumpang1.TabIndex = 22;
@@ -312,9 +312,9 @@
             // 
             this.buttonContinue.BackColor = System.Drawing.Color.Yellow;
             this.buttonContinue.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonContinue.Location = new System.Drawing.Point(1064, 524);
+            this.buttonContinue.Location = new System.Drawing.Point(791, 622);
             this.buttonContinue.Name = "buttonContinue";
-            this.buttonContinue.Size = new System.Drawing.Size(186, 52);
+            this.buttonContinue.Size = new System.Drawing.Size(186, 41);
             this.buttonContinue.TabIndex = 23;
             this.buttonContinue.Text = "CONTINUE";
             this.buttonContinue.UseVisualStyleBackColor = false;
@@ -418,9 +418,9 @@
             this.labelNamaPenumpang4.AutoSize = true;
             this.labelNamaPenumpang4.Location = new System.Drawing.Point(100, 175);
             this.labelNamaPenumpang4.Name = "labelNamaPenumpang4";
-            this.labelNamaPenumpang4.Size = new System.Drawing.Size(108, 17);
+            this.labelNamaPenumpang4.Size = new System.Drawing.Size(104, 17);
             this.labelNamaPenumpang4.TabIndex = 32;
-            this.labelNamaPenumpang4.Text = "- Elizabeth Billy ";
+            this.labelNamaPenumpang4.Text = "-BIlli suka tante";
             this.labelNamaPenumpang4.Visible = false;
             // 
             // groupBoxPenumpang1
@@ -431,9 +431,9 @@
             this.groupBoxPenumpang1.Controls.Add(this.tBoxKTPPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.tBoxNamaPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.cBoxTitlePenumpang1);
-            this.groupBoxPenumpang1.Location = new System.Drawing.Point(99, 285);
+            this.groupBoxPenumpang1.Location = new System.Drawing.Point(50, 270);
             this.groupBoxPenumpang1.Name = "groupBoxPenumpang1";
-            this.groupBoxPenumpang1.Size = new System.Drawing.Size(455, 162);
+            this.groupBoxPenumpang1.Size = new System.Drawing.Size(449, 162);
             this.groupBoxPenumpang1.TabIndex = 33;
             this.groupBoxPenumpang1.TabStop = false;
             // 
@@ -466,7 +466,7 @@
             this.groupBoxPenumpang2.Controls.Add(this.tBoxKTPPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.tBoxNamaPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.cBoxTitlePenumpang2);
-            this.groupBoxPenumpang2.Location = new System.Drawing.Point(99, 474);
+            this.groupBoxPenumpang2.Location = new System.Drawing.Point(43, 460);
             this.groupBoxPenumpang2.Name = "groupBoxPenumpang2";
             this.groupBoxPenumpang2.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang2.TabIndex = 35;
@@ -492,7 +492,7 @@
             this.groupBoxPenumpang3.Controls.Add(this.tBoxKTPPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.tBoxNamaPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.cBoxTitlePenumang3);
-            this.groupBoxPenumpang3.Location = new System.Drawing.Point(605, 285);
+            this.groupBoxPenumpang3.Location = new System.Drawing.Point(522, 271);
             this.groupBoxPenumpang3.Name = "groupBoxPenumpang3";
             this.groupBoxPenumpang3.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang3.TabIndex = 36;
@@ -518,7 +518,7 @@
             this.groupBoxPenumpang4.Controls.Add(this.tBoxKTPPenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.tBoxNamaPenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.cBoxTitlePenumang4);
-            this.groupBoxPenumpang4.Location = new System.Drawing.Point(605, 474);
+            this.groupBoxPenumpang4.Location = new System.Drawing.Point(522, 456);
             this.groupBoxPenumpang4.Name = "groupBoxPenumpang4";
             this.groupBoxPenumpang4.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang4.TabIndex = 37;
@@ -588,7 +588,7 @@
             // 
             this.buttonTambahPenumpang2.BackColor = System.Drawing.Color.Yellow;
             this.buttonTambahPenumpang2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambahPenumpang2.Location = new System.Drawing.Point(386, 638);
+            this.buttonTambahPenumpang2.Location = new System.Drawing.Point(330, 624);
             this.buttonTambahPenumpang2.Name = "buttonTambahPenumpang2";
             this.buttonTambahPenumpang2.Size = new System.Drawing.Size(168, 23);
             this.buttonTambahPenumpang2.TabIndex = 38;
@@ -600,7 +600,7 @@
             // 
             this.buttonTambahPenumpang3.BackColor = System.Drawing.Color.Yellow;
             this.buttonTambahPenumpang3.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonTambahPenumpang3.Location = new System.Drawing.Point(892, 449);
+            this.buttonTambahPenumpang3.Location = new System.Drawing.Point(809, 432);
             this.buttonTambahPenumpang3.Name = "buttonTambahPenumpang3";
             this.buttonTambahPenumpang3.Size = new System.Drawing.Size(168, 23);
             this.buttonTambahPenumpang3.TabIndex = 39;
@@ -610,10 +610,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.info_penumpang;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -8);
+            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources._123411;
+            this.pictureBox1.Location = new System.Drawing.Point(-45, -41);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1268, 685);
+            this.pictureBox1.Size = new System.Drawing.Size(1268, 769);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
@@ -629,9 +629,9 @@
             this.Controls.Add(this.groupBoxPenumpang3);
             this.Controls.Add(this.groupBoxPenumpang2);
             this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.buttonContinue);
             this.Controls.Add(this.groupBoxPenumpang1);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.buttonContinue);
             this.Controls.Add(this.buttonTambahPenumpang1);
             this.Controls.Add(this.buttonUbahProfile);
             this.Controls.Add(this.labelDetailPenumpang);

@@ -42,6 +42,8 @@
             this.btsignup = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.airport = new System.Windows.Forms.RadioButton();
+            this.tujuan = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -50,6 +52,8 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.tujuan);
+            this.panel1.Controls.Add(this.airport);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -59,10 +63,10 @@
             this.panel1.Controls.Add(this.comboBox3);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Location = new System.Drawing.Point(178, 580);
+            this.panel1.Location = new System.Drawing.Point(181, 383);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(665, 222);
+            this.panel1.Size = new System.Drawing.Size(707, 213);
             this.panel1.TabIndex = 2;
             // 
             // button3
@@ -80,7 +84,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(353, 94);
+            this.label4.Location = new System.Drawing.Point(351, 90);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 17);
             this.label4.TabIndex = 20;
@@ -154,10 +158,10 @@
             // btsignin
             // 
             this.btsignin.BackColor = System.Drawing.Color.Yellow;
-            this.btsignin.Location = new System.Drawing.Point(38, 43);
+            this.btsignin.Location = new System.Drawing.Point(23, 23);
             this.btsignin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btsignin.Name = "btsignin";
-            this.btsignin.Size = new System.Drawing.Size(156, 36);
+            this.btsignin.Size = new System.Drawing.Size(124, 24);
             this.btsignin.TabIndex = 7;
             this.btsignin.Text = "Sign-in";
             this.btsignin.UseVisualStyleBackColor = false;
@@ -166,10 +170,10 @@
             // btsignup
             // 
             this.btsignup.BackColor = System.Drawing.Color.Yellow;
-            this.btsignup.Location = new System.Drawing.Point(38, 105);
+            this.btsignup.Location = new System.Drawing.Point(22, 64);
             this.btsignup.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btsignup.Name = "btsignup";
-            this.btsignup.Size = new System.Drawing.Size(156, 35);
+            this.btsignup.Size = new System.Drawing.Size(124, 23);
             this.btsignup.TabIndex = 8;
             this.btsignup.Text = "Sign-up";
             this.btsignup.UseVisualStyleBackColor = false;
@@ -177,10 +181,11 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.hppppppp;
-            this.pictureBox1.Location = new System.Drawing.Point(-65, -19);
+            this.pictureBox1.Location = new System.Drawing.Point(-44, 6);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1753, 905);
+            this.pictureBox1.Size = new System.Drawing.Size(1309, 666);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -189,16 +194,38 @@
             this.panel2.BackColor = System.Drawing.Color.White;
             this.panel2.Controls.Add(this.btsignin);
             this.panel2.Controls.Add(this.btsignup);
-            this.panel2.Location = new System.Drawing.Point(89, 206);
+            this.panel2.Location = new System.Drawing.Point(91, 230);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(233, 188);
+            this.panel2.Size = new System.Drawing.Size(181, 87);
             this.panel2.TabIndex = 9;
+            // 
+            // airport
+            // 
+            this.airport.AutoSize = true;
+            this.airport.Location = new System.Drawing.Point(194, 15);
+            this.airport.Name = "airport";
+            this.airport.Size = new System.Drawing.Size(128, 21);
+            this.airport.TabIndex = 10;
+            this.airport.TabStop = true;
+            this.airport.Text = "Airport - Tujuan";
+            this.airport.UseVisualStyleBackColor = true;
+            // 
+            // tujuan
+            // 
+            this.tujuan.AutoSize = true;
+            this.tujuan.Location = new System.Drawing.Point(68, 15);
+            this.tujuan.Name = "tujuan";
+            this.tujuan.Size = new System.Drawing.Size(111, 21);
+            this.tujuan.TabIndex = 22;
+            this.tujuan.TabStop = true;
+            this.tujuan.Text = "Asal - Airport";
+            this.tujuan.UseVisualStyleBackColor = true;
             // 
             // Homepagebelumlogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1685, 838);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
@@ -230,5 +257,7 @@
         private System.Windows.Forms.Button btsignin;
         private System.Windows.Forms.Button btsignup;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RadioButton tujuan;
+        private System.Windows.Forms.RadioButton airport;
     }
 }
