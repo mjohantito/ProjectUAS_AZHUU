@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
+            this.cari = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbke = new System.Windows.Forms.ComboBox();
+            this.cbdari = new System.Windows.Forms.ComboBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tujuan = new System.Windows.Forms.RadioButton();
+            this.airport = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -50,14 +50,14 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.tujuan);
+            this.panel1.Controls.Add(this.airport);
+            this.panel1.Controls.Add(this.cari);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.comboBox2);
-            this.panel1.Controls.Add(this.comboBox3);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cbke);
+            this.panel1.Controls.Add(this.cbdari);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Location = new System.Drawing.Point(497, 402);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -65,26 +65,17 @@
             this.panel1.Size = new System.Drawing.Size(640, 222);
             this.panel1.TabIndex = 1;
             // 
-            // button3
+            // cari
             // 
-            this.button3.BackColor = System.Drawing.Color.Yellow;
-            this.button3.Location = new System.Drawing.Point(443, 161);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(181, 34);
-            this.button3.TabIndex = 21;
-            this.button3.Text = "Cari";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(353, 94);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(149, 17);
-            this.label4.TabIndex = 20;
-            this.label4.Text = "Jumblah Penumpang :";
+            this.cari.BackColor = System.Drawing.Color.Yellow;
+            this.cari.Location = new System.Drawing.Point(443, 161);
+            this.cari.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cari.Name = "cari";
+            this.cari.Size = new System.Drawing.Size(181, 34);
+            this.cari.TabIndex = 21;
+            this.cari.Text = "Cari";
+            this.cari.UseVisualStyleBackColor = false;
+            this.cari.Click += new System.EventHandler(this.cari_Click);
             // 
             // label3
             // 
@@ -116,32 +107,23 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Dari :";
             // 
-            // comboBox2
+            // cbke
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(61, 110);
-            this.comboBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(241, 24);
-            this.comboBox2.TabIndex = 14;
+            this.cbke.FormattingEnabled = true;
+            this.cbke.Location = new System.Drawing.Point(61, 110);
+            this.cbke.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbke.Name = "cbke";
+            this.cbke.Size = new System.Drawing.Size(241, 24);
+            this.cbke.TabIndex = 14;
             // 
-            // comboBox3
+            // cbdari
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(352, 110);
-            this.comboBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(273, 24);
-            this.comboBox3.TabIndex = 15;
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(61, 57);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(241, 24);
-            this.comboBox1.TabIndex = 13;
+            this.cbdari.FormattingEnabled = true;
+            this.cbdari.Location = new System.Drawing.Point(61, 57);
+            this.cbdari.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cbdari.Name = "cbdari";
+            this.cbdari.Size = new System.Drawing.Size(241, 24);
+            this.cbdari.TabIndex = 13;
             // 
             // dateTimePicker1
             // 
@@ -172,6 +154,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -184,6 +167,30 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // tujuan
+            // 
+            this.tujuan.AutoSize = true;
+            this.tujuan.Location = new System.Drawing.Point(62, 12);
+            this.tujuan.Name = "tujuan";
+            this.tujuan.Size = new System.Drawing.Size(111, 21);
+            this.tujuan.TabIndex = 24;
+            this.tujuan.TabStop = true;
+            this.tujuan.Text = "Asal - Airport";
+            this.tujuan.UseVisualStyleBackColor = true;
+            this.tujuan.CheckedChanged += new System.EventHandler(this.tujuan_CheckedChanged);
+            // 
+            // airport
+            // 
+            this.airport.AutoSize = true;
+            this.airport.Location = new System.Drawing.Point(188, 12);
+            this.airport.Name = "airport";
+            this.airport.Size = new System.Drawing.Size(128, 21);
+            this.airport.TabIndex = 23;
+            this.airport.TabStop = true;
+            this.airport.Text = "Airport - Tujuan";
+            this.airport.UseVisualStyleBackColor = true;
+            this.airport.CheckedChanged += new System.EventHandler(this.airport_CheckedChanged);
             // 
             // HomePage
             // 
@@ -211,16 +218,16 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button cari;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbke;
+        private System.Windows.Forms.ComboBox cbdari;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.RadioButton tujuan;
+        private System.Windows.Forms.RadioButton airport;
     }
 }

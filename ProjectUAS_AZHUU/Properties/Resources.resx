@@ -121,6 +121,9 @@
   <data name="1111ssfefsef" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1111ssfefsef.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hpbaru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hpbaru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="azuuuuuu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\azuuuuuu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,11 +163,17 @@
   <data name="Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="123411" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\123411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="123" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\123.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="aaaaaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\aaaaaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="11han" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11han.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="khusus 10 Juni 2021" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\khusus 10 Juni 2021.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,20 +193,29 @@
   <data name="BREAKING NEWS" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BREAKING NEWS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="111TITO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\111TITO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="NCAA Twitter Post1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NCAA Twitter Post1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="aaaaaaaa" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\aaaaaaaa.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="1234124" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1234124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="123brian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\123brian.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="newwwww" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\newwwww.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1234124" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1234124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1231231235" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1231231235.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="A1A1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\A1A1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NCAA Twitter Post" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NCAA Twitter Post.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -208,13 +226,16 @@
   <data name="Homepage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Homepage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hpbaru" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hpbaru.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="12312312351" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12312312351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Slate Gray Polaroid Dark Collage Religious  Spiritual Desktop Wallpaper.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="123411" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\123411.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="11TITO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\11TITO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
