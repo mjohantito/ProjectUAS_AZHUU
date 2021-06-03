@@ -61,12 +61,16 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelJumlahPembayaran = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelNamaPenumpang4 = new System.Windows.Forms.Label();
             this.groupBoxPenumpang1 = new System.Windows.Forms.GroupBox();
+            this.buttonDonePenumpang1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBoxPenumpang2 = new System.Windows.Forms.GroupBox();
+            this.buttonDonePenumpang2 = new System.Windows.Forms.Button();
             this.groupBoxPenumpang3 = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.buttonDonePenumpang3 = new System.Windows.Forms.Button();
             this.groupBoxPenumpang4 = new System.Windows.Forms.GroupBox();
+            this.buttonDonePenumpang4 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tBoxKTPPenumpang4 = new System.Windows.Forms.TextBox();
@@ -74,17 +78,13 @@
             this.cBoxTitlePenumang4 = new System.Windows.Forms.ComboBox();
             this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
-            this.buttonDonePenumpang1 = new System.Windows.Forms.Button();
-            this.buttonDonePenumpang2 = new System.Windows.Forms.Button();
-            this.buttonDonePenumpang3 = new System.Windows.Forms.Button();
-            this.buttonDonePenumpang4 = new System.Windows.Forms.Button();
-            this.labelNamaPenumpang4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
             this.groupBoxPenumpang3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.groupBoxPenumpang4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelDtlPesan
@@ -406,11 +406,22 @@
             this.groupBox1.Controls.Add(this.labelNamaPO);
             this.groupBox1.Controls.Add(this.labelJurusan);
             this.groupBox1.Controls.Add(this.labelBusShuttle);
-            this.groupBox1.Location = new System.Drawing.Point(682, 32);
+            this.groupBox1.Location = new System.Drawing.Point(626, 32);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(434, 233);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // labelNamaPenumpang4
+            // 
+            this.labelNamaPenumpang4.AutoSize = true;
+            this.labelNamaPenumpang4.Location = new System.Drawing.Point(100, 175);
+            this.labelNamaPenumpang4.Name = "labelNamaPenumpang4";
+            this.labelNamaPenumpang4.Size = new System.Drawing.Size(108, 17);
+            this.labelNamaPenumpang4.TabIndex = 32;
+            this.labelNamaPenumpang4.Text = "- Elizabeth Billy ";
+            this.labelNamaPenumpang4.Visible = false;
             // 
             // groupBoxPenumpang1
             // 
@@ -425,6 +436,18 @@
             this.groupBoxPenumpang1.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang1.TabIndex = 33;
             this.groupBoxPenumpang1.TabStop = false;
+            // 
+            // buttonDonePenumpang1
+            // 
+            this.buttonDonePenumpang1.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDonePenumpang1.Location = new System.Drawing.Point(371, 8);
+            this.buttonDonePenumpang1.Name = "buttonDonePenumpang1";
+            this.buttonDonePenumpang1.Size = new System.Drawing.Size(29, 23);
+            this.buttonDonePenumpang1.TabIndex = 20;
+            this.buttonDonePenumpang1.Text = "√";
+            this.buttonDonePenumpang1.UseVisualStyleBackColor = false;
+            this.buttonDonePenumpang1.Visible = false;
+            this.buttonDonePenumpang1.Click += new System.EventHandler(this.buttonDonePenumpang1_Click);
             // 
             // groupBox3
             // 
@@ -449,6 +472,18 @@
             this.groupBoxPenumpang2.TabIndex = 35;
             this.groupBoxPenumpang2.TabStop = false;
             // 
+            // buttonDonePenumpang2
+            // 
+            this.buttonDonePenumpang2.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDonePenumpang2.Location = new System.Drawing.Point(371, 4);
+            this.buttonDonePenumpang2.Name = "buttonDonePenumpang2";
+            this.buttonDonePenumpang2.Size = new System.Drawing.Size(29, 23);
+            this.buttonDonePenumpang2.TabIndex = 21;
+            this.buttonDonePenumpang2.Text = "√";
+            this.buttonDonePenumpang2.UseVisualStyleBackColor = false;
+            this.buttonDonePenumpang2.Visible = false;
+            this.buttonDonePenumpang2.Click += new System.EventHandler(this.buttonDonePenumpang2_Click);
+            // 
             // groupBoxPenumpang3
             // 
             this.groupBoxPenumpang3.Controls.Add(this.buttonDonePenumpang3);
@@ -463,15 +498,17 @@
             this.groupBoxPenumpang3.TabIndex = 36;
             this.groupBoxPenumpang3.TabStop = false;
             // 
-            // pictureBox1
+            // buttonDonePenumpang3
             // 
-            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.info_penumpang;
-            this.pictureBox1.Location = new System.Drawing.Point(-5, -8);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1268, 685);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 37;
-            this.pictureBox1.TabStop = false;
+            this.buttonDonePenumpang3.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDonePenumpang3.Location = new System.Drawing.Point(365, 8);
+            this.buttonDonePenumpang3.Name = "buttonDonePenumpang3";
+            this.buttonDonePenumpang3.Size = new System.Drawing.Size(29, 23);
+            this.buttonDonePenumpang3.TabIndex = 40;
+            this.buttonDonePenumpang3.Text = "√";
+            this.buttonDonePenumpang3.UseVisualStyleBackColor = false;
+            this.buttonDonePenumpang3.Visible = false;
+            this.buttonDonePenumpang3.Click += new System.EventHandler(this.buttonDonePenumpang3_Click);
             // 
             // groupBoxPenumpang4
             // 
@@ -486,6 +523,18 @@
             this.groupBoxPenumpang4.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang4.TabIndex = 37;
             this.groupBoxPenumpang4.TabStop = false;
+            // 
+            // buttonDonePenumpang4
+            // 
+            this.buttonDonePenumpang4.BackColor = System.Drawing.Color.Transparent;
+            this.buttonDonePenumpang4.Location = new System.Drawing.Point(365, 7);
+            this.buttonDonePenumpang4.Name = "buttonDonePenumpang4";
+            this.buttonDonePenumpang4.Size = new System.Drawing.Size(29, 23);
+            this.buttonDonePenumpang4.TabIndex = 41;
+            this.buttonDonePenumpang4.Text = "√";
+            this.buttonDonePenumpang4.UseVisualStyleBackColor = false;
+            this.buttonDonePenumpang4.Visible = false;
+            this.buttonDonePenumpang4.Click += new System.EventHandler(this.buttonDonePenumpang4_Click);
             // 
             // buttonHapusPenumpang4
             // 
@@ -559,63 +608,15 @@
             this.buttonTambahPenumpang3.UseVisualStyleBackColor = false;
             this.buttonTambahPenumpang3.Click += new System.EventHandler(this.buttonTambahPenumpang3_Click);
             // 
-            // buttonDonePenumpang1
+            // pictureBox1
             // 
-            this.buttonDonePenumpang1.BackColor = System.Drawing.Color.Transparent;
-            this.buttonDonePenumpang1.Location = new System.Drawing.Point(371, 8);
-            this.buttonDonePenumpang1.Name = "buttonDonePenumpang1";
-            this.buttonDonePenumpang1.Size = new System.Drawing.Size(29, 23);
-            this.buttonDonePenumpang1.TabIndex = 20;
-            this.buttonDonePenumpang1.Text = "√";
-            this.buttonDonePenumpang1.UseVisualStyleBackColor = false;
-            this.buttonDonePenumpang1.Visible = false;
-            this.buttonDonePenumpang1.Click += new System.EventHandler(this.buttonDonePenumpang1_Click);
-            // 
-            // buttonDonePenumpang2
-            // 
-            this.buttonDonePenumpang2.BackColor = System.Drawing.Color.Transparent;
-            this.buttonDonePenumpang2.Location = new System.Drawing.Point(371, 4);
-            this.buttonDonePenumpang2.Name = "buttonDonePenumpang2";
-            this.buttonDonePenumpang2.Size = new System.Drawing.Size(29, 23);
-            this.buttonDonePenumpang2.TabIndex = 21;
-            this.buttonDonePenumpang2.Text = "√";
-            this.buttonDonePenumpang2.UseVisualStyleBackColor = false;
-            this.buttonDonePenumpang2.Visible = false;
-            this.buttonDonePenumpang2.Click += new System.EventHandler(this.buttonDonePenumpang2_Click);
-            // 
-            // buttonDonePenumpang3
-            // 
-            this.buttonDonePenumpang3.BackColor = System.Drawing.Color.Transparent;
-            this.buttonDonePenumpang3.Location = new System.Drawing.Point(365, 8);
-            this.buttonDonePenumpang3.Name = "buttonDonePenumpang3";
-            this.buttonDonePenumpang3.Size = new System.Drawing.Size(29, 23);
-            this.buttonDonePenumpang3.TabIndex = 40;
-            this.buttonDonePenumpang3.Text = "√";
-            this.buttonDonePenumpang3.UseVisualStyleBackColor = false;
-            this.buttonDonePenumpang3.Visible = false;
-            this.buttonDonePenumpang3.Click += new System.EventHandler(this.buttonDonePenumpang3_Click);
-            // 
-            // buttonDonePenumpang4
-            // 
-            this.buttonDonePenumpang4.BackColor = System.Drawing.Color.Transparent;
-            this.buttonDonePenumpang4.Location = new System.Drawing.Point(365, 7);
-            this.buttonDonePenumpang4.Name = "buttonDonePenumpang4";
-            this.buttonDonePenumpang4.Size = new System.Drawing.Size(29, 23);
-            this.buttonDonePenumpang4.TabIndex = 41;
-            this.buttonDonePenumpang4.Text = "√";
-            this.buttonDonePenumpang4.UseVisualStyleBackColor = false;
-            this.buttonDonePenumpang4.Visible = false;
-            this.buttonDonePenumpang4.Click += new System.EventHandler(this.buttonDonePenumpang4_Click);
-            // 
-            // labelNamaPenumpang4
-            // 
-            this.labelNamaPenumpang4.AutoSize = true;
-            this.labelNamaPenumpang4.Location = new System.Drawing.Point(100, 175);
-            this.labelNamaPenumpang4.Name = "labelNamaPenumpang4";
-            this.labelNamaPenumpang4.Size = new System.Drawing.Size(108, 17);
-            this.labelNamaPenumpang4.TabIndex = 32;
-            this.labelNamaPenumpang4.Text = "- Elizabeth Billy ";
-            this.labelNamaPenumpang4.Visible = false;
+            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.info_penumpang;
+            this.pictureBox1.Location = new System.Drawing.Point(-5, -8);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1268, 685);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 37;
+            this.pictureBox1.TabStop = false;
             // 
             // DaftarPenumpang
             // 
@@ -651,9 +652,9 @@
             this.groupBoxPenumpang2.PerformLayout();
             this.groupBoxPenumpang3.ResumeLayout(false);
             this.groupBoxPenumpang3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxPenumpang4.ResumeLayout(false);
             this.groupBoxPenumpang4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

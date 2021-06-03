@@ -449,5 +449,10 @@ namespace ProjectUAS_AZHUU
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }
