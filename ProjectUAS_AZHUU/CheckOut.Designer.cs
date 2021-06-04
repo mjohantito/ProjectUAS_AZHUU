@@ -46,6 +46,8 @@ namespace ProjectUAS_AZHUU
             this.label14 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.buttonPay = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelCart
@@ -172,7 +174,7 @@ namespace ProjectUAS_AZHUU
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(588, 183);
+            this.label1.Location = new System.Drawing.Point(626, 424);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(172, 32);
             this.label1.TabIndex = 13;
@@ -182,7 +184,7 @@ namespace ProjectUAS_AZHUU
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(591, 312);
+            this.label14.Location = new System.Drawing.Point(626, 487);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(201, 32);
             this.label14.TabIndex = 14;
@@ -191,7 +193,7 @@ namespace ProjectUAS_AZHUU
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(809, 183);
+            this.textBox1.Location = new System.Drawing.Point(873, 424);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(311, 38);
             this.textBox1.TabIndex = 15;
@@ -200,13 +202,23 @@ namespace ProjectUAS_AZHUU
             // 
             this.buttonPay.BackColor = System.Drawing.Color.Yellow;
             this.buttonPay.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonPay.Location = new System.Drawing.Point(1064, 609);
+            this.buttonPay.Location = new System.Drawing.Point(934, 561);
             this.buttonPay.Name = "buttonPay";
             this.buttonPay.Size = new System.Drawing.Size(186, 52);
             this.buttonPay.TabIndex = 24;
             this.buttonPay.Text = "PAY";
             this.buttonPay.UseVisualStyleBackColor = false;
             this.buttonPay.Click += new System.EventHandler(this.buttonPay_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources._12341241;
+            this.pictureBox1.Location = new System.Drawing.Point(-3, -4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1280, 720);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 25;
+            this.pictureBox1.TabStop = false;
             // 
             // FormCheckout
             // 
@@ -230,8 +242,10 @@ namespace ProjectUAS_AZHUU
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.labelCart);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "FormCheckout";
             this.Text = "CheckOut";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -256,5 +270,6 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button buttonPay;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

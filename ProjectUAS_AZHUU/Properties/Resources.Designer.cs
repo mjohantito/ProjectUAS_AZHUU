@@ -173,6 +173,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12341241 {
+            get {
+                object obj = ResourceManager.GetObject("12341241", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1234432 {
             get {
                 object obj = ResourceManager.GetObject("1234432", resourceCulture);

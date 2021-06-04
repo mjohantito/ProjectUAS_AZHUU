@@ -291,5 +291,8 @@
   <ItemGroup>
     <None Include="Resources\AZUU NEWS.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12341241.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
