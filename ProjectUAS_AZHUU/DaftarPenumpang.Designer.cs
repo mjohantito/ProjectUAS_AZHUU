@@ -79,6 +79,7 @@
             this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelIDR = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
@@ -389,14 +390,15 @@
             // labelJumlahPembayaran
             // 
             this.labelJumlahPembayaran.AutoSize = true;
-            this.labelJumlahPembayaran.Location = new System.Drawing.Point(343, 199);
+            this.labelJumlahPembayaran.Location = new System.Drawing.Point(347, 199);
             this.labelJumlahPembayaran.Name = "labelJumlahPembayaran";
-            this.labelJumlahPembayaran.Size = new System.Drawing.Size(87, 17);
+            this.labelJumlahPembayaran.Size = new System.Drawing.Size(60, 17);
             this.labelJumlahPembayaran.TabIndex = 31;
-            this.labelJumlahPembayaran.Text = "IDR 954.000";
+            this.labelJumlahPembayaran.Text = "954.000";
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.labelIDR);
             this.groupBox1.Controls.Add(this.labelNamaPenumpang4);
             this.groupBox1.Controls.Add(this.labelJumlahPembayaran);
             this.groupBox1.Controls.Add(this.labelTotal);
@@ -618,6 +620,15 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
+            // labelIDR
+            // 
+            this.labelIDR.AutoSize = true;
+            this.labelIDR.Location = new System.Drawing.Point(320, 199);
+            this.labelIDR.Name = "labelIDR";
+            this.labelIDR.Size = new System.Drawing.Size(31, 17);
+            this.labelIDR.TabIndex = 33;
+            this.labelIDR.Text = "IDR";
+            // 
             // DaftarPenumpang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -713,6 +724,7 @@
         private System.Windows.Forms.Button buttonDonePenumpang3;
         private System.Windows.Forms.Button buttonDonePenumpang4;
         private System.Windows.Forms.Label labelNamaPenumpang4;
+        private System.Windows.Forms.Label labelIDR;
     }
 }
 
