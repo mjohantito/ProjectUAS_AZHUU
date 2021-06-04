@@ -39,6 +39,8 @@ namespace ProjectUAS_AZHUU
         public static string POBus;
         public static string Subtotal;
 
+        public static string Tanggal;
+
         private void buttonContinue_Click(object sender, EventArgs e)
         {
             try
@@ -58,6 +60,7 @@ namespace ProjectUAS_AZHUU
                 FromTo = labelJurusan.Text;
                 POBus = labelNamaPO.Text;
                 Subtotal = labelJumlahPembayaran.Text;
+                Tanggal = labelTanggal.Text;
 
                 FormCheckout formCheckout = new FormCheckout();
                 formCheckout.ShowDialog();
@@ -92,6 +95,14 @@ namespace ProjectUAS_AZHUU
                 tBoxNamaProfile.Text = dtProfile.Rows[0]["User Name"].ToString();
                 tBoxEmailProfile.Text = dtProfile.Rows[0]["User Email"].ToString();
                 tBoxTeleponProfile.Text = dtProfile.Rows[0]["User Telp"].ToString();
+
+                DataTable dtTanggal = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select curdate() as `Tannggal;";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtTanggal);
+                labelTanggal.Text = dtTanggal.Rows[0].ToString();
             }
             catch (Exception ex)
             {

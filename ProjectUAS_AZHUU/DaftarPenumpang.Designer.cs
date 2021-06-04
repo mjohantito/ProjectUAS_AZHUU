@@ -61,6 +61,7 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelJumlahPembayaran = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelIDR = new System.Windows.Forms.Label();
             this.labelNamaPenumpang4 = new System.Windows.Forms.Label();
             this.groupBoxPenumpang1 = new System.Windows.Forms.GroupBox();
             this.buttonDonePenumpang1 = new System.Windows.Forms.Button();
@@ -79,7 +80,7 @@
             this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelIDR = new System.Windows.Forms.Label();
+            this.labelTanggal = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
@@ -398,6 +399,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.labelTanggal);
             this.groupBox1.Controls.Add(this.labelIDR);
             this.groupBox1.Controls.Add(this.labelNamaPenumpang4);
             this.groupBox1.Controls.Add(this.labelJumlahPembayaran);
@@ -414,6 +416,15 @@
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // labelIDR
+            // 
+            this.labelIDR.AutoSize = true;
+            this.labelIDR.Location = new System.Drawing.Point(320, 199);
+            this.labelIDR.Name = "labelIDR";
+            this.labelIDR.Size = new System.Drawing.Size(31, 17);
+            this.labelIDR.TabIndex = 33;
+            this.labelIDR.Text = "IDR";
             // 
             // labelNamaPenumpang4
             // 
@@ -620,14 +631,14 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
-            // labelIDR
+            // labelTanggal
             // 
-            this.labelIDR.AutoSize = true;
-            this.labelIDR.Location = new System.Drawing.Point(320, 199);
-            this.labelIDR.Name = "labelIDR";
-            this.labelIDR.Size = new System.Drawing.Size(31, 17);
-            this.labelIDR.TabIndex = 33;
-            this.labelIDR.Text = "IDR";
+            this.labelTanggal.AutoSize = true;
+            this.labelTanggal.Location = new System.Drawing.Point(303, 32);
+            this.labelTanggal.Name = "labelTanggal";
+            this.labelTanggal.Size = new System.Drawing.Size(60, 17);
+            this.labelTanggal.TabIndex = 34;
+            this.labelTanggal.Text = "Tanggal";
             // 
             // DaftarPenumpang
             // 
@@ -725,6 +736,7 @@
         private System.Windows.Forms.Button buttonDonePenumpang4;
         private System.Windows.Forms.Label labelNamaPenumpang4;
         private System.Windows.Forms.Label labelIDR;
+        private System.Windows.Forms.Label labelTanggal;
     }
 }
 
