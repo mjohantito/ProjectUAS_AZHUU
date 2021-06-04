@@ -23,10 +23,42 @@ namespace ProjectUAS_AZHUU
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
+        public static string NamaPenumpang1;
+        public static string KTPPenumpang1;
+
+        public static string NamaPenumpang2;
+        public static string KTPPenumpang2;
+
+        public static string NamaPenumpang3;
+        public static string KTPPenumpang3;
+
+        public static string NamaPenumpang4;
+        public static string KTPPenumpang4;
+
+        public static string FromTo;
+        public static string POBus;
+        public static string Subtotal;
+
         private void buttonContinue_Click(object sender, EventArgs e)
         {
             try
             {
+                NamaPenumpang1 = tBoxNamaPenumpang1.Text;
+                KTPPenumpang1 = tBoxKTPPenumpang1.Text;
+
+                NamaPenumpang2 = tBoxNamaPenumpang2.Text;
+                KTPPenumpang2 = tBoxKTPPenumpang2.Text;
+
+                NamaPenumpang3 = tBoxNamaPenumpang3.Text;
+                KTPPenumpang3 = tBoxKTPPenumpang3.Text;
+
+                NamaPenumpang4 = tBoxNamaPenumpang4.Text;
+                KTPPenumpang4 = tBoxKTPPenumpang4.Text;
+
+                FromTo = labelJurusan.Text;
+                POBus = labelNamaPO.Text;
+                Subtotal = labelJumlahPembayaran.Text;
+
                 FormCheckout formCheckout = new FormCheckout();
                 formCheckout.ShowDialog();
             }
@@ -50,7 +82,7 @@ namespace ProjectUAS_AZHUU
 
                 DataTable dtProfile = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "";
+                sqlQuery = "select user_title as `Title`, user_name as `User Name`, user_email as `User Email`, user_telp as `User Telp` from user_azhuu where user_nik = '" + HomePage.nikkk + "';";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtProfile);
