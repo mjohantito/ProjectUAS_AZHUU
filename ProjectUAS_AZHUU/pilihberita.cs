@@ -10,17 +10,17 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_AZHUU
 {
-    public partial class News : Form
+    public partial class pilihberita : Form
     {
-        public News()
+        public pilihberita()
         {
             InitializeComponent();
         }
 
-        
-        private void News_Load(object sender, EventArgs e)
+        private void back_Click(object sender, EventArgs e)
         {
-
+            var pwnotelp = new HomePage();
+            pwnotelp.ShowDialog();
         }
     }
 }

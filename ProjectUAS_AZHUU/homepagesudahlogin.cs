@@ -78,7 +78,8 @@ namespace ProjectUAS_AZHUU
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-
+            var pwnotelp = new pilihberita();
+            pwnotelp.ShowDialog();
         }
 
         private void tujuan_CheckedChanged(object sender, EventArgs e)

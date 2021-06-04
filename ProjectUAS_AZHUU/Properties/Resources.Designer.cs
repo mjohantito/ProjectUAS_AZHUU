@@ -123,6 +123,16 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _12312311 {
+            get {
+                object obj = ResourceManager.GetObject("12312311", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1231231235 {
             get {
                 object obj = ResourceManager.GetObject("1231231235", resourceCulture);
@@ -213,6 +223,56 @@ namespace ProjectUAS_AZHUU.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _123wer {
+            get {
+                object obj = ResourceManager.GetObject("123wer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _16352 {
+            get {
+                object obj = ResourceManager.GetObject("16352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _163521 {
+            get {
+                object obj = ResourceManager.GetObject("163521", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1A1A1A11 {
+            get {
+                object obj = ResourceManager.GetObject("1A1A1A11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4123516231 {
+            get {
+                object obj = ResourceManager.GetObject("4123516231", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap A1A1 {
             get {
                 object obj = ResourceManager.GetObject("A1A1", resourceCulture);
@@ -246,6 +306,16 @@ namespace ProjectUAS_AZHUU.Properties {
         internal static System.Drawing.Bitmap azuuuuuu {
             get {
                 object obj = ResourceManager.GetObject("azuuuuuu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap berita_3 {
+            get {
+                object obj = ResourceManager.GetObject("berita 3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

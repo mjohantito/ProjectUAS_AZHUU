@@ -95,11 +95,11 @@
     <Compile Include="NewPassword.Designer.cs">
       <DependentUpon>NewPassword.cs</DependentUpon>
     </Compile>
-    <Compile Include="News.cs">
+    <Compile Include="pilihberita.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="News.Designer.cs">
-      <DependentUpon>News.cs</DependentUpon>
+    <Compile Include="pilihberita.Designer.cs">
+      <DependentUpon>pilihberita.cs</DependentUpon>
     </Compile>
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
@@ -157,8 +157,8 @@
     <EmbeddedResource Include="NewPassword.resx">
       <DependentUpon>NewPassword.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="News.resx">
-      <DependentUpon>News.cs</DependentUpon>
+    <EmbeddedResource Include="pilihberita.resx">
+      <DependentUpon>pilihberita.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
@@ -293,6 +293,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\12341241.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123wer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16352.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\berita 3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\12312311.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4123516231.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\163521.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1A1A1A11.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
