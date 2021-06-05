@@ -31,46 +31,52 @@ namespace ProjectUAS_AZHUU
             if (tujuan.Checked == true)
             {
                 sqlConnect = new MySqlConnection(connectString);
-                DataTable masuk = new DataTable();
-                sqlQuery = "select airport_name  , airport_id from airport";
+
+                DataTable dtListAirport = new DataTable();
+                sqlQuery = "select airport_id, concat('[',`airport_id`,']',`airport_name`) as `Airport` from airport";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
-                sqlAdapter.Fill(masuk);
-                cbdari.DisplayMember = "airport_name";
+                sqlAdapter.Fill(dtListAirport);
+
+                cbdari.DataSource = dtListAirport;
+                cbdari.DisplayMember = "Airport";
                 cbdari.ValueMember = "airport_id";
-                cbdari.DataSource = masuk;
 
                 sqlConnect = new MySqlConnection(connectString);
-                DataTable masuk1 = new DataTable();
-                sqlQuery = "select RUTE_DESTINATION  , RUTE_ID from RUTE";
+                DataTable dtRute = new DataTable();
+                sqlQuery = "select rute_id, rute_halte as `Halte` from rute where airport_id = '" + cbke.SelectedValue.ToString() + "' group by rute_halte";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
-                sqlAdapter.Fill(masuk1);
-                cbke.DisplayMember = "RUTE_DESTINATION";
-                cbke.ValueMember = "RUTE_ID";
-                cbke.DataSource = masuk1;
+                sqlAdapter.Fill(dtRute);
+
+                cbke.DataSource = dtRute;
+                cbke.DisplayMember = "Halte";
+                cbke.ValueMember = "Halte";
             }
             else if (airport.Checked == true)
             {
                 sqlConnect = new MySqlConnection(connectString);
-                DataTable masuk = new DataTable();
-                sqlQuery = "select airport_name  , airport_id from airport";
+                DataTable dtRute = new DataTable();
+                sqlQuery = "select rute_id, rute_halte as `Halte` from rute where airport_id = '" + cbke.SelectedValue.ToString() + "' group by rute_halte";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
-                sqlAdapter.Fill(masuk);
-                cbke.DisplayMember = "airport_name";
-                cbke.ValueMember = "airport_id";
-                cbke.DataSource = masuk;
+                sqlAdapter.Fill(dtRute);
+
+                cbke.DataSource = dtRute;
+                cbke.DisplayMember = "Halte";
+                cbke.ValueMember = "Halte";
 
                 sqlConnect = new MySqlConnection(connectString);
-                DataTable masuk1 = new DataTable();
-                sqlQuery = "select RUTE_DESTINATION  , RUTE_ID from RUTE";
+                DataTable dtListAirport = new DataTable();
+                sqlQuery = "select airport_id, concat('[',`airport_id`,']',`airport_name`) as `Airport` from airport";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
-                sqlAdapter.Fill(masuk1);
-                cbdari.DisplayMember = "RUTE_DESTINATION";
-                cbdari.ValueMember = "RUTE_ID";
-                cbdari.DataSource = masuk1;
+                sqlAdapter.Fill(dtListAirport);
+
+                cbdari.DataSource = dtListAirport;
+                cbdari.DisplayMember = "Airport";
+                cbdari.ValueMember = "airport_id";
+
 
             }
         }
