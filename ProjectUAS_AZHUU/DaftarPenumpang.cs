@@ -25,15 +25,19 @@ namespace ProjectUAS_AZHUU
 
         public static string NamaPenumpang1;
         public static string KTPPenumpang1;
+        public static string TlpnPenumpang1;
 
         public static string NamaPenumpang2;
         public static string KTPPenumpang2;
+        public static string TlpnPenumpang2;
 
         public static string NamaPenumpang3;
         public static string KTPPenumpang3;
+        public static string TlpnPenumpang3;
 
         public static string NamaPenumpang4;
         public static string KTPPenumpang4;
+        public static string TlpnPenumpang4;
 
         public static string FromTo;
         public static string POBus;
@@ -47,15 +51,19 @@ namespace ProjectUAS_AZHUU
             {
                 NamaPenumpang1 = tBoxNamaPenumpang1.Text;
                 KTPPenumpang1 = tBoxKTPPenumpang1.Text;
+                TlpnPenumpang1 = tBoxTlpnPenumpang1.Text;
 
                 NamaPenumpang2 = tBoxNamaPenumpang2.Text;
                 KTPPenumpang2 = tBoxKTPPenumpang2.Text;
+                TlpnPenumpang2 = tBoxTlpnPenumpang2.Text;
 
                 NamaPenumpang3 = tBoxNamaPenumpang3.Text;
                 KTPPenumpang3 = tBoxKTPPenumpang3.Text;
+                TlpnPenumpang3 = tBoxTlpnPenumpang3.Text;
 
                 NamaPenumpang4 = tBoxNamaPenumpang4.Text;
                 KTPPenumpang4 = tBoxKTPPenumpang4.Text;
+                TlpnPenumpang4 = tBoxTlpnPenumpang4.Text;
 
                 FromTo = labelJurusan.Text;
                 POBus = labelNamaPO.Text;
@@ -293,54 +301,6 @@ namespace ProjectUAS_AZHUU
             }
         }
 
-        private void cBoxTitlePenumpang1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                buttonDonePenumpang1.Visible = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void cBoxTitlePenumpang2_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                buttonDonePenumpang2.Visible = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void cBoxTitlePenumang3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                buttonDonePenumpang3.Visible = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void cBoxTitlePenumang4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                buttonDonePenumpang4.Visible = true;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void tBoxNamaPenumpang1_TextChanged(object sender, EventArgs e)
         {
             try
@@ -493,9 +453,52 @@ namespace ProjectUAS_AZHUU
             }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void tBoxTlpnPenumpang1_TextChanged(object sender, EventArgs e)
         {
+            try
+            {
+                buttonDonePenumpang1.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        private void tBoxTlpnPenumpang2_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                buttonDonePenumpang2.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tBoxTlpnPenumpang3_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                buttonDonePenumpang3.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tBoxTlpnPenumpang4_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                buttonDonePenumpang4.Visible = true;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

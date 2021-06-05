@@ -35,18 +35,15 @@
             this.tBoxTeleponProfile = new System.Windows.Forms.TextBox();
             this.labelDetailPenumpang = new System.Windows.Forms.Label();
             this.buttonUbahProfile = new System.Windows.Forms.Button();
-            this.cBoxTitlePenumpang1 = new System.Windows.Forms.ComboBox();
             this.tBoxNamaPenumpang1 = new System.Windows.Forms.TextBox();
             this.tBoxKTPPenumpang1 = new System.Windows.Forms.TextBox();
             this.labelPenumpang1 = new System.Windows.Forms.Label();
             this.labelPenumpang2 = new System.Windows.Forms.Label();
             this.tBoxKTPPenumpang2 = new System.Windows.Forms.TextBox();
             this.tBoxNamaPenumpang2 = new System.Windows.Forms.TextBox();
-            this.cBoxTitlePenumpang2 = new System.Windows.Forms.ComboBox();
             this.labelPenumpang3 = new System.Windows.Forms.Label();
             this.tBoxKTPPenumpang3 = new System.Windows.Forms.TextBox();
             this.tBoxNamaPenumpang3 = new System.Windows.Forms.TextBox();
-            this.cBoxTitlePenumang3 = new System.Windows.Forms.ComboBox();
             this.buttonHapusPenumpang1 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang2 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang3 = new System.Windows.Forms.Button();
@@ -61,6 +58,7 @@
             this.labelTotal = new System.Windows.Forms.Label();
             this.labelJumlahPembayaran = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.labelTanggal = new System.Windows.Forms.Label();
             this.labelIDR = new System.Windows.Forms.Label();
             this.labelNamaPenumpang4 = new System.Windows.Forms.Label();
             this.groupBoxPenumpang1 = new System.Windows.Forms.GroupBox();
@@ -76,11 +74,13 @@
             this.label1 = new System.Windows.Forms.Label();
             this.tBoxKTPPenumpang4 = new System.Windows.Forms.TextBox();
             this.tBoxNamaPenumpang4 = new System.Windows.Forms.TextBox();
-            this.cBoxTitlePenumang4 = new System.Windows.Forms.ComboBox();
             this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.labelTanggal = new System.Windows.Forms.Label();
+            this.tBoxTlpnPenumpang1 = new System.Windows.Forms.TextBox();
+            this.tBoxTlpnPenumpang2 = new System.Windows.Forms.TextBox();
+            this.tBoxTlpnPenumpang3 = new System.Windows.Forms.TextBox();
+            this.tBoxTlpnPenumpang4 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
@@ -154,21 +154,9 @@
             this.buttonUbahProfile.UseVisualStyleBackColor = false;
             this.buttonUbahProfile.Click += new System.EventHandler(this.buttonUbahProfile_Click);
             // 
-            // cBoxTitlePenumpang1
-            // 
-            this.cBoxTitlePenumpang1.FormattingEnabled = true;
-            this.cBoxTitlePenumpang1.Items.AddRange(new object[] {
-            "Mr. ",
-            "Ms. "});
-            this.cBoxTitlePenumpang1.Location = new System.Drawing.Point(14, 40);
-            this.cBoxTitlePenumpang1.Name = "cBoxTitlePenumpang1";
-            this.cBoxTitlePenumpang1.Size = new System.Drawing.Size(121, 24);
-            this.cBoxTitlePenumpang1.TabIndex = 7;
-            this.cBoxTitlePenumpang1.SelectedIndexChanged += new System.EventHandler(this.cBoxTitlePenumpang1_SelectedIndexChanged);
-            // 
             // tBoxNamaPenumpang1
             // 
-            this.tBoxNamaPenumpang1.Location = new System.Drawing.Point(14, 84);
+            this.tBoxNamaPenumpang1.Location = new System.Drawing.Point(14, 42);
             this.tBoxNamaPenumpang1.Name = "tBoxNamaPenumpang1";
             this.tBoxNamaPenumpang1.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang1.TabIndex = 8;
@@ -176,7 +164,7 @@
             // 
             // tBoxKTPPenumpang1
             // 
-            this.tBoxKTPPenumpang1.Location = new System.Drawing.Point(14, 126);
+            this.tBoxKTPPenumpang1.Location = new System.Drawing.Point(14, 84);
             this.tBoxKTPPenumpang1.Name = "tBoxKTPPenumpang1";
             this.tBoxKTPPenumpang1.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang1.TabIndex = 9;
@@ -202,7 +190,7 @@
             // 
             // tBoxKTPPenumpang2
             // 
-            this.tBoxKTPPenumpang2.Location = new System.Drawing.Point(12, 122);
+            this.tBoxKTPPenumpang2.Location = new System.Drawing.Point(21, 79);
             this.tBoxKTPPenumpang2.Name = "tBoxKTPPenumpang2";
             this.tBoxKTPPenumpang2.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang2.TabIndex = 13;
@@ -210,23 +198,11 @@
             // 
             // tBoxNamaPenumpang2
             // 
-            this.tBoxNamaPenumpang2.Location = new System.Drawing.Point(12, 80);
+            this.tBoxNamaPenumpang2.Location = new System.Drawing.Point(21, 37);
             this.tBoxNamaPenumpang2.Name = "tBoxNamaPenumpang2";
             this.tBoxNamaPenumpang2.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang2.TabIndex = 12;
             this.tBoxNamaPenumpang2.TextChanged += new System.EventHandler(this.tBoxNamaPenumpang2_TextChanged);
-            // 
-            // cBoxTitlePenumpang2
-            // 
-            this.cBoxTitlePenumpang2.FormattingEnabled = true;
-            this.cBoxTitlePenumpang2.Items.AddRange(new object[] {
-            "Mr. ",
-            "Ms. "});
-            this.cBoxTitlePenumpang2.Location = new System.Drawing.Point(12, 36);
-            this.cBoxTitlePenumpang2.Name = "cBoxTitlePenumpang2";
-            this.cBoxTitlePenumpang2.Size = new System.Drawing.Size(121, 24);
-            this.cBoxTitlePenumpang2.TabIndex = 11;
-            this.cBoxTitlePenumpang2.SelectedIndexChanged += new System.EventHandler(this.cBoxTitlePenumpang2_SelectedIndexChanged);
             // 
             // labelPenumpang3
             // 
@@ -239,7 +215,7 @@
             // 
             // tBoxKTPPenumpang3
             // 
-            this.tBoxKTPPenumpang3.Location = new System.Drawing.Point(7, 125);
+            this.tBoxKTPPenumpang3.Location = new System.Drawing.Point(7, 83);
             this.tBoxKTPPenumpang3.Name = "tBoxKTPPenumpang3";
             this.tBoxKTPPenumpang3.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang3.TabIndex = 17;
@@ -247,23 +223,11 @@
             // 
             // tBoxNamaPenumpang3
             // 
-            this.tBoxNamaPenumpang3.Location = new System.Drawing.Point(7, 83);
+            this.tBoxNamaPenumpang3.Location = new System.Drawing.Point(7, 41);
             this.tBoxNamaPenumpang3.Name = "tBoxNamaPenumpang3";
             this.tBoxNamaPenumpang3.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang3.TabIndex = 16;
             this.tBoxNamaPenumpang3.TextChanged += new System.EventHandler(this.tBoxNamaPenumpang3_TextChanged);
-            // 
-            // cBoxTitlePenumang3
-            // 
-            this.cBoxTitlePenumang3.FormattingEnabled = true;
-            this.cBoxTitlePenumang3.Items.AddRange(new object[] {
-            "Mr. ",
-            "Ms. "});
-            this.cBoxTitlePenumang3.Location = new System.Drawing.Point(7, 39);
-            this.cBoxTitlePenumang3.Name = "cBoxTitlePenumang3";
-            this.cBoxTitlePenumang3.Size = new System.Drawing.Size(121, 24);
-            this.cBoxTitlePenumang3.TabIndex = 15;
-            this.cBoxTitlePenumang3.SelectedIndexChanged += new System.EventHandler(this.cBoxTitlePenumang3_SelectedIndexChanged);
             // 
             // buttonHapusPenumpang1
             // 
@@ -415,7 +379,15 @@
             this.groupBox1.Size = new System.Drawing.Size(434, 233);
             this.groupBox1.TabIndex = 32;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // labelTanggal
+            // 
+            this.labelTanggal.AutoSize = true;
+            this.labelTanggal.Location = new System.Drawing.Point(303, 32);
+            this.labelTanggal.Name = "labelTanggal";
+            this.labelTanggal.Size = new System.Drawing.Size(60, 17);
+            this.labelTanggal.TabIndex = 34;
+            this.labelTanggal.Text = "Tanggal";
             // 
             // labelIDR
             // 
@@ -438,12 +410,12 @@
             // 
             // groupBoxPenumpang1
             // 
+            this.groupBoxPenumpang1.Controls.Add(this.tBoxTlpnPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.buttonDonePenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.buttonHapusPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.labelPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.tBoxKTPPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.tBoxNamaPenumpang1);
-            this.groupBoxPenumpang1.Controls.Add(this.cBoxTitlePenumpang1);
             this.groupBoxPenumpang1.Location = new System.Drawing.Point(50, 270);
             this.groupBoxPenumpang1.Name = "groupBoxPenumpang1";
             this.groupBoxPenumpang1.Size = new System.Drawing.Size(449, 162);
@@ -473,12 +445,12 @@
             // 
             // groupBoxPenumpang2
             // 
+            this.groupBoxPenumpang2.Controls.Add(this.tBoxTlpnPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.buttonDonePenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.buttonHapusPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.labelPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.tBoxKTPPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.tBoxNamaPenumpang2);
-            this.groupBoxPenumpang2.Controls.Add(this.cBoxTitlePenumpang2);
             this.groupBoxPenumpang2.Location = new System.Drawing.Point(43, 460);
             this.groupBoxPenumpang2.Name = "groupBoxPenumpang2";
             this.groupBoxPenumpang2.Size = new System.Drawing.Size(455, 162);
@@ -499,12 +471,12 @@
             // 
             // groupBoxPenumpang3
             // 
+            this.groupBoxPenumpang3.Controls.Add(this.tBoxTlpnPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.buttonDonePenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.buttonHapusPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.labelPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.tBoxKTPPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.tBoxNamaPenumpang3);
-            this.groupBoxPenumpang3.Controls.Add(this.cBoxTitlePenumang3);
             this.groupBoxPenumpang3.Location = new System.Drawing.Point(522, 271);
             this.groupBoxPenumpang3.Name = "groupBoxPenumpang3";
             this.groupBoxPenumpang3.Size = new System.Drawing.Size(455, 162);
@@ -525,12 +497,12 @@
             // 
             // groupBoxPenumpang4
             // 
+            this.groupBoxPenumpang4.Controls.Add(this.tBoxTlpnPenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.buttonDonePenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.buttonHapusPenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.label1);
             this.groupBoxPenumpang4.Controls.Add(this.tBoxKTPPenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.tBoxNamaPenumpang4);
-            this.groupBoxPenumpang4.Controls.Add(this.cBoxTitlePenumang4);
             this.groupBoxPenumpang4.Location = new System.Drawing.Point(522, 456);
             this.groupBoxPenumpang4.Name = "groupBoxPenumpang4";
             this.groupBoxPenumpang4.Size = new System.Drawing.Size(455, 162);
@@ -571,7 +543,7 @@
             // 
             // tBoxKTPPenumpang4
             // 
-            this.tBoxKTPPenumpang4.Location = new System.Drawing.Point(7, 125);
+            this.tBoxKTPPenumpang4.Location = new System.Drawing.Point(7, 83);
             this.tBoxKTPPenumpang4.Name = "tBoxKTPPenumpang4";
             this.tBoxKTPPenumpang4.Size = new System.Drawing.Size(422, 22);
             this.tBoxKTPPenumpang4.TabIndex = 17;
@@ -579,23 +551,11 @@
             // 
             // tBoxNamaPenumpang4
             // 
-            this.tBoxNamaPenumpang4.Location = new System.Drawing.Point(7, 83);
+            this.tBoxNamaPenumpang4.Location = new System.Drawing.Point(7, 41);
             this.tBoxNamaPenumpang4.Name = "tBoxNamaPenumpang4";
             this.tBoxNamaPenumpang4.Size = new System.Drawing.Size(422, 22);
             this.tBoxNamaPenumpang4.TabIndex = 16;
             this.tBoxNamaPenumpang4.TextChanged += new System.EventHandler(this.tBoxNamaPenumpang4_TextChanged);
-            // 
-            // cBoxTitlePenumang4
-            // 
-            this.cBoxTitlePenumang4.FormattingEnabled = true;
-            this.cBoxTitlePenumang4.Items.AddRange(new object[] {
-            "Mr. ",
-            "Ms. "});
-            this.cBoxTitlePenumang4.Location = new System.Drawing.Point(7, 39);
-            this.cBoxTitlePenumang4.Name = "cBoxTitlePenumang4";
-            this.cBoxTitlePenumang4.Size = new System.Drawing.Size(121, 24);
-            this.cBoxTitlePenumang4.TabIndex = 15;
-            this.cBoxTitlePenumang4.SelectedIndexChanged += new System.EventHandler(this.cBoxTitlePenumang4_SelectedIndexChanged);
             // 
             // buttonTambahPenumpang2
             // 
@@ -631,14 +591,37 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
-            // labelTanggal
+            // tBoxTlpnPenumpang1
             // 
-            this.labelTanggal.AutoSize = true;
-            this.labelTanggal.Location = new System.Drawing.Point(303, 32);
-            this.labelTanggal.Name = "labelTanggal";
-            this.labelTanggal.Size = new System.Drawing.Size(60, 17);
-            this.labelTanggal.TabIndex = 34;
-            this.labelTanggal.Text = "Tanggal";
+            this.tBoxTlpnPenumpang1.Location = new System.Drawing.Point(14, 126);
+            this.tBoxTlpnPenumpang1.Name = "tBoxTlpnPenumpang1";
+            this.tBoxTlpnPenumpang1.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang1.TabIndex = 21;
+            this.tBoxTlpnPenumpang1.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang1_TextChanged);
+            // 
+            // tBoxTlpnPenumpang2
+            // 
+            this.tBoxTlpnPenumpang2.Location = new System.Drawing.Point(21, 121);
+            this.tBoxTlpnPenumpang2.Name = "tBoxTlpnPenumpang2";
+            this.tBoxTlpnPenumpang2.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang2.TabIndex = 22;
+            this.tBoxTlpnPenumpang2.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang2_TextChanged);
+            // 
+            // tBoxTlpnPenumpang3
+            // 
+            this.tBoxTlpnPenumpang3.Location = new System.Drawing.Point(7, 125);
+            this.tBoxTlpnPenumpang3.Name = "tBoxTlpnPenumpang3";
+            this.tBoxTlpnPenumpang3.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang3.TabIndex = 41;
+            this.tBoxTlpnPenumpang3.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang3_TextChanged);
+            // 
+            // tBoxTlpnPenumpang4
+            // 
+            this.tBoxTlpnPenumpang4.Location = new System.Drawing.Point(7, 125);
+            this.tBoxTlpnPenumpang4.Name = "tBoxTlpnPenumpang4";
+            this.tBoxTlpnPenumpang4.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang4.TabIndex = 42;
+            this.tBoxTlpnPenumpang4.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang4_TextChanged);
             // 
             // DaftarPenumpang
             // 
@@ -691,18 +674,15 @@
         private System.Windows.Forms.TextBox tBoxTeleponProfile;
         private System.Windows.Forms.Label labelDetailPenumpang;
         private System.Windows.Forms.Button buttonUbahProfile;
-        private System.Windows.Forms.ComboBox cBoxTitlePenumpang1;
         private System.Windows.Forms.TextBox tBoxNamaPenumpang1;
         private System.Windows.Forms.TextBox tBoxKTPPenumpang1;
         private System.Windows.Forms.Label labelPenumpang1;
         private System.Windows.Forms.Label labelPenumpang2;
         private System.Windows.Forms.TextBox tBoxKTPPenumpang2;
         private System.Windows.Forms.TextBox tBoxNamaPenumpang2;
-        private System.Windows.Forms.ComboBox cBoxTitlePenumpang2;
         private System.Windows.Forms.Label labelPenumpang3;
         private System.Windows.Forms.TextBox tBoxKTPPenumpang3;
         private System.Windows.Forms.TextBox tBoxNamaPenumpang3;
-        private System.Windows.Forms.ComboBox cBoxTitlePenumang3;
         private System.Windows.Forms.Button buttonHapusPenumpang1;
         private System.Windows.Forms.Button buttonHapusPenumpang2;
         private System.Windows.Forms.Button buttonHapusPenumpang3;
@@ -727,7 +707,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tBoxKTPPenumpang4;
         private System.Windows.Forms.TextBox tBoxNamaPenumpang4;
-        private System.Windows.Forms.ComboBox cBoxTitlePenumang4;
         private System.Windows.Forms.Button buttonTambahPenumpang2;
         private System.Windows.Forms.Button buttonTambahPenumpang3;
         private System.Windows.Forms.Button buttonDonePenumpang1;
@@ -737,6 +716,10 @@
         private System.Windows.Forms.Label labelNamaPenumpang4;
         private System.Windows.Forms.Label labelIDR;
         private System.Windows.Forms.Label labelTanggal;
+        private System.Windows.Forms.TextBox tBoxTlpnPenumpang1;
+        private System.Windows.Forms.TextBox tBoxTlpnPenumpang2;
+        private System.Windows.Forms.TextBox tBoxTlpnPenumpang3;
+        private System.Windows.Forms.TextBox tBoxTlpnPenumpang4;
     }
 }
 

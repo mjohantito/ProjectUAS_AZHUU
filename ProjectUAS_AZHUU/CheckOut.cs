@@ -25,26 +25,6 @@ namespace ProjectUAS_AZHUU
 
         int Potongan;
 
-        private void buttonPay_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                DataTable dtProfile = new DataTable();
-                sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "";
-                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                sqlAdapter = new MySqlDataAdapter(sqlCommand);
-                sqlAdapter.Fill(dtProfile);
-
-                FormMyOrder formMyOrder = new FormMyOrder();
-                formMyOrder.ShowDialog();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void FormCheckout_Load(object sender, EventArgs e)
         {
             try
@@ -100,6 +80,37 @@ namespace ProjectUAS_AZHUU
                     Potongan = 200000;
                     labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonCheckOut_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dtPenumpang = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "insert into penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang1 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang1 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang2 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang2 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang2 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang3 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang3 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang3 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang4 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang4 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang4 + "' as `Telepon`, '0' as `Delete`;";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                MySqlDataReader DataPenumpang;
+                sqlConnect.Open();
+                DataPenumpang = sqlCommand.ExecuteReader();
+                sqlConnect.Close();
+
+                DataTable dtPT = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select '' as `Booking ID`";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                MySqlDataReader DataPT;
+                sqlConnect.Open();
+                DataPT = sqlCommand.ExecuteReader();
+                sqlConnect.Close();
+
+                FormMyOrder formMyOrder = new FormMyOrder();
+                formMyOrder.ShowDialog();
             }
             catch (Exception ex)
             {

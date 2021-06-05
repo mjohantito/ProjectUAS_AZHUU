@@ -212,7 +212,7 @@ namespace ProjectUAS_AZHUU
             this.buttonCheckOut.TabIndex = 24;
             this.buttonCheckOut.Text = "CheckOut";
             this.buttonCheckOut.UseVisualStyleBackColor = false;
-            this.buttonCheckOut.Click += new System.EventHandler(this.buttonPay_Click);
+            this.buttonCheckOut.Click += new System.EventHandler(this.buttonCheckOut_Click);
             // 
             // pictureBox1
             // 
