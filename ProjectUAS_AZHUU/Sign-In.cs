@@ -88,6 +88,8 @@ namespace ProjectUAS_AZHUU
                     sqlAdapter = new MySqlDataAdapter(sqlCommand);
                     sqlAdapter.Fill(dtcektitle);
 
+                    Homepagebelumlogin.ceklogin = "sudah login";
+
                     HomePage.nikkk = dtcektitle.Rows[0]["user_nik"].ToString();
                     if (dtcektitle.Rows[0]["user_title"].ToString() == "0") // user title kosong, di lempar ke profile, else di lempar ke home page
                     {
@@ -114,6 +116,32 @@ namespace ProjectUAS_AZHUU
             try
             {
                 tboxPassword.PasswordChar = '*';
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void labRegister_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var rigistir = new Register();
+                rigistir.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void butForgotPass_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var firgit = new ForgotPasswordEmail();
+                firgit.ShowDialog();
             }
             catch (Exception ex)
             {

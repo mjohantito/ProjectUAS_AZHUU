@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.tujuan = new System.Windows.Forms.RadioButton();
-            this.airport = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rbutDari = new System.Windows.Forms.RadioButton();
+            this.rbutKe = new System.Windows.Forms.RadioButton();
             this.btcari = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelDariKe = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.cbke = new System.Windows.Forms.ComboBox();
-            this.cbdari = new System.Windows.Forms.ComboBox();
-            this.tanggal = new System.Windows.Forms.DateTimePicker();
+            this.cboxHalte = new System.Windows.Forms.ComboBox();
+            this.cboxAirport = new System.Windows.Forms.ComboBox();
+            this.dtpTanggalCari = new System.Windows.Forms.DateTimePicker();
             this.btsignin = new System.Windows.Forms.Button();
             this.btsignup = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -50,79 +51,92 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.tujuan);
-            this.panel1.Controls.Add(this.airport);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.rbutDari);
+            this.panel1.Controls.Add(this.rbutKe);
             this.panel1.Controls.Add(this.btcari);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.labelDariKe);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.cbke);
-            this.panel1.Controls.Add(this.cbdari);
-            this.panel1.Controls.Add(this.tanggal);
+            this.panel1.Controls.Add(this.cboxHalte);
+            this.panel1.Controls.Add(this.cboxAirport);
+            this.panel1.Controls.Add(this.dtpTanggalCari);
             this.panel1.Location = new System.Drawing.Point(136, 311);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(530, 173);
             this.panel1.TabIndex = 2;
             // 
-            // tujuan
+            // label2
             // 
-            this.tujuan.AutoSize = true;
-            this.tujuan.Location = new System.Drawing.Point(51, 12);
-            this.tujuan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tujuan.Name = "tujuan";
-            this.tujuan.Size = new System.Drawing.Size(84, 17);
-            this.tujuan.TabIndex = 22;
-            this.tujuan.TabStop = true;
-            this.tujuan.Text = "Asal - Airport";
-            this.tujuan.UseVisualStyleBackColor = true;
-            this.tujuan.CheckedChanged += new System.EventHandler(this.tujuan_CheckedChanged);
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(215, 14);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.TabIndex = 23;
+            this.label2.Text = "Airport";
             // 
-            // airport
+            // rbutDari
             // 
-            this.airport.AutoSize = true;
-            this.airport.Location = new System.Drawing.Point(146, 12);
-            this.airport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.airport.Name = "airport";
-            this.airport.Size = new System.Drawing.Size(97, 17);
-            this.airport.TabIndex = 10;
-            this.airport.TabStop = true;
-            this.airport.Text = "Airport - Tujuan";
-            this.airport.UseVisualStyleBackColor = true;
-            this.airport.CheckedChanged += new System.EventHandler(this.airport_CheckedChanged);
+            this.rbutDari.AutoSize = true;
+            this.rbutDari.Location = new System.Drawing.Point(51, 12);
+            this.rbutDari.Margin = new System.Windows.Forms.Padding(2);
+            this.rbutDari.Name = "rbutDari";
+            this.rbutDari.Size = new System.Drawing.Size(44, 17);
+            this.rbutDari.TabIndex = 22;
+            this.rbutDari.TabStop = true;
+            this.rbutDari.Text = "Dari";
+            this.rbutDari.UseVisualStyleBackColor = true;
+            this.rbutDari.CheckedChanged += new System.EventHandler(this.rbutDari_CheckedChanged);
+            // 
+            // rbutKe
+            // 
+            this.rbutKe.AutoSize = true;
+            this.rbutKe.Location = new System.Drawing.Point(146, 12);
+            this.rbutKe.Margin = new System.Windows.Forms.Padding(2);
+            this.rbutKe.Name = "rbutKe";
+            this.rbutKe.Size = new System.Drawing.Size(38, 17);
+            this.rbutKe.TabIndex = 10;
+            this.rbutKe.TabStop = true;
+            this.rbutKe.Text = "Ke";
+            this.rbutKe.UseVisualStyleBackColor = true;
+            this.rbutKe.CheckedChanged += new System.EventHandler(this.rbutKe_CheckedChanged);
             // 
             // btcari
             // 
             this.btcari.BackColor = System.Drawing.Color.Yellow;
-            this.btcari.Location = new System.Drawing.Point(290, 89);
-            this.btcari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btcari.Location = new System.Drawing.Point(360, 116);
+            this.btcari.Margin = new System.Windows.Forms.Padding(2);
             this.btcari.Name = "btcari";
             this.btcari.Size = new System.Drawing.Size(136, 28);
             this.btcari.TabIndex = 21;
             this.btcari.Text = "Cari";
             this.btcari.UseVisualStyleBackColor = false;
+            this.btcari.Click += new System.EventHandler(this.btcari_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(264, 31);
+            this.label3.Location = new System.Drawing.Point(290, 31);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Tanggal :";
             // 
-            // label2
+            // labelDariKe
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(49, 73);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 13);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Ke :";
+            this.labelDariKe.AutoSize = true;
+            this.labelDariKe.BackColor = System.Drawing.Color.Transparent;
+            this.labelDariKe.Location = new System.Drawing.Point(49, 100);
+            this.labelDariKe.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelDariKe.Name = "labelDariKe";
+            this.labelDariKe.Size = new System.Drawing.Size(26, 13);
+            this.labelDariKe.TabIndex = 18;
+            this.labelDariKe.Text = "Ke :";
             // 
             // label1
             // 
@@ -131,54 +145,55 @@
             this.label1.Location = new System.Drawing.Point(47, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(32, 13);
+            this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 17;
-            this.label1.Text = "Dari :";
+            this.label1.Text = "Airport :";
             // 
-            // cbke
+            // cboxHalte
             // 
-            this.cbke.FormattingEnabled = true;
-            this.cbke.Location = new System.Drawing.Point(46, 89);
-            this.cbke.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cbke.Name = "cbke";
-            this.cbke.Size = new System.Drawing.Size(182, 21);
-            this.cbke.TabIndex = 14;
+            this.cboxHalte.FormattingEnabled = true;
+            this.cboxHalte.Location = new System.Drawing.Point(46, 116);
+            this.cboxHalte.Margin = new System.Windows.Forms.Padding(2);
+            this.cboxHalte.Name = "cboxHalte";
+            this.cboxHalte.Size = new System.Drawing.Size(182, 21);
+            this.cboxHalte.TabIndex = 14;
             // 
-            // cbdari
+            // cboxAirport
             // 
-            this.cbdari.FormattingEnabled = true;
-            this.cbdari.Location = new System.Drawing.Point(46, 46);
-            this.cbdari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.cbdari.Name = "cbdari";
-            this.cbdari.Size = new System.Drawing.Size(182, 21);
-            this.cbdari.TabIndex = 13;
+            this.cboxAirport.FormattingEnabled = true;
+            this.cboxAirport.Location = new System.Drawing.Point(46, 46);
+            this.cboxAirport.Margin = new System.Windows.Forms.Padding(2);
+            this.cboxAirport.Name = "cboxAirport";
+            this.cboxAirport.Size = new System.Drawing.Size(222, 21);
+            this.cboxAirport.TabIndex = 13;
+            this.cboxAirport.SelectedIndexChanged += new System.EventHandler(this.cboxAirport_SelectedIndexChanged);
             // 
-            // tanggal
+            // dtpTanggalCari
             // 
-            this.tanggal.Location = new System.Drawing.Point(264, 46);
-            this.tanggal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tanggal.Name = "tanggal";
-            this.tanggal.Size = new System.Drawing.Size(206, 20);
-            this.tanggal.TabIndex = 16;
+            this.dtpTanggalCari.Location = new System.Drawing.Point(290, 46);
+            this.dtpTanggalCari.Margin = new System.Windows.Forms.Padding(2);
+            this.dtpTanggalCari.Name = "dtpTanggalCari";
+            this.dtpTanggalCari.Size = new System.Drawing.Size(206, 20);
+            this.dtpTanggalCari.TabIndex = 16;
+            this.dtpTanggalCari.ValueChanged += new System.EventHandler(this.dtpTanggalCari_ValueChanged);
             // 
             // btsignin
             // 
             this.btsignin.BackColor = System.Drawing.Color.Yellow;
             this.btsignin.Location = new System.Drawing.Point(17, 19);
-            this.btsignin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btsignin.Margin = new System.Windows.Forms.Padding(2);
             this.btsignin.Name = "btsignin";
             this.btsignin.Size = new System.Drawing.Size(93, 20);
             this.btsignin.TabIndex = 7;
             this.btsignin.Text = "Sign-in";
             this.btsignin.UseVisualStyleBackColor = false;
             this.btsignin.Click += new System.EventHandler(this.btsignin_Click);
-            this.btsignin.MouseHover += new System.EventHandler(this.btsignin_MouseHover);
             // 
             // btsignup
             // 
             this.btsignup.BackColor = System.Drawing.Color.Yellow;
             this.btsignup.Location = new System.Drawing.Point(16, 52);
-            this.btsignup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btsignup.Margin = new System.Windows.Forms.Padding(2);
             this.btsignup.Name = "btsignup";
             this.btsignup.Size = new System.Drawing.Size(93, 19);
             this.btsignup.TabIndex = 8;
@@ -192,7 +207,7 @@
             this.panel2.Controls.Add(this.btsignin);
             this.panel2.Controls.Add(this.btsignup);
             this.panel2.Location = new System.Drawing.Point(68, 187);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(136, 71);
             this.panel2.TabIndex = 9;
@@ -201,13 +216,12 @@
             // 
             this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.hppppppp;
             this.pictureBox1.Location = new System.Drawing.Point(-33, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(982, 541);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Homepagebelumlogin
             // 
@@ -217,9 +231,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Homepagebelumlogin";
-            this.Text = "Form1";
+            this.Text = "Homepage";
             this.Load += new System.EventHandler(this.Homepagebelumlogin_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -234,16 +248,17 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btcari;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelDariKe;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox cbke;
-        private System.Windows.Forms.ComboBox cbdari;
-        private System.Windows.Forms.DateTimePicker tanggal;
+        private System.Windows.Forms.ComboBox cboxHalte;
+        private System.Windows.Forms.ComboBox cboxAirport;
+        private System.Windows.Forms.DateTimePicker dtpTanggalCari;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btsignin;
         private System.Windows.Forms.Button btsignup;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.RadioButton tujuan;
-        private System.Windows.Forms.RadioButton airport;
+        private System.Windows.Forms.RadioButton rbutDari;
+        private System.Windows.Forms.RadioButton rbutKe;
+        private System.Windows.Forms.Label label2;
     }
 }

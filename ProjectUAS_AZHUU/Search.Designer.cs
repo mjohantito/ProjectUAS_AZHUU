@@ -30,6 +30,9 @@
         {
             this.dgvRute = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rbutKe = new System.Windows.Forms.RadioButton();
+            this.rbutDari = new System.Windows.Forms.RadioButton();
             this.butCari = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.labelDariKe = new System.Windows.Forms.Label();
@@ -38,9 +41,6 @@
             this.cboxAirport = new System.Windows.Forms.ComboBox();
             this.dtpTanggalCari = new System.Windows.Forms.DateTimePicker();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rbutDari = new System.Windows.Forms.RadioButton();
-            this.rbutKe = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRute)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -50,12 +50,13 @@
             // 
             this.dgvRute.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvRute.Location = new System.Drawing.Point(104, 269);
-            this.dgvRute.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvRute.Margin = new System.Windows.Forms.Padding(2);
             this.dgvRute.Name = "dgvRute";
             this.dgvRute.RowHeadersWidth = 51;
             this.dgvRute.RowTemplate.Height = 24;
             this.dgvRute.Size = new System.Drawing.Size(1083, 388);
             this.dgvRute.TabIndex = 1;
+            this.dgvRute.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRute_CellClick);
             // 
             // panel1
             // 
@@ -71,16 +72,49 @@
             this.panel1.Controls.Add(this.cboxAirport);
             this.panel1.Controls.Add(this.dtpTanggalCari);
             this.panel1.Location = new System.Drawing.Point(154, 57);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(620, 180);
             this.panel1.TabIndex = 2;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(226, 14);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(37, 13);
+            this.label4.TabIndex = 24;
+            this.label4.Text = "Airport";
+            // 
+            // rbutKe
+            // 
+            this.rbutKe.AutoSize = true;
+            this.rbutKe.Location = new System.Drawing.Point(135, 12);
+            this.rbutKe.Name = "rbutKe";
+            this.rbutKe.Size = new System.Drawing.Size(38, 17);
+            this.rbutKe.TabIndex = 23;
+            this.rbutKe.TabStop = true;
+            this.rbutKe.Text = "Ke";
+            this.rbutKe.UseVisualStyleBackColor = true;
+            this.rbutKe.CheckedChanged += new System.EventHandler(this.rbutKe_CheckedChanged);
+            // 
+            // rbutDari
+            // 
+            this.rbutDari.AutoSize = true;
+            this.rbutDari.Location = new System.Drawing.Point(46, 12);
+            this.rbutDari.Name = "rbutDari";
+            this.rbutDari.Size = new System.Drawing.Size(44, 17);
+            this.rbutDari.TabIndex = 22;
+            this.rbutDari.TabStop = true;
+            this.rbutDari.Text = "Dari";
+            this.rbutDari.UseVisualStyleBackColor = true;
+            this.rbutDari.CheckedChanged += new System.EventHandler(this.rbutDari_CheckedChanged);
             // 
             // butCari
             // 
             this.butCari.BackColor = System.Drawing.Color.Yellow;
             this.butCari.Location = new System.Drawing.Point(455, 119);
-            this.butCari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.butCari.Margin = new System.Windows.Forms.Padding(2);
             this.butCari.Name = "butCari";
             this.butCari.Size = new System.Drawing.Size(136, 28);
             this.butCari.TabIndex = 21;
@@ -125,7 +159,7 @@
             // 
             this.cboxHalte.FormattingEnabled = true;
             this.cboxHalte.Location = new System.Drawing.Point(42, 119);
-            this.cboxHalte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxHalte.Margin = new System.Windows.Forms.Padding(2);
             this.cboxHalte.Name = "cboxHalte";
             this.cboxHalte.Size = new System.Drawing.Size(182, 21);
             this.cboxHalte.TabIndex = 14;
@@ -134,7 +168,7 @@
             // 
             this.cboxAirport.FormattingEnabled = true;
             this.cboxAirport.Location = new System.Drawing.Point(42, 67);
-            this.cboxAirport.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cboxAirport.Margin = new System.Windows.Forms.Padding(2);
             this.cboxAirport.Name = "cboxAirport";
             this.cboxAirport.Size = new System.Drawing.Size(278, 21);
             this.cboxAirport.TabIndex = 13;
@@ -143,54 +177,22 @@
             // dtpTanggalCari
             // 
             this.dtpTanggalCari.Location = new System.Drawing.Point(385, 68);
-            this.dtpTanggalCari.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpTanggalCari.Margin = new System.Windows.Forms.Padding(2);
             this.dtpTanggalCari.Name = "dtpTanggalCari";
             this.dtpTanggalCari.Size = new System.Drawing.Size(206, 20);
             this.dtpTanggalCari.TabIndex = 16;
+            this.dtpTanggalCari.ValueChanged += new System.EventHandler(this.dtpTanggalCari_ValueChanged);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.Search;
             this.pictureBox1.Location = new System.Drawing.Point(0, -4);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1265, 690);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // rbutDari
-            // 
-            this.rbutDari.AutoSize = true;
-            this.rbutDari.Location = new System.Drawing.Point(46, 12);
-            this.rbutDari.Name = "rbutDari";
-            this.rbutDari.Size = new System.Drawing.Size(44, 17);
-            this.rbutDari.TabIndex = 22;
-            this.rbutDari.TabStop = true;
-            this.rbutDari.Text = "Dari";
-            this.rbutDari.UseVisualStyleBackColor = true;
-            this.rbutDari.CheckedChanged += new System.EventHandler(this.rbutDari_CheckedChanged);
-            // 
-            // rbutKe
-            // 
-            this.rbutKe.AutoSize = true;
-            this.rbutKe.Location = new System.Drawing.Point(135, 12);
-            this.rbutKe.Name = "rbutKe";
-            this.rbutKe.Size = new System.Drawing.Size(38, 17);
-            this.rbutKe.TabIndex = 23;
-            this.rbutKe.TabStop = true;
-            this.rbutKe.Text = "Ke";
-            this.rbutKe.UseVisualStyleBackColor = true;
-            this.rbutKe.CheckedChanged += new System.EventHandler(this.rbutKe_CheckedChanged);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(226, 14);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(37, 13);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Airport";
             // 
             // Search
             // 
@@ -200,7 +202,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvRute);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Search";
             this.Text = "Search";
             this.Load += new System.EventHandler(this.Search_Load);

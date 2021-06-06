@@ -89,20 +89,21 @@
             // 
             this.labRegister.AutoSize = true;
             this.labRegister.ForeColor = System.Drawing.Color.DarkOrange;
-            this.labRegister.Location = new System.Drawing.Point(218, 620);
+            this.labRegister.Location = new System.Drawing.Point(231, 620);
             this.labRegister.Name = "labRegister";
             this.labRegister.Size = new System.Drawing.Size(30, 13);
             this.labRegister.TabIndex = 20;
             this.labRegister.Text = "Here";
+            this.labRegister.Click += new System.EventHandler(this.labRegister_Click);
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(80, 619);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(142, 13);
+            this.label8.Size = new System.Drawing.Size(149, 13);
             this.label8.TabIndex = 19;
-            this.label8.Text = "Don\'t have account? Sign in";
+            this.label8.Text = "Don\'t have account? Register";
             // 
             // label2
             // 
@@ -131,12 +132,13 @@
             this.butForgotPass.TabIndex = 23;
             this.butForgotPass.Text = "Forgot Password";
             this.butForgotPass.UseVisualStyleBackColor = true;
+            this.butForgotPass.Click += new System.EventHandler(this.butForgotPass_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources.Purple_Space_Opera_Education_Presentation;
             this.pictureBox1.Location = new System.Drawing.Point(-4, -3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1271, 700);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

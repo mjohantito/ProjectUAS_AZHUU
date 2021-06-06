@@ -25,12 +25,17 @@ namespace ProjectUAS_AZHUU
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
-        string fromto = "F"; // dari homepage
+        string fromto = Homepagebelumlogin.fromto; // dari homepage
+        DateTime dateeeee =  Convert.ToDateTime(Homepagebelumlogin.dateee);
+
+        public static string ruteidd;
+
         private void Search_Load(object sender, EventArgs e)
         {
             loadcbox();
-            cboxAirport.SelectedValue = "CGK"; // dari homepage
-            cboxHalte.SelectedValue = "BNI City"; // darihomepage
+            cboxAirport.SelectedValue = Homepagebelumlogin.airport; // dari homepage
+            cboxHalte.SelectedValue = Homepagebelumlogin.halte; // darihomepage
+            dtpTanggalCari.Value = (DateTime)dateeeee;
             if(fromto == "F")
             {
                 rbutDari.Checked = true;
@@ -122,7 +127,7 @@ namespace ProjectUAS_AZHUU
                 sqlConnect = new MySqlConnection(connectString);
 
                 DataTable dtsearch = new DataTable();
-                sqlQuery = "select a.rute_id, `PO BUS`, Jenis,IFNULL(`Sisa Kursi` - `apagitu`,`Sisa Kursi`) as `Sisa Kursi`, Halte, Waktu, `Harga`   from  (select rute_id, pobus_name as `PO BUS`, v_jenis as `Jenis`, v_capacity as `Sisa Kursi`, concat(if (rute_fromto = 'F','Ke','Dari'),'  ', rute_halte) as `Halte`,RUTE_WAKTUBERANGKAT as `Waktu`, rute_price as `Harga`   from rute r, po_bus p, vehicle v where p.pobus_id = r.pobus_id and v.v_id = r.v_id and airport_id = '"+cboxAirport.SelectedValue.ToString()+"' and RUTE_FROMTO = '"+fromto+"' and RUTE_HALTE = '"+cboxHalte.SelectedValue.ToString()+ "') a left join(select tp_tanggalbooking as `Tanggal Booking`, rute_id, count(*) as `apagitu` from pesan_transaksi group by rute_id) b on a.rute_id = b.rute_id where `Tanggal Booking` = '"+dateee+"'";
+                sqlQuery = "select a.rute_id as `Rute ID`, `PO BUS`, Jenis,IFNULL(`Sisa Kursi` - `apagitu`,`Sisa Kursi`) as `Sisa Kursi`, Halte, Waktu, `Harga`   from  (select rute_id, pobus_name as `PO BUS`, v_jenis as `Jenis`, v_capacity as `Sisa Kursi`, concat(if (rute_fromto = 'F','Ke','Dari'),'  ', rute_halte) as `Halte`,RUTE_WAKTUBERANGKAT as `Waktu`, rute_price as `Harga`   from rute r, po_bus p, vehicle v where p.pobus_id = v.pobus_id and v.v_id = r.v_id and airport_id = '"+cboxAirport.SelectedValue.ToString()+"' and RUTE_FROMTO = '"+fromto+"' and RUTE_HALTE = '"+cboxHalte.SelectedValue.ToString()+ "') a left join(select tp_tanggalbooking as `Tanggal Booking`, rute_id, count(*) as `apagitu` from pesan_transaksi group by rute_id) b on a.rute_id = b.rute_id";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtsearch);
@@ -135,6 +140,34 @@ namespace ProjectUAS_AZHUU
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void dgvRute_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                if(Homepagebelumlogin.ceklogin == "belum login")
+                {
+                    MessageBox.Show("Login Terlebih dahulu!");
+                    var logiin = new Sign_In();
+                    logiin.ShowDialog();
+                }
+                else
+                {
+                    ruteidd = dgvRute.Rows[e.RowIndex].Cells["Rute ID"].ToString();
+                    var diftirpinimping = new DaftarPenumpang();
+                    diftirpinimping.ShowDialog();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dtpTanggalCari_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
