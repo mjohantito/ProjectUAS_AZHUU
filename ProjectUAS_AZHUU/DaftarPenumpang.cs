@@ -45,6 +45,8 @@ namespace ProjectUAS_AZHUU
 
         public static string Tanggal;
 
+        public static int counterPenumpang;
+
         private void buttonContinue_Click(object sender, EventArgs e)
         {
             try
@@ -69,6 +71,23 @@ namespace ProjectUAS_AZHUU
                 POBus = labelNamaPO.Text;
                 Subtotal = Convert.ToInt32(labelJumlahPembayaran.Text);
                 Tanggal = labelTanggal.Text;
+
+                if(labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    counterPenumpang = 4;
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    counterPenumpang = 3;
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    counterPenumpang = 2;
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    counterPenumpang = 1;
+                }
 
                 FormCheckout formCheckout = new FormCheckout();
                 formCheckout.ShowDialog();
@@ -100,6 +119,26 @@ namespace ProjectUAS_AZHUU
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
 
+                DataTable dtRute = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select concat(airport_id, ' ', if (rute_fromto = 'F','Ke','Dari'),'  ', rute_halte) as `Rute` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtRute);
+
+                labelJurusan.Text = dtRute.Rows[0]["Rute"].ToString();
+
+                string POID = Search.ruteidd.ToString().Substring(0, 4);
+
+                DataTable dtPOBus = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select pobus_name as `Nama PO` from po_bus where  pobus_id  = '" + POID + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtPOBus);
+
+                labelNamaPO.Text = dtPOBus.Rows[0]["Nama PO"].ToString();
+
                 DataTable dtProfile = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
                 sqlQuery = "select user_title as `Title`, user_name as `User Name`, user_email as `User Email`, user_telp as `User Telp` from user_azhuu where user_nik = '" + HomePage.nikkk + "';";
@@ -115,7 +154,7 @@ namespace ProjectUAS_AZHUU
 
                 DataTable dtTanggal = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select curdate() as `Tanggal`";
+                sqlQuery = "select curdate() as `Tanggal`;";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtTanggal);
@@ -123,6 +162,8 @@ namespace ProjectUAS_AZHUU
 
                 Subtotal = 0;
                 labelJumlahPembayaran.Text = Subtotal.ToString();
+
+                counterPenumpang = 0;
             }
             catch (Exception ex)
             {

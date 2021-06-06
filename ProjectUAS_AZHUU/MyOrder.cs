@@ -21,5 +21,10 @@ namespace ProjectUAS_AZHUU
         {
 
         }
+
+        private void FormMyOrder_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

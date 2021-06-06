@@ -490,6 +490,7 @@ namespace ProjectUAS_AZHUU
             this.Controls.Add(this.pictureBox1);
             this.Name = "FormMyOrder";
             this.Text = "My Order";
+            this.Load += new System.EventHandler(this.FormMyOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
