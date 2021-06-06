@@ -189,5 +189,12 @@ namespace ProjectUAS_AZHUU
                 throw;
             }
         }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            var formprofile = new FormMyOrder();
+            formprofile.ShowDialog();
+
+        }
     }
 }
