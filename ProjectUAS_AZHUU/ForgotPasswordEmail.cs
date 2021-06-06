@@ -22,9 +22,8 @@ namespace ProjectUAS_AZHUU
         MySqlDataAdapter sqlAdapter;
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
-        int cekemail = 0;
 
-        public string emailforgot = "";
+        public static string emailforgot = "";
         private void ForgotPasswordEmail_Load(object sender, EventArgs e)
         {
 
@@ -46,6 +45,7 @@ namespace ProjectUAS_AZHUU
             }
             else
             {
+                this.Hide();
                 emailforgot = tbEmail.Text;
                 var pwnotelp = new ForgotPasswordNoTelp();
                 pwnotelp.ShowDialog();

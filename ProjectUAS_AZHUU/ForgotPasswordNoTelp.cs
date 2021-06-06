@@ -22,29 +22,15 @@ namespace ProjectUAS_AZHUU
         MySqlDataAdapter sqlAdapter;
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
-        int cekemail = 0;
 
-        private void label2_Click(object sender, EventArgs e)
-        {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbNoTelp_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+        string emailforgot = ForgotPasswordEmail.emailforgot;
         private void butContinue_Click(object sender, EventArgs e)
         {
-            ForgotPasswordEmail fe = new ForgotPasswordEmail();
+            //ForgotPasswordEmail fe = new ForgotPasswordEmail();
             sqlConnect = new MySqlConnection(connectString);
             DataTable masuk1 = new DataTable();
-            sqlQuery = "select * from user_azhuu where USER_TELP  = '" + tbNoTelp.Text + "' and USER_EMAIL = '" +fe.emailforgot+ "' ";
+            sqlQuery = "select * from user_azhuu where USER_TELP  = '" + tbNoTelp.Text + "' and USER_EMAIL = '" +emailforgot+ "' ";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(masuk1);
@@ -55,6 +41,7 @@ namespace ProjectUAS_AZHUU
             }
             else
             {
+                this.Hide();
                 var pwnew = new NewPassword();
                 pwnew.ShowDialog();
             }
@@ -69,7 +56,7 @@ namespace ProjectUAS_AZHUU
 
         private void ForgotPasswordNoTelp_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

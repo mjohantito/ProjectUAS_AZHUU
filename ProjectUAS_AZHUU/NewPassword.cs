@@ -37,15 +37,19 @@ namespace ProjectUAS_AZHUU
             }
             else
             {
-                ForgotPasswordEmail vt = new ForgotPasswordEmail();
+                // masih belom selesai, close semua form di sebelum ini
+
+                // ForgotPasswordEmail vt = new ForgotPasswordEmail();
                 sqlConnect = new MySqlConnection(connectString);
                 DataTable masuk1 = new DataTable();
-                sqlQuery = "update user_azhuu set USER_PASSWORD = '" + tbpasword.Text + "' where USER_EMAIL = '" + vt.tbEmail.Text + "' ";
+                sqlQuery = "update user_azhuu set USER_PASSWORD = '" + tbpasword.Text + "' where USER_EMAIL = '" + ForgotPasswordEmail.emailforgot + "' ";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(masuk1);
 
-                labError.Text = " paswword sudah diganti";
+                //labError.Text = " paswword sudah diganti";
+
+                // password di password char '*';
 
             }
 
