@@ -115,7 +115,7 @@ namespace ProjectUAS_AZHUU
 
                 DataTable dtTanggal = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select curdate() as `Tanggal;";
+                sqlQuery = "select curdate() as `Tanggal`";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtTanggal);

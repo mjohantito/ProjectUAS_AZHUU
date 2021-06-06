@@ -53,6 +53,8 @@ namespace ProjectUAS_AZHUU
 
                 string tanggalbook = Homepagebelumlogin.dateee;
                 string idTengah = tanggalbook.Substring(0, 2) + tanggalbook.Substring(3, 2) + tanggalbook.Substring(6, 4);
+
+                
                 BookingID = Search.ruteidd + idTengah; // terakhir disini brian
                 labelisiIDBooking.Text = BookingID;
             }
