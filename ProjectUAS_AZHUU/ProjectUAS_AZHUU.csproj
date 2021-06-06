@@ -152,6 +152,12 @@
     <Compile Include="Sign-In.Designer.cs">
       <DependentUpon>Sign-In.cs</DependentUpon>
     </Compile>
+    <Compile Include="sudahpagiiii.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>sudahpagiiii.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="CheckOut.resx">
       <DependentUpon>CheckOut.cs</DependentUpon>
     </EmbeddedResource>
@@ -210,6 +216,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Sign-In.resx">
       <DependentUpon>Sign-In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sudahpagiiii.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>sudahpagiiii.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
