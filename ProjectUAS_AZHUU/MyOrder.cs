@@ -20,7 +20,7 @@ namespace ProjectUAS_AZHUU
         MySqlConnection sqlConnect;
         MySqlCommand sqlCommand;
         MySqlDataAdapter sqlAdapter;
-        string connectString = "server=localhost;uid=root;pwd=;database=premier_league;";
+        string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
         private void FormMyOrder_Load(object sender, EventArgs e)

@@ -29,6 +29,7 @@ namespace ProjectUAS_AZHUU
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCheckout));
             this.labelCart = new System.Windows.Forms.Label();
             this.labelFromTo = new System.Windows.Forms.Label();
             this.labelPenumpang1 = new System.Windows.Forms.Label();
@@ -54,6 +55,7 @@ namespace ProjectUAS_AZHUU
             this.labelisiIDBooking = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.labelRp3 = new System.Windows.Forms.Label();
+            this.butInvoice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,99 +63,110 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelCart.AutoSize = true;
             this.labelCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelCart.Location = new System.Drawing.Point(110, 104);
+            this.labelCart.Location = new System.Drawing.Point(82, 84);
+            this.labelCart.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelCart.Name = "labelCart";
-            this.labelCart.Size = new System.Drawing.Size(91, 32);
+            this.labelCart.Size = new System.Drawing.Size(71, 26);
             this.labelCart.TabIndex = 0;
             this.labelCart.Text = "CART";
             // 
             // labelFromTo
             // 
             this.labelFromTo.AutoSize = true;
-            this.labelFromTo.Location = new System.Drawing.Point(110, 203);
+            this.labelFromTo.Location = new System.Drawing.Point(82, 165);
+            this.labelFromTo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelFromTo.Name = "labelFromTo";
-            this.labelFromTo.Size = new System.Drawing.Size(150, 17);
+            this.labelFromTo.Size = new System.Drawing.Size(111, 13);
             this.labelFromTo.TabIndex = 1;
             this.labelFromTo.Text = "Blablabla --> Blablabla";
             // 
             // labelPenumpang1
             // 
             this.labelPenumpang1.AutoSize = true;
-            this.labelPenumpang1.Location = new System.Drawing.Point(160, 270);
+            this.labelPenumpang1.Location = new System.Drawing.Point(120, 219);
+            this.labelPenumpang1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPenumpang1.Name = "labelPenumpang1";
-            this.labelPenumpang1.Size = new System.Drawing.Size(188, 17);
+            this.labelPenumpang1.Size = new System.Drawing.Size(142, 13);
             this.labelPenumpang1.TabIndex = 2;
             this.labelPenumpang1.Text = "Yohan Wijaya - 0123456789";
             // 
             // labelPenumpang2
             // 
             this.labelPenumpang2.AutoSize = true;
-            this.labelPenumpang2.Location = new System.Drawing.Point(160, 306);
+            this.labelPenumpang2.Location = new System.Drawing.Point(120, 249);
+            this.labelPenumpang2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPenumpang2.Name = "labelPenumpang2";
-            this.labelPenumpang2.Size = new System.Drawing.Size(186, 17);
+            this.labelPenumpang2.Size = new System.Drawing.Size(139, 13);
             this.labelPenumpang2.TabIndex = 3;
             this.labelPenumpang2.Text = "Billy Anthony  - 9876543210";
             // 
             // labelPromo
             // 
             this.labelPromo.AutoSize = true;
-            this.labelPromo.Location = new System.Drawing.Point(116, 487);
+            this.labelPromo.Location = new System.Drawing.Point(87, 396);
+            this.labelPromo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPromo.Name = "labelPromo";
-            this.labelPromo.Size = new System.Drawing.Size(49, 17);
+            this.labelPromo.Size = new System.Drawing.Size(37, 13);
             this.labelPromo.TabIndex = 4;
             this.labelPromo.Text = "Promo";
             // 
             // labelJumlahPromo
             // 
             this.labelJumlahPromo.AutoSize = true;
-            this.labelJumlahPromo.Location = new System.Drawing.Point(249, 487);
+            this.labelJumlahPromo.Location = new System.Drawing.Point(187, 396);
+            this.labelJumlahPromo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelJumlahPromo.Name = "labelJumlahPromo";
-            this.labelJumlahPromo.Size = new System.Drawing.Size(42, 17);
+            this.labelJumlahPromo.Size = new System.Drawing.Size(35, 13);
             this.labelJumlahPromo.TabIndex = 5;
             this.labelJumlahPromo.Text = "xx.xxx";
             // 
             // labelJumlahSubtotal
             // 
             this.labelJumlahSubtotal.AutoSize = true;
-            this.labelJumlahSubtotal.Location = new System.Drawing.Point(249, 458);
+            this.labelJumlahSubtotal.Location = new System.Drawing.Point(187, 372);
+            this.labelJumlahSubtotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelJumlahSubtotal.Name = "labelJumlahSubtotal";
-            this.labelJumlahSubtotal.Size = new System.Drawing.Size(42, 17);
+            this.labelJumlahSubtotal.Size = new System.Drawing.Size(35, 13);
             this.labelJumlahSubtotal.TabIndex = 10;
             this.labelJumlahSubtotal.Text = "xx.xxx";
             // 
             // labelSubtotal
             // 
             this.labelSubtotal.AutoSize = true;
-            this.labelSubtotal.Location = new System.Drawing.Point(116, 458);
+            this.labelSubtotal.Location = new System.Drawing.Point(87, 372);
+            this.labelSubtotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelSubtotal.Name = "labelSubtotal";
-            this.labelSubtotal.Size = new System.Drawing.Size(60, 17);
+            this.labelSubtotal.Size = new System.Drawing.Size(46, 13);
             this.labelSubtotal.TabIndex = 9;
             this.labelSubtotal.Text = "Subtotal";
             // 
             // labelPenumpang4
             // 
             this.labelPenumpang4.AutoSize = true;
-            this.labelPenumpang4.Location = new System.Drawing.Point(160, 382);
+            this.labelPenumpang4.Location = new System.Drawing.Point(120, 310);
+            this.labelPenumpang4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPenumpang4.Name = "labelPenumpang4";
-            this.labelPenumpang4.Size = new System.Drawing.Size(189, 17);
+            this.labelPenumpang4.Size = new System.Drawing.Size(141, 13);
             this.labelPenumpang4.TabIndex = 8;
             this.labelPenumpang4.Text = "Billy Nugroho  - 9876543210";
             // 
             // labelPenumpang3
             // 
             this.labelPenumpang3.AutoSize = true;
-            this.labelPenumpang3.Location = new System.Drawing.Point(160, 346);
+            this.labelPenumpang3.Location = new System.Drawing.Point(120, 281);
+            this.labelPenumpang3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPenumpang3.Name = "labelPenumpang3";
-            this.labelPenumpang3.Size = new System.Drawing.Size(203, 17);
+            this.labelPenumpang3.Size = new System.Drawing.Size(153, 13);
             this.labelPenumpang3.TabIndex = 7;
             this.labelPenumpang3.Text = "Zefanya Wijaya  - 0123456789";
             // 
             // labelPOBus
             // 
             this.labelPOBus.AutoSize = true;
-            this.labelPOBus.Location = new System.Drawing.Point(110, 229);
+            this.labelPOBus.Location = new System.Drawing.Point(82, 186);
+            this.labelPOBus.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelPOBus.Name = "labelPOBus";
-            this.labelPOBus.Size = new System.Drawing.Size(108, 17);
+            this.labelPOBus.Size = new System.Drawing.Size(82, 13);
             this.labelPOBus.TabIndex = 6;
             this.labelPOBus.Text = "Po Bus Hanjayy";
             // 
@@ -161,9 +174,10 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelTotal.AutoSize = true;
             this.labelTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTotal.Location = new System.Drawing.Point(114, 584);
+            this.labelTotal.Location = new System.Drawing.Point(86, 474);
+            this.labelTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelTotal.Name = "labelTotal";
-            this.labelTotal.Size = new System.Drawing.Size(68, 29);
+            this.labelTotal.Size = new System.Drawing.Size(51, 24);
             this.labelTotal.TabIndex = 11;
             this.labelTotal.Text = "Total";
             // 
@@ -171,9 +185,10 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelJumlahTotal.AutoSize = true;
             this.labelJumlahTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJumlahTotal.Location = new System.Drawing.Point(355, 584);
+            this.labelJumlahTotal.Location = new System.Drawing.Point(266, 474);
+            this.labelJumlahTotal.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelJumlahTotal.Name = "labelJumlahTotal";
-            this.labelJumlahTotal.Size = new System.Drawing.Size(74, 29);
+            this.labelJumlahTotal.Size = new System.Drawing.Size(65, 24);
             this.labelJumlahTotal.TabIndex = 12;
             this.labelJumlahTotal.Text = "xx.xxx";
             // 
@@ -181,9 +196,10 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelKodePromo.AutoSize = true;
             this.labelKodePromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelKodePromo.Location = new System.Drawing.Point(626, 424);
+            this.labelKodePromo.Location = new System.Drawing.Point(470, 344);
+            this.labelKodePromo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelKodePromo.Name = "labelKodePromo";
-            this.labelKodePromo.Size = new System.Drawing.Size(172, 32);
+            this.labelKodePromo.Size = new System.Drawing.Size(134, 26);
             this.labelKodePromo.TabIndex = 13;
             this.labelKodePromo.Text = "Kode Promo";
             // 
@@ -191,27 +207,30 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelRincianPromo.AutoSize = true;
             this.labelRincianPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRincianPromo.Location = new System.Drawing.Point(626, 487);
+            this.labelRincianPromo.Location = new System.Drawing.Point(470, 396);
+            this.labelRincianPromo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRincianPromo.Name = "labelRincianPromo";
-            this.labelRincianPromo.Size = new System.Drawing.Size(201, 32);
+            this.labelRincianPromo.Size = new System.Drawing.Size(156, 26);
             this.labelRincianPromo.TabIndex = 14;
             this.labelRincianPromo.Text = "Rincian Promo";
             // 
             // tBoxKode
             // 
             this.tBoxKode.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tBoxKode.Location = new System.Drawing.Point(873, 424);
+            this.tBoxKode.Location = new System.Drawing.Point(655, 344);
+            this.tBoxKode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tBoxKode.Name = "tBoxKode";
-            this.tBoxKode.Size = new System.Drawing.Size(311, 38);
+            this.tBoxKode.Size = new System.Drawing.Size(234, 32);
             this.tBoxKode.TabIndex = 15;
             // 
             // buttonCheckOut
             // 
             this.buttonCheckOut.BackColor = System.Drawing.Color.Yellow;
             this.buttonCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCheckOut.Location = new System.Drawing.Point(934, 561);
+            this.buttonCheckOut.Location = new System.Drawing.Point(700, 456);
+            this.buttonCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonCheckOut.Name = "buttonCheckOut";
-            this.buttonCheckOut.Size = new System.Drawing.Size(186, 52);
+            this.buttonCheckOut.Size = new System.Drawing.Size(140, 42);
             this.buttonCheckOut.TabIndex = 24;
             this.buttonCheckOut.Text = "CheckOut";
             this.buttonCheckOut.UseVisualStyleBackColor = false;
@@ -219,10 +238,11 @@ namespace ProjectUAS_AZHUU
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::ProjectUAS_AZHUU.Properties.Resources._12341241;
-            this.pictureBox1.Location = new System.Drawing.Point(-3, -4);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(-2, -3);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1280, 720);
+            this.pictureBox1.Size = new System.Drawing.Size(960, 585);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
@@ -230,18 +250,20 @@ namespace ProjectUAS_AZHUU
             // labelRp1
             // 
             this.labelRp1.AutoSize = true;
-            this.labelRp1.Location = new System.Drawing.Point(217, 458);
+            this.labelRp1.Location = new System.Drawing.Point(163, 372);
+            this.labelRp1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRp1.Name = "labelRp1";
-            this.labelRp1.Size = new System.Drawing.Size(26, 17);
+            this.labelRp1.Size = new System.Drawing.Size(21, 13);
             this.labelRp1.TabIndex = 26;
             this.labelRp1.Text = "Rp";
             // 
             // labelRp2
             // 
             this.labelRp2.AutoSize = true;
-            this.labelRp2.Location = new System.Drawing.Point(217, 487);
+            this.labelRp2.Location = new System.Drawing.Point(163, 396);
+            this.labelRp2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRp2.Name = "labelRp2";
-            this.labelRp2.Size = new System.Drawing.Size(26, 17);
+            this.labelRp2.Size = new System.Drawing.Size(21, 13);
             this.labelRp2.TabIndex = 27;
             this.labelRp2.Text = "Rp";
             // 
@@ -249,27 +271,30 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelDetailPromo.AutoSize = true;
             this.labelDetailPromo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelDetailPromo.Location = new System.Drawing.Point(870, 500);
+            this.labelDetailPromo.Location = new System.Drawing.Point(652, 406);
+            this.labelDetailPromo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelDetailPromo.Name = "labelDetailPromo";
-            this.labelDetailPromo.Size = new System.Drawing.Size(272, 17);
+            this.labelDetailPromo.Size = new System.Drawing.Size(208, 13);
             this.labelDetailPromo.TabIndex = 28;
             this.labelDetailPromo.Text = "Promo HANTAMPAN + Potongan 300.000";
             // 
             // labelBookingID
             // 
             this.labelBookingID.AutoSize = true;
-            this.labelBookingID.Location = new System.Drawing.Point(110, 148);
+            this.labelBookingID.Location = new System.Drawing.Point(82, 120);
+            this.labelBookingID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelBookingID.Name = "labelBookingID";
-            this.labelBookingID.Size = new System.Drawing.Size(88, 17);
+            this.labelBookingID.Size = new System.Drawing.Size(69, 13);
             this.labelBookingID.TabIndex = 29;
             this.labelBookingID.Text = "Booking ID =";
             // 
             // labelisiIDBooking
             // 
             this.labelisiIDBooking.AutoSize = true;
-            this.labelisiIDBooking.Location = new System.Drawing.Point(215, 148);
+            this.labelisiIDBooking.Location = new System.Drawing.Point(161, 120);
+            this.labelisiIDBooking.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelisiIDBooking.Name = "labelisiIDBooking";
-            this.labelisiIDBooking.Size = new System.Drawing.Size(76, 17);
+            this.labelisiIDBooking.Size = new System.Drawing.Size(60, 13);
             this.labelisiIDBooking.TabIndex = 30;
             this.labelisiIDBooking.Text = "ID Booking";
             // 
@@ -277,9 +302,10 @@ namespace ProjectUAS_AZHUU
             // 
             this.buttonUse.BackColor = System.Drawing.Color.Yellow;
             this.buttonUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonUse.Location = new System.Drawing.Point(632, 561);
+            this.buttonUse.Location = new System.Drawing.Point(474, 456);
+            this.buttonUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buttonUse.Name = "buttonUse";
-            this.buttonUse.Size = new System.Drawing.Size(107, 37);
+            this.buttonUse.Size = new System.Drawing.Size(80, 30);
             this.buttonUse.TabIndex = 31;
             this.buttonUse.Text = "Use Code";
             this.buttonUse.UseVisualStyleBackColor = false;
@@ -289,17 +315,32 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelRp3.AutoSize = true;
             this.labelRp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRp3.Location = new System.Drawing.Point(305, 584);
+            this.labelRp3.Location = new System.Drawing.Point(229, 474);
+            this.labelRp3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.labelRp3.Name = "labelRp3";
-            this.labelRp3.Size = new System.Drawing.Size(44, 29);
+            this.labelRp3.Size = new System.Drawing.Size(34, 24);
             this.labelRp3.TabIndex = 32;
             this.labelRp3.Text = "Rp";
             // 
+            // butInvoice
+            // 
+            this.butInvoice.BackColor = System.Drawing.Color.Yellow;
+            this.butInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butInvoice.Location = new System.Drawing.Point(720, 77);
+            this.butInvoice.Margin = new System.Windows.Forms.Padding(2);
+            this.butInvoice.Name = "butInvoice";
+            this.butInvoice.Size = new System.Drawing.Size(140, 42);
+            this.butInvoice.TabIndex = 33;
+            this.butInvoice.Text = "Invoice";
+            this.butInvoice.UseVisualStyleBackColor = false;
+            this.butInvoice.Click += new System.EventHandler(this.butInvoice_Click);
+            // 
             // FormCheckout
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(946, 547);
+            this.Controls.Add(this.butInvoice);
             this.Controls.Add(this.labelRp3);
             this.Controls.Add(this.buttonUse);
             this.Controls.Add(this.labelisiIDBooking);
@@ -325,6 +366,7 @@ namespace ProjectUAS_AZHUU
             this.Controls.Add(this.labelFromTo);
             this.Controls.Add(this.labelCart);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormCheckout";
             this.Text = "CheckOut";
             this.Load += new System.EventHandler(this.FormCheckout_Load);
@@ -361,5 +403,6 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label labelisiIDBooking;
         private System.Windows.Forms.Button buttonUse;
         private System.Windows.Forms.Label labelRp3;
+        private System.Windows.Forms.Button butInvoice;
     }
 }

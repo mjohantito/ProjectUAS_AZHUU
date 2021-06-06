@@ -98,7 +98,7 @@ namespace ProjectUAS_AZHUU
                 string idTanggal = tanggalbook.Substring(0, 4) + tanggalbook.Substring(5, 2) + tanggalbook.Substring(8, 2);
                 MessageBox.Show(idTanggal);
                 BookingID = Search.ruteidd + idTanggal;
-                MessageBox.Show(BookingID);
+                
                 DataTable dtBookingID = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
                 sqlQuery = "select tp_bookingid as `Booking ID` from pesan_transaksi where rute_id = '" + Search.ruteidd + "' and tp_tanggalbooking = '" + tanggalbook + "';";
@@ -132,6 +132,7 @@ namespace ProjectUAS_AZHUU
                 }
 
                 labelisiIDBooking.Text = BookingID;
+                MessageBox.Show(BookingID);
             }
             catch (Exception ex)
             {
@@ -284,7 +285,7 @@ namespace ProjectUAS_AZHUU
                 jumlahpromo = Potongan;
 
                 jumlahtotal = jumlahsubtotal - jumlahpromo;
-                labelJumlahTotal.Text = "Rp. " + Convert.ToString(jumlahtotal);
+                labelJumlahTotal.Text = Convert.ToString(jumlahtotal);
 
                 PromoID = Promo.Rows[0]["ID Promo"].ToString();
 
@@ -304,6 +305,36 @@ namespace ProjectUAS_AZHUU
                 {
                     labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void butInvoice_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // delete di table 
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "delete from azhuu_report";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlConnect.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnect.Close();
+
+                //insert di table
+                sqlQuery = "insert into azhuu_report values ('"+BookingID+"','"+HomePage.nikkk+"','"+Search.ruteidd+"','"+tBoxKode.Text+"','"+DaftarPenumpang.Tanggal+"','"+Homepagebelumlogin.dateee+"','"+jumlahtotal.ToString()+"')";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlConnect.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnect.Close();
+
+                var aaaa = new Report();
+                aaaa.ShowDialog();
+
+                
             }
             catch (Exception ex)
             {
