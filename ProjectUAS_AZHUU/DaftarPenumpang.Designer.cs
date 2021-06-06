@@ -81,6 +81,18 @@
             this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.labelPN1 = new System.Windows.Forms.Label();
+            this.labelPN2 = new System.Windows.Forms.Label();
+            this.labelPN4 = new System.Windows.Forms.Label();
+            this.labelPN3 = new System.Windows.Forms.Label();
+            this.labelNIK1 = new System.Windows.Forms.Label();
+            this.labelNIK3 = new System.Windows.Forms.Label();
+            this.labelNIK4 = new System.Windows.Forms.Label();
+            this.labelNIK2 = new System.Windows.Forms.Label();
+            this.labeltlp1 = new System.Windows.Forms.Label();
+            this.labeltlp2 = new System.Windows.Forms.Label();
+            this.labeltlp3 = new System.Windows.Forms.Label();
+            this.labeltlp4 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
@@ -355,7 +367,7 @@
             // labelJumlahPembayaran
             // 
             this.labelJumlahPembayaran.AutoSize = true;
-            this.labelJumlahPembayaran.Location = new System.Drawing.Point(347, 199);
+            this.labelJumlahPembayaran.Location = new System.Drawing.Point(349, 199);
             this.labelJumlahPembayaran.Name = "labelJumlahPembayaran";
             this.labelJumlahPembayaran.Size = new System.Drawing.Size(60, 17);
             this.labelJumlahPembayaran.TabIndex = 31;
@@ -392,7 +404,7 @@
             // labelIDR
             // 
             this.labelIDR.AutoSize = true;
-            this.labelIDR.Location = new System.Drawing.Point(320, 199);
+            this.labelIDR.Location = new System.Drawing.Point(303, 199);
             this.labelIDR.Name = "labelIDR";
             this.labelIDR.Size = new System.Drawing.Size(31, 17);
             this.labelIDR.TabIndex = 33;
@@ -410,6 +422,9 @@
             // 
             // groupBoxPenumpang1
             // 
+            this.groupBoxPenumpang1.Controls.Add(this.labeltlp1);
+            this.groupBoxPenumpang1.Controls.Add(this.labelNIK1);
+            this.groupBoxPenumpang1.Controls.Add(this.labelPN1);
             this.groupBoxPenumpang1.Controls.Add(this.tBoxTlpnPenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.buttonDonePenumpang1);
             this.groupBoxPenumpang1.Controls.Add(this.buttonHapusPenumpang1);
@@ -453,6 +468,9 @@
             // 
             // groupBoxPenumpang2
             // 
+            this.groupBoxPenumpang2.Controls.Add(this.labeltlp2);
+            this.groupBoxPenumpang2.Controls.Add(this.labelNIK2);
+            this.groupBoxPenumpang2.Controls.Add(this.labelPN2);
             this.groupBoxPenumpang2.Controls.Add(this.tBoxTlpnPenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.buttonDonePenumpang2);
             this.groupBoxPenumpang2.Controls.Add(this.buttonHapusPenumpang2);
@@ -487,6 +505,9 @@
             // 
             // groupBoxPenumpang3
             // 
+            this.groupBoxPenumpang3.Controls.Add(this.labeltlp3);
+            this.groupBoxPenumpang3.Controls.Add(this.labelNIK3);
+            this.groupBoxPenumpang3.Controls.Add(this.labelPN3);
             this.groupBoxPenumpang3.Controls.Add(this.tBoxTlpnPenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.buttonDonePenumpang3);
             this.groupBoxPenumpang3.Controls.Add(this.buttonHapusPenumpang3);
@@ -521,6 +542,9 @@
             // 
             // groupBoxPenumpang4
             // 
+            this.groupBoxPenumpang4.Controls.Add(this.labeltlp4);
+            this.groupBoxPenumpang4.Controls.Add(this.labelNIK4);
+            this.groupBoxPenumpang4.Controls.Add(this.labelPN4);
             this.groupBoxPenumpang4.Controls.Add(this.tBoxTlpnPenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.buttonDonePenumpang4);
             this.groupBoxPenumpang4.Controls.Add(this.buttonHapusPenumpang4);
@@ -623,6 +647,114 @@
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
             // 
+            // labelPN1
+            // 
+            this.labelPN1.AutoSize = true;
+            this.labelPN1.Location = new System.Drawing.Point(30, 45);
+            this.labelPN1.Name = "labelPN1";
+            this.labelPN1.Size = new System.Drawing.Size(45, 17);
+            this.labelPN1.TabIndex = 22;
+            this.labelPN1.Text = "Nama";
+            // 
+            // labelPN2
+            // 
+            this.labelPN2.AutoSize = true;
+            this.labelPN2.Location = new System.Drawing.Point(37, 40);
+            this.labelPN2.Name = "labelPN2";
+            this.labelPN2.Size = new System.Drawing.Size(45, 17);
+            this.labelPN2.TabIndex = 23;
+            this.labelPN2.Text = "Nama";
+            // 
+            // labelPN4
+            // 
+            this.labelPN4.AutoSize = true;
+            this.labelPN4.Location = new System.Drawing.Point(36, 44);
+            this.labelPN4.Name = "labelPN4";
+            this.labelPN4.Size = new System.Drawing.Size(45, 17);
+            this.labelPN4.TabIndex = 24;
+            this.labelPN4.Text = "Nama";
+            // 
+            // labelPN3
+            // 
+            this.labelPN3.AutoSize = true;
+            this.labelPN3.Location = new System.Drawing.Point(36, 44);
+            this.labelPN3.Name = "labelPN3";
+            this.labelPN3.Size = new System.Drawing.Size(45, 17);
+            this.labelPN3.TabIndex = 43;
+            this.labelPN3.Text = "Nama";
+            // 
+            // labelNIK1
+            // 
+            this.labelNIK1.AutoSize = true;
+            this.labelNIK1.Location = new System.Drawing.Point(30, 87);
+            this.labelNIK1.Name = "labelNIK1";
+            this.labelNIK1.Size = new System.Drawing.Size(30, 17);
+            this.labelNIK1.TabIndex = 23;
+            this.labelNIK1.Text = "NIK";
+            // 
+            // labelNIK3
+            // 
+            this.labelNIK3.AutoSize = true;
+            this.labelNIK3.Location = new System.Drawing.Point(36, 86);
+            this.labelNIK3.Name = "labelNIK3";
+            this.labelNIK3.Size = new System.Drawing.Size(30, 17);
+            this.labelNIK3.TabIndex = 24;
+            this.labelNIK3.Text = "NIK";
+            // 
+            // labelNIK4
+            // 
+            this.labelNIK4.AutoSize = true;
+            this.labelNIK4.Location = new System.Drawing.Point(36, 86);
+            this.labelNIK4.Name = "labelNIK4";
+            this.labelNIK4.Size = new System.Drawing.Size(30, 17);
+            this.labelNIK4.TabIndex = 44;
+            this.labelNIK4.Text = "NIK";
+            // 
+            // labelNIK2
+            // 
+            this.labelNIK2.AutoSize = true;
+            this.labelNIK2.Location = new System.Drawing.Point(37, 79);
+            this.labelNIK2.Name = "labelNIK2";
+            this.labelNIK2.Size = new System.Drawing.Size(30, 17);
+            this.labelNIK2.TabIndex = 45;
+            this.labelNIK2.Text = "NIK";
+            // 
+            // labeltlp1
+            // 
+            this.labeltlp1.AutoSize = true;
+            this.labeltlp1.Location = new System.Drawing.Point(30, 129);
+            this.labeltlp1.Name = "labeltlp1";
+            this.labeltlp1.Size = new System.Drawing.Size(90, 17);
+            this.labeltlp1.TabIndex = 46;
+            this.labeltlp1.Text = "No . Telepon";
+            // 
+            // labeltlp2
+            // 
+            this.labeltlp2.AutoSize = true;
+            this.labeltlp2.Location = new System.Drawing.Point(37, 121);
+            this.labeltlp2.Name = "labeltlp2";
+            this.labeltlp2.Size = new System.Drawing.Size(90, 17);
+            this.labeltlp2.TabIndex = 47;
+            this.labeltlp2.Text = "No . Telepon";
+            // 
+            // labeltlp3
+            // 
+            this.labeltlp3.AutoSize = true;
+            this.labeltlp3.Location = new System.Drawing.Point(36, 128);
+            this.labeltlp3.Name = "labeltlp3";
+            this.labeltlp3.Size = new System.Drawing.Size(90, 17);
+            this.labeltlp3.TabIndex = 48;
+            this.labeltlp3.Text = "No . Telepon";
+            // 
+            // labeltlp4
+            // 
+            this.labeltlp4.AutoSize = true;
+            this.labeltlp4.Location = new System.Drawing.Point(36, 128);
+            this.labeltlp4.Name = "labeltlp4";
+            this.labeltlp4.Size = new System.Drawing.Size(90, 17);
+            this.labeltlp4.TabIndex = 49;
+            this.labeltlp4.Text = "No . Telepon";
+            // 
             // DaftarPenumpang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -720,6 +852,18 @@
         private System.Windows.Forms.TextBox tBoxTlpnPenumpang2;
         private System.Windows.Forms.TextBox tBoxTlpnPenumpang3;
         private System.Windows.Forms.TextBox tBoxTlpnPenumpang4;
+        private System.Windows.Forms.Label labeltlp1;
+        private System.Windows.Forms.Label labelNIK1;
+        private System.Windows.Forms.Label labelPN1;
+        private System.Windows.Forms.Label labeltlp2;
+        private System.Windows.Forms.Label labelNIK2;
+        private System.Windows.Forms.Label labelPN2;
+        private System.Windows.Forms.Label labeltlp3;
+        private System.Windows.Forms.Label labelNIK3;
+        private System.Windows.Forms.Label labelPN3;
+        private System.Windows.Forms.Label labeltlp4;
+        private System.Windows.Forms.Label labelNIK4;
+        private System.Windows.Forms.Label labelPN4;
     }
 }
 

@@ -119,6 +119,22 @@ namespace ProjectUAS_AZHUU
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
 
+                labelPN1.Visible = true;
+                labelNIK1.Visible = true;
+                labeltlp1.Visible = true;
+
+                labelPN2.Visible = false;
+                labelNIK2.Visible = false;
+                labeltlp2.Visible = false;
+
+                labelPN3.Visible = false;
+                labelNIK3.Visible = false;
+                labeltlp3.Visible = false;
+
+                labelPN4.Visible = false;
+                labelNIK4.Visible = false;
+                labeltlp4.Visible = false;
+
                 DataTable dtRute = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
                 sqlQuery = "select concat(airport_id, ' ', if (rute_fromto = 'F','Ke','Dari'),'  ', rute_halte) as `Rute` from rute where rute_id = '" + Search.ruteidd + "';";
@@ -182,6 +198,10 @@ namespace ProjectUAS_AZHUU
                 groupBoxPenumpang3.Visible = true;
                 buttonTambahPenumpang3.Visible = true;
                 groupBoxPenumpang4.Visible = false;
+
+                labelPN3.Visible = true;
+                labelNIK3.Visible = true;
+                labeltlp3.Visible = true;
             }
             catch (Exception ex)
             {
@@ -200,6 +220,10 @@ namespace ProjectUAS_AZHUU
                 groupBoxPenumpang3.Visible = true;
                 buttonTambahPenumpang3.Visible = false;
                 groupBoxPenumpang4.Visible = true;
+
+                labelPN4.Visible = true;
+                labelNIK4.Visible = true;
+                labeltlp4.Visible = true;
             }
             catch (Exception ex)
             {
@@ -218,6 +242,10 @@ namespace ProjectUAS_AZHUU
                 groupBoxPenumpang3.Visible = false;
                 buttonTambahPenumpang3.Visible = false;
                 groupBoxPenumpang4.Visible = false;
+
+                labelPN2.Visible = true;
+                labelNIK2.Visible = true;
+                labeltlp2.Visible = true;
             }
             catch (Exception ex)
             {
@@ -243,22 +271,44 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonTambahPenumpang1.Visible = true;
+                buttonTambahPenumpang2.Visible = false;
+                buttonTambahPenumpang3.Visible = false;
 
                 tBoxNamaPenumpang1.Text = "";
                 tBoxKTPPenumpang1.Text = "";
+                tBoxTlpnPenumpang1.Text = "";
                 groupBoxPenumpang1.Visible = true;
 
                 tBoxNamaPenumpang2.Text = "";
                 tBoxKTPPenumpang2.Text = "";
+                tBoxTlpnPenumpang2.Text = "";
                 groupBoxPenumpang2.Visible = false;
 
                 tBoxNamaPenumpang3.Text = "";
                 tBoxKTPPenumpang3.Text = "";
+                tBoxTlpnPenumpang3.Text = "";
                 groupBoxPenumpang3.Visible = false;
 
                 tBoxNamaPenumpang4.Text = "";
                 tBoxKTPPenumpang4.Text = "";
+                tBoxTlpnPenumpang4.Text = "";
                 groupBoxPenumpang4.Visible = false;
+
+                labelPN1.Visible = true;
+                labelNIK1.Visible = true;
+                labeltlp1.Visible = true;
+
+                labelPN2.Visible = false;
+                labelNIK2.Visible = false;
+                labeltlp2.Visible = false;
+
+                labelPN3.Visible = false;
+                labelNIK3.Visible = false;
+                labeltlp3.Visible = false;
+
+                labelPN4.Visible = false;
+                labelNIK4.Visible = false;
+                labeltlp4.Visible = false;
 
                 labelNamaPenumpang1.Text = "";
                 labelNamaPenumpang1.Visible = false;
@@ -312,18 +362,35 @@ namespace ProjectUAS_AZHUU
                 groupBoxPenumpang1.Visible = true;
 
                 buttonTambahPenumpang1.Visible = true;
+                buttonTambahPenumpang2.Visible = false;
+                buttonTambahPenumpang3.Visible = false;
 
                 tBoxNamaPenumpang2.Text = "";
                 tBoxKTPPenumpang2.Text = "";
+                tBoxTlpnPenumpang2.Text = "";
                 groupBoxPenumpang2.Visible = false;
 
                 tBoxNamaPenumpang3.Text = "";
                 tBoxKTPPenumpang3.Text = "";
+                tBoxTlpnPenumpang3.Text = "";
                 groupBoxPenumpang3.Visible = false;
 
                 tBoxNamaPenumpang4.Text = "";
                 tBoxKTPPenumpang4.Text = "";
+                tBoxTlpnPenumpang4.Text = "";
                 groupBoxPenumpang4.Visible = false;
+
+                labelPN2.Visible = true;
+                labelNIK2.Visible = true;
+                labeltlp2.Visible = true;
+
+                labelPN3.Visible = false;
+                labelNIK3.Visible = false;
+                labeltlp3.Visible = false;
+
+                labelPN4.Visible = false;
+                labelNIK4.Visible = false;
+                labeltlp4.Visible = false;
 
                 labelNamaPenumpang2.Text = "";
                 labelNamaPenumpang2.Visible = false;
@@ -377,14 +444,25 @@ namespace ProjectUAS_AZHUU
                 groupBoxPenumpang2.Visible = true;
 
                 buttonTambahPenumpang2.Visible = true;
+                buttonTambahPenumpang3.Visible = false;
 
                 tBoxNamaPenumpang3.Text = "";
                 tBoxKTPPenumpang3.Text = "";
+                tBoxTlpnPenumpang3.Text = "";
                 groupBoxPenumpang3.Visible = false;
 
                 tBoxNamaPenumpang4.Text = "";
                 tBoxKTPPenumpang4.Text = "";
+                tBoxTlpnPenumpang4.Text = "";
                 groupBoxPenumpang4.Visible = false;
+
+                labelPN3.Visible = true;
+                labelNIK3.Visible = true;
+                labeltlp3.Visible = true;
+
+                labelPN4.Visible = false;
+                labelNIK4.Visible = false;
+                labeltlp4.Visible = false;
 
                 labelNamaPenumpang3.Text = "";
                 labelNamaPenumpang3.Visible = false;
@@ -441,7 +519,12 @@ namespace ProjectUAS_AZHUU
 
                 tBoxNamaPenumpang4.Text = "";
                 tBoxKTPPenumpang4.Text = "";
+                tBoxTlpnPenumpang4.Text = "";
                 groupBoxPenumpang4.Visible = false;
+
+                labelPN4.Visible = true;
+                labelNIK4.Visible = true;
+                labeltlp4.Visible = true;
 
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
@@ -487,6 +570,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang1.Visible = true;
+                labelPN1.Visible = false;
             }
             catch (Exception ex)
             {
@@ -499,6 +583,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang2.Visible = true;
+                labelPN2.Visible = false;
             }
             catch (Exception ex)
             {
@@ -511,6 +596,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang3.Visible = true;
+                labelPN3.Visible = false;
             }
             catch (Exception ex)
             {
@@ -523,6 +609,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang4.Visible = true;
+                labelPN4.Visible = false;
             }
             catch (Exception ex)
             {
@@ -535,6 +622,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang1.Visible = true;
+                labelNIK1.Visible = false;
             }
             catch (Exception ex)
             {
@@ -547,6 +635,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang2.Visible = true;
+                labelNIK2.Visible = false;
             }
             catch (Exception ex)
             {
@@ -559,6 +648,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang3.Visible = true;
+                labelNIK3.Visible = false;
             }
             catch (Exception ex)
             {
@@ -571,6 +661,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang4.Visible = true;
+                labelNIK4.Visible = false;
             }
             catch (Exception ex)
             {
@@ -628,7 +719,7 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang2.Visible = false;
                 labelNamaPenumpang2.Visible = true;
-                labelNamaPenumpang2.Text = "- " + tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang2.Text = "- " + tBoxNamaPenumpang2.Text;
 
                 DataTable dtHarga = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
@@ -636,7 +727,7 @@ namespace ProjectUAS_AZHUU
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtHarga);
-                Subtotal = Convert.ToInt32(dtHarga.Rows[0].ToString());
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
 
                 if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
                 {
@@ -672,7 +763,7 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang3.Visible = false;
                 labelNamaPenumpang3.Visible = true;
-                labelNamaPenumpang3.Text = "- " + tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang3.Text = "- " + tBoxNamaPenumpang3.Text;
 
                 DataTable dtHarga = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
@@ -680,7 +771,7 @@ namespace ProjectUAS_AZHUU
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtHarga);
-                Subtotal = Convert.ToInt32(dtHarga.Rows[0].ToString());
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
 
                 if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
                 {
@@ -716,7 +807,7 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang4.Visible = false;
                 labelNamaPenumpang4.Visible = true;
-                labelNamaPenumpang4.Text = "- " + tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang4.Text = "- " + tBoxNamaPenumpang4.Text;
 
                 DataTable dtHarga = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
@@ -724,7 +815,7 @@ namespace ProjectUAS_AZHUU
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtHarga);
-                Subtotal = Convert.ToInt32(dtHarga.Rows[0].ToString());
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
 
                 if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
                 {
@@ -759,6 +850,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang1.Visible = true;
+                labeltlp1.Visible = false;
             }
             catch (Exception ex)
             {
@@ -771,6 +863,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang2.Visible = true;
+                labeltlp2.Visible = false;
             }
             catch (Exception ex)
             {
@@ -783,6 +876,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang3.Visible = true;
+                labeltlp3.Visible = false;
             }
             catch (Exception ex)
             {
@@ -795,6 +889,7 @@ namespace ProjectUAS_AZHUU
             try
             {
                 buttonDonePenumpang4.Visible = true;
+                labeltlp4.Visible = false;
             }
             catch (Exception ex)
             {

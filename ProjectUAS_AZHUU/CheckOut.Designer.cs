@@ -52,6 +52,8 @@ namespace ProjectUAS_AZHUU
             this.labelDetailPromo = new System.Windows.Forms.Label();
             this.labelBookingID = new System.Windows.Forms.Label();
             this.labelisiIDBooking = new System.Windows.Forms.Label();
+            this.buttonUse = new System.Windows.Forms.Button();
+            this.labelRp3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -169,11 +171,11 @@ namespace ProjectUAS_AZHUU
             // 
             this.labelJumlahTotal.AutoSize = true;
             this.labelJumlahTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelJumlahTotal.Location = new System.Drawing.Point(318, 584);
+            this.labelJumlahTotal.Location = new System.Drawing.Point(355, 584);
             this.labelJumlahTotal.Name = "labelJumlahTotal";
-            this.labelJumlahTotal.Size = new System.Drawing.Size(111, 29);
+            this.labelJumlahTotal.Size = new System.Drawing.Size(74, 29);
             this.labelJumlahTotal.TabIndex = 12;
-            this.labelJumlahTotal.Text = "Rp xx.xxx";
+            this.labelJumlahTotal.Text = "xx.xxx";
             // 
             // labelKodePromo
             // 
@@ -202,7 +204,6 @@ namespace ProjectUAS_AZHUU
             this.tBoxKode.Name = "tBoxKode";
             this.tBoxKode.Size = new System.Drawing.Size(311, 38);
             this.tBoxKode.TabIndex = 15;
-            this.tBoxKode.TextChanged += new System.EventHandler(this.tBoxKode_TextChanged);
             // 
             // buttonCheckOut
             // 
@@ -272,11 +273,35 @@ namespace ProjectUAS_AZHUU
             this.labelisiIDBooking.TabIndex = 30;
             this.labelisiIDBooking.Text = "ID Booking";
             // 
+            // buttonUse
+            // 
+            this.buttonUse.BackColor = System.Drawing.Color.Yellow;
+            this.buttonUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUse.Location = new System.Drawing.Point(632, 561);
+            this.buttonUse.Name = "buttonUse";
+            this.buttonUse.Size = new System.Drawing.Size(107, 37);
+            this.buttonUse.TabIndex = 31;
+            this.buttonUse.Text = "Use Code";
+            this.buttonUse.UseVisualStyleBackColor = false;
+            this.buttonUse.Click += new System.EventHandler(this.buttonUse_Click);
+            // 
+            // labelRp3
+            // 
+            this.labelRp3.AutoSize = true;
+            this.labelRp3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRp3.Location = new System.Drawing.Point(305, 584);
+            this.labelRp3.Name = "labelRp3";
+            this.labelRp3.Size = new System.Drawing.Size(44, 29);
+            this.labelRp3.TabIndex = 32;
+            this.labelRp3.Text = "Rp";
+            // 
             // FormCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.labelRp3);
+            this.Controls.Add(this.buttonUse);
             this.Controls.Add(this.labelisiIDBooking);
             this.Controls.Add(this.labelBookingID);
             this.Controls.Add(this.labelDetailPromo);
@@ -334,5 +359,7 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label labelDetailPromo;
         private System.Windows.Forms.Label labelBookingID;
         private System.Windows.Forms.Label labelisiIDBooking;
+        private System.Windows.Forms.Button buttonUse;
+        private System.Windows.Forms.Label labelRp3;
     }
 }

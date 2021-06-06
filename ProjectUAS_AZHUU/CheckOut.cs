@@ -23,12 +23,12 @@ namespace ProjectUAS_AZHUU
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
-        public static int Potongan;
+        public static int Potongan = 0;
         public static int jumlahsubtotal;
-        public static int jumlahpromo;
+        public static int jumlahpromo = 0;
         public static int jumlahtotal;
         public static string BookingID;
-        public static string PromoID;
+        public static string PromoID = "p0005";
 
         private void FormCheckout_Load(object sender, EventArgs e)
         {
@@ -37,28 +37,71 @@ namespace ProjectUAS_AZHUU
                 labelFromTo.Text = DaftarPenumpang.FromTo;
                 labelPOBus.Text = DaftarPenumpang.POBus;
 
-                labelPenumpang1.Text = DaftarPenumpang.NamaPenumpang1 = DaftarPenumpang.KTPPenumpang1;
-                labelPenumpang2.Text = DaftarPenumpang.NamaPenumpang2 = DaftarPenumpang.KTPPenumpang2;
-                labelPenumpang3.Text = DaftarPenumpang.NamaPenumpang3 = DaftarPenumpang.KTPPenumpang3;
-                labelPenumpang4.Text = DaftarPenumpang.NamaPenumpang4 = DaftarPenumpang.KTPPenumpang4;
+                if (DaftarPenumpang.counterPenumpang == 1)
+                {
+                    labelPenumpang1.Text = DaftarPenumpang.NamaPenumpang1 + " - " + DaftarPenumpang.KTPPenumpang1;
+                    labelPenumpang2.Text = "";
+                    labelPenumpang3.Text = "";
+                    labelPenumpang4.Text = "";
+
+                    labelPenumpang1.Visible = true;
+                    labelPenumpang2.Visible = false;
+                    labelPenumpang3.Visible = false;
+                    labelPenumpang4.Visible = false;
+                }
+                else if (DaftarPenumpang.counterPenumpang == 2)
+                {
+                    labelPenumpang1.Text = DaftarPenumpang.NamaPenumpang1 + " - " + DaftarPenumpang.KTPPenumpang1;
+                    labelPenumpang2.Text = DaftarPenumpang.NamaPenumpang2 + " - " + DaftarPenumpang.KTPPenumpang2;
+                    labelPenumpang3.Text = "";
+                    labelPenumpang4.Text = "";
+
+                    labelPenumpang1.Visible = true;
+                    labelPenumpang2.Visible = true;
+                    labelPenumpang3.Visible = false;
+                    labelPenumpang4.Visible = false;
+                }
+                else if (DaftarPenumpang.counterPenumpang == 3)
+                {
+                    labelPenumpang1.Text = DaftarPenumpang.NamaPenumpang1 + " - " + DaftarPenumpang.KTPPenumpang1;
+                    labelPenumpang2.Text = DaftarPenumpang.NamaPenumpang2 + " - " + DaftarPenumpang.KTPPenumpang2;
+                    labelPenumpang3.Text = DaftarPenumpang.NamaPenumpang3 + " - " + DaftarPenumpang.KTPPenumpang3;
+                    labelPenumpang4.Text = "";
+
+                    labelPenumpang1.Visible = true;
+                    labelPenumpang2.Visible = true;
+                    labelPenumpang3.Visible = true;
+                    labelPenumpang4.Visible = false;
+                }
+                else if (DaftarPenumpang.counterPenumpang == 4)
+                {
+                    labelPenumpang1.Text = DaftarPenumpang.NamaPenumpang1 + " - " + DaftarPenumpang.KTPPenumpang1;
+                    labelPenumpang2.Text = DaftarPenumpang.NamaPenumpang2 + " - " + DaftarPenumpang.KTPPenumpang2;
+                    labelPenumpang3.Text = DaftarPenumpang.NamaPenumpang3 + " - " + DaftarPenumpang.KTPPenumpang3;
+                    labelPenumpang4.Text = DaftarPenumpang.NamaPenumpang4 + " - " + DaftarPenumpang.KTPPenumpang4;
+
+                    labelPenumpang1.Visible = true;
+                    labelPenumpang2.Visible = true;
+                    labelPenumpang3.Visible = true;
+                    labelPenumpang4.Visible = true;
+                }
 
                 labelJumlahSubtotal.Text = DaftarPenumpang.Subtotal.ToString();
-                jumlahsubtotal = Convert.ToInt32(labelJumlahSubtotal);
+                jumlahsubtotal = Convert.ToInt32(DaftarPenumpang.Subtotal);
 
-                labelJumlahPromo.Text = Convert.ToString(Potongan);
-                jumlahpromo = Potongan;
+                labelJumlahPromo.Text = Potongan.ToString();
 
                 jumlahtotal = jumlahsubtotal - jumlahpromo;
-                labelJumlahTotal.Text = "Rp. " + Convert.ToString(jumlahtotal);
+                labelJumlahTotal.Text = jumlahtotal.ToString();
 
                 string tanggalbook = Homepagebelumlogin.dateee;
                 string idTanggal = tanggalbook.Substring(0, 4) + tanggalbook.Substring(5, 2) + tanggalbook.Substring(8, 2);
-
+                MessageBox.Show(idTanggal);
                 BookingID = Search.ruteidd + idTanggal;
-
+                MessageBox.Show(BookingID);
                 DataTable dtBookingID = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select tp_bookingid as `Booking ID` from pesan_transakasi where rute_id = '" + Search.ruteidd + "' and tp_tanggalbooking = '" + tanggalbook +"';";
+                sqlQuery = "select tp_bookingid as `Booking ID` from pesan_transaksi where rute_id = '" + Search.ruteidd + "' and tp_tanggalbooking = '" + tanggalbook + "';";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtBookingID);
@@ -89,48 +132,6 @@ namespace ProjectUAS_AZHUU
                 }
 
                 labelisiIDBooking.Text = BookingID;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
-        private void tBoxKode_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                DataTable Promo = new DataTable();
-                sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select promo_id as `ID Promo`, promo_value as `Promo`, promo_code as `Kode` from promo where promo_code = '" + tBoxKode.Text + "';";
-                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                sqlAdapter = new MySqlDataAdapter(sqlCommand);
-                sqlAdapter.Fill(Promo);
-
-                Potongan = Convert.ToInt32(Promo.Rows[0]["Promo"].ToString());
-                jumlahpromo = Potongan;
-
-                jumlahtotal = jumlahsubtotal - jumlahpromo;
-                labelJumlahTotal.Text = "Rp. " + Convert.ToString(jumlahtotal);
-
-                PromoID = Promo.Rows[0]["ID Promo"].ToString();
-
-                if (tBoxKode.Text == "HANTAMPAN")
-                {
-                    labelDetailPromo.Text = "Promo HANTAMPAN + Potongan " + Convert.ToString(Potongan);
-                }
-                else if(tBoxKode.Text == "TAMPANPEMBERANI")
-                {
-                    labelDetailPromo.Text = "Promo TAMPANPEMBERANI + Potongan " + Convert.ToString(Potongan);
-                }
-                else if (tBoxKode.Text == "PENIKMATKOPI")
-                {
-                    labelDetailPromo.Text = "Promo PENIKMATKOPI + Potongan " + Convert.ToString(Potongan);
-                }
-                else if (tBoxKode.Text == "ASDOS2021")
-                {
-                    labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
-                }
             }
             catch (Exception ex)
             {
@@ -261,6 +262,48 @@ namespace ProjectUAS_AZHUU
 
                 FormMyOrder formMyOrder = new FormMyOrder();
                 formMyOrder.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonUse_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable Promo = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select promo_id as `ID Promo`, promo_value as `Promo`, promo_code as `Kode` from promo where promo_code = '" + tBoxKode.Text + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(Promo);
+
+                Potongan = Convert.ToInt32(Promo.Rows[0]["Promo"].ToString());
+                jumlahpromo = Potongan;
+
+                jumlahtotal = jumlahsubtotal - jumlahpromo;
+                labelJumlahTotal.Text = "Rp. " + Convert.ToString(jumlahtotal);
+
+                PromoID = Promo.Rows[0]["ID Promo"].ToString();
+
+                if (tBoxKode.Text == "HANTAMPAN")
+                {
+                    labelDetailPromo.Text = "Promo HANTAMPAN + Potongan " + Convert.ToString(Potongan);
+                }
+                else if (tBoxKode.Text == "TAMPANPEMBERANI")
+                {
+                    labelDetailPromo.Text = "Promo TAMPANPEMBERANI + Potongan " + Convert.ToString(Potongan);
+                }
+                else if (tBoxKode.Text == "PENIKMATKOPI")
+                {
+                    labelDetailPromo.Text = "Promo PENIKMATKOPI + Potongan " + Convert.ToString(Potongan);
+                }
+                else if (tBoxKode.Text == "ASDOS2021")
+                {
+                    labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
+                }
             }
             catch (Exception ex)
             {

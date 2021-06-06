@@ -154,7 +154,7 @@ namespace ProjectUAS_AZHUU
                 }
                 else
                 {
-                    ruteidd = dgvRute.Rows[e.RowIndex].Cells["Rute ID"].ToString();
+                    ruteidd = dgvRute.Rows[e.RowIndex].Cells["Rute ID"].Value.ToString();
                     var diftirpinimping = new DaftarPenumpang();
                     diftirpinimping.ShowDialog();
                 }
