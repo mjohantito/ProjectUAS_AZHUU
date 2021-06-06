@@ -16,5 +16,16 @@ namespace ProjectUAS_AZHUU
         {
             InitializeComponent();
         }
+
+        private void back_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Promo_Load(object sender, EventArgs e)
+        {
+            var pwnotelp = new HomePage();
+            pwnotelp.ShowDialog();
+        }
     }
 }
