@@ -24,7 +24,7 @@ namespace ProjectUAS_AZHUU
         string sqlQuery;
         int cekemail = 0;
 
-
+        public string emailforgot = "";
         private void ForgotPasswordEmail_Load(object sender, EventArgs e)
         {
 
@@ -46,6 +46,7 @@ namespace ProjectUAS_AZHUU
             }
             else
             {
+                emailforgot = tbEmail.Text;
                 var pwnotelp = new ForgotPasswordNoTelp();
                 pwnotelp.ShowDialog();
             }

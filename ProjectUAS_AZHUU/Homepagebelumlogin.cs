@@ -33,7 +33,7 @@ namespace ProjectUAS_AZHUU
         private void Homepagebelumlogin_Load(object sender, EventArgs e)
         {
             
-            cboxAirport.SelectedIndex = -1;
+            //cboxAirport.SelectedIndex = -1;
             loadcbox();
             if (fromto == "F")
             {

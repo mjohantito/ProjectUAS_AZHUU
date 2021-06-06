@@ -44,7 +44,7 @@ namespace ProjectUAS_AZHUU
             ForgotPasswordEmail fe = new ForgotPasswordEmail();
             sqlConnect = new MySqlConnection(connectString);
             DataTable masuk1 = new DataTable();
-            sqlQuery = "select * from user_azhuu where USER_TELP  = '" + tbNoTelp.Text + "' and USER_MAIL = '" + fe.tbEmail.Text + "' ";
+            sqlQuery = "select * from user_azhuu where USER_TELP  = '" + tbNoTelp.Text + "' and USER_EMAIL = '" +fe.emailforgot+ "' ";
             sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
             sqlAdapter = new MySqlDataAdapter(sqlCommand);
             sqlAdapter.Fill(masuk1);
