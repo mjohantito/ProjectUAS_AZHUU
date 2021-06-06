@@ -26,14 +26,21 @@ namespace ProjectUAS_AZHUU
 
         public static string nikkk;
         string fromto = Homepagebelumlogin.fromto;
-        DateTime dateeeee = Convert.ToDateTime(Homepagebelumlogin.dateee);
+        
 
         private void HomePage_Load(object sender, EventArgs e)
         {
             loadcbox();
             cboxAirport.SelectedValue = Homepagebelumlogin.airport; // dari homepage
             cboxHalte.SelectedValue = Homepagebelumlogin.halte; // darihomepage
-            dtpTanggalCari.Value = Convert.ToDateTime(Homepagebelumlogin.dateee);
+            if(Homepagebelumlogin.dateee == "0000-00-00")
+            {
+
+            }
+            else
+            {
+                dtpTanggalCari.Value = Convert.ToDateTime(Homepagebelumlogin.dateee);
+            }    
             if (fromto == "F")
             {
                 rbutDari.Checked = true;
@@ -167,6 +174,20 @@ namespace ProjectUAS_AZHUU
         private void dtpTanggalCari_ValueChanged(object sender, EventArgs e)
         {
             Homepagebelumlogin.dateee = dtpTanggalCari.Value.ToString("yyyy-MM-dd");
+        }
+
+        private void butProfile_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                var formprofile = new Profile();
+                formprofile.ShowDialog();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

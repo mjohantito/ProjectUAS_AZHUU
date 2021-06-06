@@ -42,6 +42,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.butProfile = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -214,11 +215,24 @@
             this.label4.TabIndex = 25;
             this.label4.Text = "Airport";
             // 
+            // butProfile
+            // 
+            this.butProfile.BackColor = System.Drawing.Color.Yellow;
+            this.butProfile.Location = new System.Drawing.Point(100, 231);
+            this.butProfile.Margin = new System.Windows.Forms.Padding(2);
+            this.butProfile.Name = "butProfile";
+            this.butProfile.Size = new System.Drawing.Size(136, 28);
+            this.butProfile.TabIndex = 26;
+            this.butProfile.Text = "Profile";
+            this.butProfile.UseVisualStyleBackColor = false;
+            this.butProfile.Click += new System.EventHandler(this.butProfile_Click);
+            // 
             // HomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(946, 547);
+            this.Controls.Add(this.butProfile);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
@@ -252,5 +266,6 @@
         private System.Windows.Forms.RadioButton rbutDari;
         private System.Windows.Forms.RadioButton rbutKe;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button butProfile;
     }
 }

@@ -47,9 +47,11 @@ namespace ProjectUAS_AZHUU
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(masuk1);
 
-                //labError.Text = " paswword sudah diganti";
+                // labError.Text = " paswword sudah diganti";
 
                 // password di password char '*';
+
+                // lempar ke login
 
             }
 
@@ -59,6 +61,30 @@ namespace ProjectUAS_AZHUU
         {
             var pwnotelp = new ForgotPasswordNoTelp();
             pwnotelp.ShowDialog();
+        }
+
+        private void tbpasword_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                tbpasword.PasswordChar = '*';
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void tbconfirm_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                tbconfirm.PasswordChar = '*';
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

@@ -61,7 +61,8 @@ namespace ProjectUAS_AZHUU
                 cboxAirport.DataSource = dtListAirport;
                 cboxAirport.DisplayMember = "Airport";
                 cboxAirport.ValueMember = "airport_id";
-
+                airport = cboxAirport.SelectedValue.ToString();
+                
                 
                 
 

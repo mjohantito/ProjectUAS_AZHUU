@@ -35,12 +35,6 @@ namespace ProjectUAS_AZHUU
         {
             try
             {
-                // cari di database emailnya
-                // cek password 
-
-                // if email ga ada di database, messagebox email belum terdaftar, ganti label, silahkan register
-                // if password tidak match, hanya ganti label
-                // else -> di lempar ke homepage yg sudah log-in
 
                 int cekemail = 0;
                 int cekpassword = 0;
@@ -54,7 +48,7 @@ namespace ProjectUAS_AZHUU
                 sqlAdapter.Fill(dtLogin);
 
 
-                if(dtLogin.Rows.Count == 1) // masih salah
+                if(dtLogin.Rows.Count == 1)
                 {
                     cekemail = 1;
                 }
@@ -65,7 +59,7 @@ namespace ProjectUAS_AZHUU
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtpassword);
 
-                if(dtpassword.Rows.Count == 1) // masih salahhh
+                if(dtpassword.Rows.Count == 1) 
                 {
                     cekpassword = 1;
                 }

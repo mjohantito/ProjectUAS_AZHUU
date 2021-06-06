@@ -60,5 +60,48 @@ namespace ProjectUAS_AZHUU
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void butSaveChange_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                sqlConnect = new MySqlConnection(connectString);
+
+                DataTable dt1User = new DataTable();
+                sqlQuery = "select user_nik, user_name, user_title, user_birthdate, user_gender, user_email,user_telp from user_azhuu where user_nik = '"+tbKTP.Text+"'";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dt1User);
+
+
+
+                if (cboxTitle.SelectedIndex == -1 || tbFullName.Text == "" || tbEmail.Text == "" || tbKTP.Text == "" || tbHP.Text == "") // data ada yang kosong
+                {
+                    MessageBox.Show("Data ada yang kosong!");
+                }
+                else if (cboxTitle.SelectedItem == dt1User.Rows[0]["user_title"] && tbFullName.Text == dt1User.Rows[0]["user_name"].ToString() && tbEmail.Text == dt1User.Rows[0]["user_name"].ToString() && tbHP.Text == dt1User.Rows[0]["user_telp"].ToString())
+                {
+                    MessageBox.Show("Data tidak ada yang di ubah!");
+                }
+                else
+                {
+                    sqlConnect = new MySqlConnection(connectString);
+                    sqlQuery = "";
+                    sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                    sqlConnect.Open();
+                    sqlCommand.ExecuteNonQuery();
+                    sqlConnect.Close();
+                    MessageBox.Show("Data berhasil masuk!");
+
+                    var homepage = new HomePage();
+                    homepage.ShowDialog();
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
