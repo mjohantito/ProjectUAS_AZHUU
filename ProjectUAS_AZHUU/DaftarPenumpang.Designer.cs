@@ -62,13 +62,17 @@
             this.labelIDR = new System.Windows.Forms.Label();
             this.labelNamaPenumpang4 = new System.Windows.Forms.Label();
             this.groupBoxPenumpang1 = new System.Windows.Forms.GroupBox();
+            this.tBoxTlpnPenumpang1 = new System.Windows.Forms.TextBox();
             this.buttonDonePenumpang1 = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBoxPenumpang2 = new System.Windows.Forms.GroupBox();
+            this.tBoxTlpnPenumpang2 = new System.Windows.Forms.TextBox();
             this.buttonDonePenumpang2 = new System.Windows.Forms.Button();
             this.groupBoxPenumpang3 = new System.Windows.Forms.GroupBox();
+            this.tBoxTlpnPenumpang3 = new System.Windows.Forms.TextBox();
             this.buttonDonePenumpang3 = new System.Windows.Forms.Button();
             this.groupBoxPenumpang4 = new System.Windows.Forms.GroupBox();
+            this.tBoxTlpnPenumpang4 = new System.Windows.Forms.TextBox();
             this.buttonDonePenumpang4 = new System.Windows.Forms.Button();
             this.buttonHapusPenumpang4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
@@ -77,10 +81,6 @@
             this.buttonTambahPenumpang2 = new System.Windows.Forms.Button();
             this.buttonTambahPenumpang3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.tBoxTlpnPenumpang1 = new System.Windows.Forms.TextBox();
-            this.tBoxTlpnPenumpang2 = new System.Windows.Forms.TextBox();
-            this.tBoxTlpnPenumpang3 = new System.Windows.Forms.TextBox();
-            this.tBoxTlpnPenumpang4 = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBoxPenumpang1.SuspendLayout();
             this.groupBoxPenumpang2.SuspendLayout();
@@ -403,9 +403,9 @@
             this.labelNamaPenumpang4.AutoSize = true;
             this.labelNamaPenumpang4.Location = new System.Drawing.Point(100, 175);
             this.labelNamaPenumpang4.Name = "labelNamaPenumpang4";
-            this.labelNamaPenumpang4.Size = new System.Drawing.Size(104, 17);
+            this.labelNamaPenumpang4.Size = new System.Drawing.Size(108, 17);
             this.labelNamaPenumpang4.TabIndex = 32;
-            this.labelNamaPenumpang4.Text = "-BIlli suka tante";
+            this.labelNamaPenumpang4.Text = "- BIlli suka tante";
             this.labelNamaPenumpang4.Visible = false;
             // 
             // groupBoxPenumpang1
@@ -421,6 +421,14 @@
             this.groupBoxPenumpang1.Size = new System.Drawing.Size(449, 162);
             this.groupBoxPenumpang1.TabIndex = 33;
             this.groupBoxPenumpang1.TabStop = false;
+            // 
+            // tBoxTlpnPenumpang1
+            // 
+            this.tBoxTlpnPenumpang1.Location = new System.Drawing.Point(14, 126);
+            this.tBoxTlpnPenumpang1.Name = "tBoxTlpnPenumpang1";
+            this.tBoxTlpnPenumpang1.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang1.TabIndex = 21;
+            this.tBoxTlpnPenumpang1.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang1_TextChanged);
             // 
             // buttonDonePenumpang1
             // 
@@ -457,6 +465,14 @@
             this.groupBoxPenumpang2.TabIndex = 35;
             this.groupBoxPenumpang2.TabStop = false;
             // 
+            // tBoxTlpnPenumpang2
+            // 
+            this.tBoxTlpnPenumpang2.Location = new System.Drawing.Point(21, 121);
+            this.tBoxTlpnPenumpang2.Name = "tBoxTlpnPenumpang2";
+            this.tBoxTlpnPenumpang2.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang2.TabIndex = 22;
+            this.tBoxTlpnPenumpang2.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang2_TextChanged);
+            // 
             // buttonDonePenumpang2
             // 
             this.buttonDonePenumpang2.BackColor = System.Drawing.Color.Transparent;
@@ -483,6 +499,14 @@
             this.groupBoxPenumpang3.TabIndex = 36;
             this.groupBoxPenumpang3.TabStop = false;
             // 
+            // tBoxTlpnPenumpang3
+            // 
+            this.tBoxTlpnPenumpang3.Location = new System.Drawing.Point(7, 125);
+            this.tBoxTlpnPenumpang3.Name = "tBoxTlpnPenumpang3";
+            this.tBoxTlpnPenumpang3.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang3.TabIndex = 41;
+            this.tBoxTlpnPenumpang3.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang3_TextChanged);
+            // 
             // buttonDonePenumpang3
             // 
             this.buttonDonePenumpang3.BackColor = System.Drawing.Color.Transparent;
@@ -508,6 +532,14 @@
             this.groupBoxPenumpang4.Size = new System.Drawing.Size(455, 162);
             this.groupBoxPenumpang4.TabIndex = 37;
             this.groupBoxPenumpang4.TabStop = false;
+            // 
+            // tBoxTlpnPenumpang4
+            // 
+            this.tBoxTlpnPenumpang4.Location = new System.Drawing.Point(7, 125);
+            this.tBoxTlpnPenumpang4.Name = "tBoxTlpnPenumpang4";
+            this.tBoxTlpnPenumpang4.Size = new System.Drawing.Size(422, 22);
+            this.tBoxTlpnPenumpang4.TabIndex = 42;
+            this.tBoxTlpnPenumpang4.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang4_TextChanged);
             // 
             // buttonDonePenumpang4
             // 
@@ -590,38 +622,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 37;
             this.pictureBox1.TabStop = false;
-            // 
-            // tBoxTlpnPenumpang1
-            // 
-            this.tBoxTlpnPenumpang1.Location = new System.Drawing.Point(14, 126);
-            this.tBoxTlpnPenumpang1.Name = "tBoxTlpnPenumpang1";
-            this.tBoxTlpnPenumpang1.Size = new System.Drawing.Size(422, 22);
-            this.tBoxTlpnPenumpang1.TabIndex = 21;
-            this.tBoxTlpnPenumpang1.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang1_TextChanged);
-            // 
-            // tBoxTlpnPenumpang2
-            // 
-            this.tBoxTlpnPenumpang2.Location = new System.Drawing.Point(21, 121);
-            this.tBoxTlpnPenumpang2.Name = "tBoxTlpnPenumpang2";
-            this.tBoxTlpnPenumpang2.Size = new System.Drawing.Size(422, 22);
-            this.tBoxTlpnPenumpang2.TabIndex = 22;
-            this.tBoxTlpnPenumpang2.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang2_TextChanged);
-            // 
-            // tBoxTlpnPenumpang3
-            // 
-            this.tBoxTlpnPenumpang3.Location = new System.Drawing.Point(7, 125);
-            this.tBoxTlpnPenumpang3.Name = "tBoxTlpnPenumpang3";
-            this.tBoxTlpnPenumpang3.Size = new System.Drawing.Size(422, 22);
-            this.tBoxTlpnPenumpang3.TabIndex = 41;
-            this.tBoxTlpnPenumpang3.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang3_TextChanged);
-            // 
-            // tBoxTlpnPenumpang4
-            // 
-            this.tBoxTlpnPenumpang4.Location = new System.Drawing.Point(7, 125);
-            this.tBoxTlpnPenumpang4.Name = "tBoxTlpnPenumpang4";
-            this.tBoxTlpnPenumpang4.Size = new System.Drawing.Size(422, 22);
-            this.tBoxTlpnPenumpang4.TabIndex = 42;
-            this.tBoxTlpnPenumpang4.TextChanged += new System.EventHandler(this.tBoxTlpnPenumpang4_TextChanged);
             // 
             // DaftarPenumpang
             // 

@@ -41,7 +41,7 @@ namespace ProjectUAS_AZHUU
 
         public static string FromTo;
         public static string POBus;
-        public static string Subtotal;
+        public static int Subtotal;
 
         public static string Tanggal;
 
@@ -67,7 +67,7 @@ namespace ProjectUAS_AZHUU
 
                 FromTo = labelJurusan.Text;
                 POBus = labelNamaPO.Text;
-                Subtotal = labelJumlahPembayaran.Text;
+                Subtotal = Convert.ToInt32(labelJumlahPembayaran.Text);
                 Tanggal = labelTanggal.Text;
 
                 FormCheckout formCheckout = new FormCheckout();
@@ -91,6 +91,15 @@ namespace ProjectUAS_AZHUU
                 buttonTambahPenumpang3.Visible = false;
                 groupBoxPenumpang4.Visible = false;
 
+                labelNamaPenumpang1.Text = "";
+                labelNamaPenumpang1.Visible = false;
+                labelNamaPenumpang2.Text = "";
+                labelNamaPenumpang2.Visible = false;
+                labelNamaPenumpang3.Text = "";
+                labelNamaPenumpang3.Visible = false;
+                labelNamaPenumpang4.Text = "";
+                labelNamaPenumpang4.Visible = false;
+
                 DataTable dtProfile = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
                 sqlQuery = "select user_title as `Title`, user_name as `User Name`, user_email as `User Email`, user_telp as `User Telp` from user_azhuu where user_nik = '" + HomePage.nikkk + "';";
@@ -106,11 +115,14 @@ namespace ProjectUAS_AZHUU
 
                 DataTable dtTanggal = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select curdate() as `Tannggal;";
+                sqlQuery = "select curdate() as `Tanggal;";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtTanggal);
-                labelTanggal.Text = dtTanggal.Rows[0].ToString();
+                labelTanggal.Text = dtTanggal.Rows[0]["Tanggal"].ToString();
+
+                Subtotal = 0;
+                labelJumlahPembayaran.Text = Subtotal.ToString();
             }
             catch (Exception ex)
             {
@@ -189,6 +201,8 @@ namespace ProjectUAS_AZHUU
         {
             try
             {
+                buttonTambahPenumpang1.Visible = true;
+
                 tBoxNamaPenumpang1.Text = "";
                 tBoxKTPPenumpang1.Text = "";
                 groupBoxPenumpang1.Visible = true;
@@ -213,6 +227,36 @@ namespace ProjectUAS_AZHUU
                 labelNamaPenumpang3.Visible = false;
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -225,6 +269,8 @@ namespace ProjectUAS_AZHUU
             try
             {
                 groupBoxPenumpang1.Visible = true;
+
+                buttonTambahPenumpang1.Visible = true;
 
                 tBoxNamaPenumpang2.Text = "";
                 tBoxKTPPenumpang2.Text = "";
@@ -244,6 +290,36 @@ namespace ProjectUAS_AZHUU
                 labelNamaPenumpang3.Visible = false;
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -259,6 +335,8 @@ namespace ProjectUAS_AZHUU
 
                 groupBoxPenumpang2.Visible = true;
 
+                buttonTambahPenumpang2.Visible = true;
+
                 tBoxNamaPenumpang3.Text = "";
                 tBoxKTPPenumpang3.Text = "";
                 groupBoxPenumpang3.Visible = false;
@@ -271,6 +349,36 @@ namespace ProjectUAS_AZHUU
                 labelNamaPenumpang3.Visible = false;
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -288,12 +396,44 @@ namespace ProjectUAS_AZHUU
 
                 groupBoxPenumpang3.Visible = true;
 
+                buttonTambahPenumpang3.Visible = true;
+
                 tBoxNamaPenumpang4.Text = "";
                 tBoxKTPPenumpang4.Text = "";
                 groupBoxPenumpang4.Visible = false;
 
                 labelNamaPenumpang4.Text = "";
                 labelNamaPenumpang4.Visible = false;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -403,7 +543,37 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang1.Visible = false;
                 labelNamaPenumpang1.Visible = true;
-                labelNamaPenumpang1.Text = tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang1.Text = "- " + tBoxNamaPenumpang1.Text;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0]["Harga"].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal*2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -417,7 +587,37 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang2.Visible = false;
                 labelNamaPenumpang2.Visible = true;
-                labelNamaPenumpang2.Text = tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang2.Text = "- " + tBoxNamaPenumpang1.Text;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -431,7 +631,37 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang3.Visible = false;
                 labelNamaPenumpang3.Visible = true;
-                labelNamaPenumpang3.Text = tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang3.Text = "- " + tBoxNamaPenumpang1.Text;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -445,7 +675,37 @@ namespace ProjectUAS_AZHUU
             {
                 buttonDonePenumpang4.Visible = false;
                 labelNamaPenumpang4.Visible = true;
-                labelNamaPenumpang4.Text = tBoxNamaPenumpang1.Text;
+                labelNamaPenumpang4.Text = "- " + tBoxNamaPenumpang1.Text;
+
+                DataTable dtHarga = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select rute_price as `Harga` from rute where rute_id = '" + Search.ruteidd + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(dtHarga);
+                Subtotal = Convert.ToInt32(dtHarga.Rows[0].ToString());
+
+                if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 2).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == false)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 3).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == true && labelNamaPenumpang2.Visible == true && labelNamaPenumpang3.Visible == true && labelNamaPenumpang4.Visible == true)
+                {
+                    labelJumlahPembayaran.Text = (Subtotal * 4).ToString();
+                }
+                else if (labelNamaPenumpang1.Visible == false && labelNamaPenumpang2.Visible == false && labelNamaPenumpang3.Visible == false && labelNamaPenumpang4.Visible == false)
+                {
+                    Subtotal = 0;
+                    labelJumlahPembayaran.Text = Subtotal.ToString();
+                }
             }
             catch (Exception ex)
             {

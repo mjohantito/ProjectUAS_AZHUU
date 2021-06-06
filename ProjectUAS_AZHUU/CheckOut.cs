@@ -23,16 +23,17 @@ namespace ProjectUAS_AZHUU
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
-        int Potongan;
+        public static int Potongan;
+        public static int jumlahsubtotal;
+        public static int jumlahpromo;
+        public static int jumlahtotal;
+        public static string BookingID;
+        public static string PromoID;
 
         private void FormCheckout_Load(object sender, EventArgs e)
         {
             try
             {
-                int jumlahsubtotal;
-                int jumlahpromo;
-                int jumlahtotal;
-
                 labelFromTo.Text = DaftarPenumpang.FromTo;
                 labelPOBus.Text = DaftarPenumpang.POBus;
 
@@ -41,7 +42,7 @@ namespace ProjectUAS_AZHUU
                 labelPenumpang3.Text = DaftarPenumpang.NamaPenumpang3 = DaftarPenumpang.KTPPenumpang3;
                 labelPenumpang4.Text = DaftarPenumpang.NamaPenumpang4 = DaftarPenumpang.KTPPenumpang4;
 
-                labelJumlahSubtotal.Text = DaftarPenumpang.Subtotal;
+                labelJumlahSubtotal.Text = DaftarPenumpang.Subtotal.ToString();
                 jumlahsubtotal = Convert.ToInt32(labelJumlahSubtotal);
 
                 labelJumlahPromo.Text = Convert.ToString(Potongan);
@@ -49,6 +50,11 @@ namespace ProjectUAS_AZHUU
 
                 jumlahtotal = jumlahsubtotal - jumlahpromo;
                 labelJumlahTotal.Text = "Rp. " + Convert.ToString(jumlahtotal);
+
+                string tanggalbook = Homepagebelumlogin.dateee;
+                string idTengah = tanggalbook.Substring(0, 2) + tanggalbook.Substring(3, 2) + tanggalbook.Substring(6, 4);
+                BookingID = Search.ruteidd + idTengah; // terakhir disini brian
+                labelisiIDBooking.Text = BookingID;
             }
             catch (Exception ex)
             {
@@ -60,24 +66,35 @@ namespace ProjectUAS_AZHUU
         {
             try
             {
-                if(tBoxKode.Text == "HANTAMPAN")
+                DataTable Promo = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "select promo_id as `ID Promo`, promo_value as `Promo`, promo_code as `Kode` from promo where promo_code = '" + tBoxKode.Text + "';";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlAdapter = new MySqlDataAdapter(sqlCommand);
+                sqlAdapter.Fill(Promo);
+
+                Potongan = Convert.ToInt32(Promo.Rows[0]["Promo"].ToString());
+                jumlahpromo = Potongan;
+
+                jumlahtotal = jumlahsubtotal - jumlahpromo;
+                labelJumlahTotal.Text = "Rp. " + Convert.ToString(jumlahtotal);
+
+                PromoID = Promo.Rows[0]["ID Promo"].ToString();
+
+                if (tBoxKode.Text == "HANTAMPAN")
                 {
-                    Potongan = 300000;
                     labelDetailPromo.Text = "Promo HANTAMPAN + Potongan " + Convert.ToString(Potongan);
                 }
                 else if(tBoxKode.Text == "TAMPANPEMBERANI")
                 {
-                    Potongan = 1500;
                     labelDetailPromo.Text = "Promo TAMPANPEMBERANI + Potongan " + Convert.ToString(Potongan);
                 }
                 else if (tBoxKode.Text == "PENIKMATKOPI")
                 {
-                    Potongan = 50000;
                     labelDetailPromo.Text = "Promo PENIKMATKOPI + Potongan " + Convert.ToString(Potongan);
                 }
                 else if (tBoxKode.Text == "ASDOS2021")
                 {
-                    Potongan = 200000;
                     labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
                 }
             }
@@ -100,13 +117,22 @@ namespace ProjectUAS_AZHUU
                 DataPenumpang = sqlCommand.ExecuteReader();
                 sqlConnect.Close();
 
-                DataTable dtPT = new DataTable();
+                DataTable dtPesanTrans = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select '' as `Booking ID`";
+                sqlQuery = "`";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                MySqlDataReader DataPT;
+                MySqlDataReader DataPesanTrans;
                 sqlConnect.Open();
-                DataPT = sqlCommand.ExecuteReader();
+                DataPesanTrans = sqlCommand.ExecuteReader();
+                sqlConnect.Close();
+                
+                DataTable dtTransPenumpang = new DataTable();
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "`";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                MySqlDataReader DataTransPenumpang;
+                sqlConnect.Open();
+                DataTransPenumpang = sqlCommand.ExecuteReader();
                 sqlConnect.Close();
 
                 FormMyOrder formMyOrder = new FormMyOrder();

@@ -50,6 +50,8 @@ namespace ProjectUAS_AZHUU
             this.labelRp1 = new System.Windows.Forms.Label();
             this.labelRp2 = new System.Windows.Forms.Label();
             this.labelDetailPromo = new System.Windows.Forms.Label();
+            this.labelBookingID = new System.Windows.Forms.Label();
+            this.labelisiIDBooking = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,7 +68,7 @@ namespace ProjectUAS_AZHUU
             // labelFromTo
             // 
             this.labelFromTo.AutoSize = true;
-            this.labelFromTo.Location = new System.Drawing.Point(110, 166);
+            this.labelFromTo.Location = new System.Drawing.Point(110, 203);
             this.labelFromTo.Name = "labelFromTo";
             this.labelFromTo.Size = new System.Drawing.Size(150, 17);
             this.labelFromTo.TabIndex = 1;
@@ -147,7 +149,7 @@ namespace ProjectUAS_AZHUU
             // labelPOBus
             // 
             this.labelPOBus.AutoSize = true;
-            this.labelPOBus.Location = new System.Drawing.Point(110, 200);
+            this.labelPOBus.Location = new System.Drawing.Point(110, 229);
             this.labelPOBus.Name = "labelPOBus";
             this.labelPOBus.Size = new System.Drawing.Size(108, 17);
             this.labelPOBus.TabIndex = 6;
@@ -252,11 +254,31 @@ namespace ProjectUAS_AZHUU
             this.labelDetailPromo.TabIndex = 28;
             this.labelDetailPromo.Text = "Promo HANTAMPAN + Potongan 300.000";
             // 
+            // labelBookingID
+            // 
+            this.labelBookingID.AutoSize = true;
+            this.labelBookingID.Location = new System.Drawing.Point(110, 148);
+            this.labelBookingID.Name = "labelBookingID";
+            this.labelBookingID.Size = new System.Drawing.Size(88, 17);
+            this.labelBookingID.TabIndex = 29;
+            this.labelBookingID.Text = "Booking ID =";
+            // 
+            // labelisiIDBooking
+            // 
+            this.labelisiIDBooking.AutoSize = true;
+            this.labelisiIDBooking.Location = new System.Drawing.Point(215, 148);
+            this.labelisiIDBooking.Name = "labelisiIDBooking";
+            this.labelisiIDBooking.Size = new System.Drawing.Size(76, 17);
+            this.labelisiIDBooking.TabIndex = 30;
+            this.labelisiIDBooking.Text = "ID Booking";
+            // 
             // FormCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.labelisiIDBooking);
+            this.Controls.Add(this.labelBookingID);
             this.Controls.Add(this.labelDetailPromo);
             this.Controls.Add(this.labelRp2);
             this.Controls.Add(this.labelRp1);
@@ -310,5 +332,7 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label labelRp1;
         private System.Windows.Forms.Label labelRp2;
         private System.Windows.Forms.Label labelDetailPromo;
+        private System.Windows.Forms.Label labelBookingID;
+        private System.Windows.Forms.Label labelisiIDBooking;
     }
 }
