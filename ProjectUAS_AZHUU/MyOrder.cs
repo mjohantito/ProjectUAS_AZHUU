@@ -23,6 +23,8 @@ namespace ProjectUAS_AZHUU
         string connectString = "server=localhost;uid=root;pwd=;database=airport_shuttle;";
         string sqlQuery;
 
+        string bookingidddddd = "";
+
         private void FormMyOrder_Load(object sender, EventArgs e)
         {
             try
@@ -85,6 +87,7 @@ namespace ProjectUAS_AZHUU
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtPenumpang);
 
+                bookingidddddd = dgvMyOrder.Rows[e.RowIndex].Cells["Booking ID"].Value.ToString();
                 dgvPenumpang.DataSource = dtPenumpang;
             }
             catch (Exception ex)
@@ -106,7 +109,7 @@ namespace ProjectUAS_AZHUU
                 sqlConnect.Close();
 
                 //insert di table
-                sqlQuery = "insert into azhuu_report (select p.p_nik as `NIK`, p.P_NAMA as `Nama`, pt.rute_id as `ID Rute`,pt.TP_TANGGALBOOKING as `Tanggal Booking`, pt.TP_BOOKINGID as `Booking ID`,pt.TP_TOTALPRICE as `Harga` from penumpang p, pesan_transaksi pt, transaksi_penumpang tp, promo pr where p.p_nik = tp.p_nik and pr.promo_id = pt.promo_id and tp.tp_bookingid = pt.tp_bookingid and user_nik = '"+HomePage.nikkk+"')";
+                sqlQuery = "insert into azhuu_report (select p.p_nik as `NIK`, p.P_NAMA as `Nama`, pt.rute_id as `ID Rute`,pt.TP_TANGGALBOOKING as `Tanggal Booking`, pt.TP_BOOKINGID as `Booking ID`,pt.TP_TOTALPRICE as `Harga` from penumpang p, pesan_transaksi pt, transaksi_penumpang tp, promo pr where p.p_nik = tp.p_nik and pr.promo_id = pt.promo_id and tp.tp_bookingid = pt.tp_bookingid and user_nik = '"+HomePage.nikkk+"' and pt.TP_BOOKINGID = '"+bookingidddddd+ "')";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlConnect.Open();
                 sqlCommand.ExecuteNonQuery();

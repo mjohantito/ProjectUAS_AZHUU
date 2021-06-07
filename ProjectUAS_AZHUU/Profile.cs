@@ -86,14 +86,14 @@ namespace ProjectUAS_AZHUU
                 else
                 {
                     sqlConnect = new MySqlConnection(connectString);
-                    sqlQuery = "";
+                    sqlQuery = "update user_azhuu set user_title = '"+cboxTitle.SelectedValue+"', user_name = '"+tbFullName.Text+"',user_email = '"+tbEmail.Text+"',user_telp = '"+tbHP.Text+"' where user_nik = '"+tbKTP.Text+"'";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
                     MessageBox.Show("Data berhasil masuk!");
-
-                    var homepage = new HomePage();
+                    this.Hide();
+                    var homepage = new Sign_In();
                     homepage.ShowDialog();
 
                 }

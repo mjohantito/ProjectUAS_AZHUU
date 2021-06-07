@@ -217,6 +217,7 @@ namespace ProjectUAS_AZHUU
             this.butInvoice.TabIndex = 39;
             this.butInvoice.Text = "Invoice";
             this.butInvoice.UseVisualStyleBackColor = false;
+            this.butInvoice.Visible = false;
             this.butInvoice.Click += new System.EventHandler(this.butInvoice_Click);
             // 
             // FormMyOrder
