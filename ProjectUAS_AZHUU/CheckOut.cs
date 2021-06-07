@@ -37,6 +37,9 @@ namespace ProjectUAS_AZHUU
                 labelFromTo.Text = DaftarPenumpang.FromTo;
                 labelPOBus.Text = DaftarPenumpang.POBus;
 
+                labelDetailPromo.Text = "";
+                labelDetailPromo.Visible = false;
+
                 if (DaftarPenumpang.counterPenumpang == 1)
                 {
                     labelPenumpang1.Text = DaftarPenumpang.NamaPenumpang1 + " - " + DaftarPenumpang.KTPPenumpang1;
@@ -274,9 +277,27 @@ namespace ProjectUAS_AZHUU
         {
             try
             {
+                labelDetailPromo.Visible = true;
+                string KodePromo = tBoxKode.Text.ToUpper();
+
                 DataTable Promo = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select promo_id as `ID Promo`, promo_value as `Promo`, promo_code as `Kode` from promo where promo_code = '" + tBoxKode.Text + "';";
+
+                if (KodePromo == "HANTAMPAN" || KodePromo == "TAMPANPEMBERANI" || KodePromo == "PENIKMATKOPI" || KodePromo == "ASDOS2021")
+                {
+                    //KodePromo = KodePromo;
+                }
+                else if (KodePromo == "")
+                {
+                    KodePromo = "TANPADISKON";
+                }
+                else
+                {
+                    KodePromo = "TANPADISKON";
+                    MessageBox.Show("Kode Promo Salah");
+                }
+
+                sqlQuery = "select promo_id as `ID Promo`, promo_value as `Promo`, promo_code as `Kode` from promo where promo_code = '" + KodePromo + "';";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(Promo);
@@ -284,27 +305,30 @@ namespace ProjectUAS_AZHUU
                 Potongan = Convert.ToInt32(Promo.Rows[0]["Promo"].ToString());
                 jumlahpromo = Potongan;
 
+                labelJumlahPromo.Text = jumlahpromo.ToString();
+
                 jumlahtotal = jumlahsubtotal - jumlahpromo;
-                labelJumlahTotal.Text = Convert.ToString(jumlahtotal);
+                labelJumlahTotal.Text = jumlahtotal.ToString();
 
                 PromoID = Promo.Rows[0]["ID Promo"].ToString();
+                labelDetailPromo.Text = "Promo " + Promo.Rows[0]["Kode"].ToString() + " Potongan " + Potongan.ToString();
 
-                if (tBoxKode.Text == "HANTAMPAN")
-                {
-                    labelDetailPromo.Text = "Promo HANTAMPAN + Potongan " + Convert.ToString(Potongan);
-                }
-                else if (tBoxKode.Text == "TAMPANPEMBERANI")
-                {
-                    labelDetailPromo.Text = "Promo TAMPANPEMBERANI + Potongan " + Convert.ToString(Potongan);
-                }
-                else if (tBoxKode.Text == "PENIKMATKOPI")
-                {
-                    labelDetailPromo.Text = "Promo PENIKMATKOPI + Potongan " + Convert.ToString(Potongan);
-                }
-                else if (tBoxKode.Text == "ASDOS2021")
-                {
-                    labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
-                }
+                //if (tBoxKode.Text == "HANTAMPAN")
+                //{
+                //    labelDetailPromo.Text = "Promo " + Promo.Rows[0]["Kode"].ToString() + " Potongan " + Potongan.ToString();
+                //}
+                //else if (tBoxKode.Text == "TAMPANPEMBERANI")
+                //{
+                //    labelDetailPromo.Text = "Promo TAMPANPEMBERANI + Potongan " + Convert.ToString(Potongan);
+                //}
+                //else if (tBoxKode.Text == "PENIKMATKOPI")
+                //{
+                //    labelDetailPromo.Text = "Promo PENIKMATKOPI + Potongan " + Convert.ToString(Potongan);
+                //}
+                //else if (tBoxKode.Text == "ASDOS2021")
+                //{
+                //    labelDetailPromo.Text = "Promo ASDOS2021 + Potongan " + Convert.ToString(Potongan);
+                //}
             }
             catch (Exception ex)
             {
