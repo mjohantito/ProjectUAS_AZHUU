@@ -55,7 +55,6 @@ namespace ProjectUAS_AZHUU
             this.labelisiIDBooking = new System.Windows.Forms.Label();
             this.buttonUse = new System.Windows.Forms.Button();
             this.labelRp3 = new System.Windows.Forms.Label();
-            this.butInvoice = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,7 +217,7 @@ namespace ProjectUAS_AZHUU
             // 
             this.tBoxKode.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tBoxKode.Location = new System.Drawing.Point(655, 344);
-            this.tBoxKode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tBoxKode.Margin = new System.Windows.Forms.Padding(2);
             this.tBoxKode.Name = "tBoxKode";
             this.tBoxKode.Size = new System.Drawing.Size(234, 32);
             this.tBoxKode.TabIndex = 15;
@@ -228,7 +227,7 @@ namespace ProjectUAS_AZHUU
             this.buttonCheckOut.BackColor = System.Drawing.Color.Yellow;
             this.buttonCheckOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCheckOut.Location = new System.Drawing.Point(700, 456);
-            this.buttonCheckOut.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonCheckOut.Margin = new System.Windows.Forms.Padding(2);
             this.buttonCheckOut.Name = "buttonCheckOut";
             this.buttonCheckOut.Size = new System.Drawing.Size(140, 42);
             this.buttonCheckOut.TabIndex = 24;
@@ -240,7 +239,7 @@ namespace ProjectUAS_AZHUU
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(-2, -3);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(960, 585);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -303,7 +302,7 @@ namespace ProjectUAS_AZHUU
             this.buttonUse.BackColor = System.Drawing.Color.Yellow;
             this.buttonUse.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUse.Location = new System.Drawing.Point(474, 456);
-            this.buttonUse.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.buttonUse.Margin = new System.Windows.Forms.Padding(2);
             this.buttonUse.Name = "buttonUse";
             this.buttonUse.Size = new System.Drawing.Size(80, 30);
             this.buttonUse.TabIndex = 31;
@@ -322,25 +321,11 @@ namespace ProjectUAS_AZHUU
             this.labelRp3.TabIndex = 32;
             this.labelRp3.Text = "Rp";
             // 
-            // butInvoice
-            // 
-            this.butInvoice.BackColor = System.Drawing.Color.Yellow;
-            this.butInvoice.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.butInvoice.Location = new System.Drawing.Point(720, 77);
-            this.butInvoice.Margin = new System.Windows.Forms.Padding(2);
-            this.butInvoice.Name = "butInvoice";
-            this.butInvoice.Size = new System.Drawing.Size(140, 42);
-            this.butInvoice.TabIndex = 33;
-            this.butInvoice.Text = "Invoice";
-            this.butInvoice.UseVisualStyleBackColor = false;
-            this.butInvoice.Click += new System.EventHandler(this.butInvoice_Click);
-            // 
             // FormCheckout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(946, 547);
-            this.Controls.Add(this.butInvoice);
             this.Controls.Add(this.labelRp3);
             this.Controls.Add(this.buttonUse);
             this.Controls.Add(this.labelisiIDBooking);
@@ -366,7 +351,7 @@ namespace ProjectUAS_AZHUU
             this.Controls.Add(this.labelFromTo);
             this.Controls.Add(this.labelCart);
             this.Controls.Add(this.pictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormCheckout";
             this.Text = "CheckOut";
             this.Load += new System.EventHandler(this.FormCheckout_Load);
@@ -403,6 +388,5 @@ namespace ProjectUAS_AZHUU
         private System.Windows.Forms.Label labelisiIDBooking;
         private System.Windows.Forms.Button buttonUse;
         private System.Windows.Forms.Label labelRp3;
-        private System.Windows.Forms.Button butInvoice;
     }
 }

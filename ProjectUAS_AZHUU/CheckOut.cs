@@ -324,34 +324,5 @@ namespace ProjectUAS_AZHUU
             }
         }
 
-        private void butInvoice_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // delete di table 
-                sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "delete from azhuu_report";
-                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                sqlConnect.Open();
-                sqlCommand.ExecuteNonQuery();
-                sqlConnect.Close();
-
-                //insert di table
-                sqlQuery = "insert into azhuu_report values ('"+BookingID+"','"+HomePage.nikkk+"','"+Search.ruteidd+"','"+tBoxKode.Text+"','"+DaftarPenumpang.Tanggal+"','"+Homepagebelumlogin.dateee+"','"+jumlahtotal.ToString()+"')";
-                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                sqlConnect.Open();
-                sqlCommand.ExecuteNonQuery();
-                sqlConnect.Close();
-
-                var aaaa = new Report();
-                aaaa.ShowDialog();
-
-                
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
     }
 }

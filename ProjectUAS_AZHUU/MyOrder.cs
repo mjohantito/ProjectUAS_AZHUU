@@ -92,5 +92,35 @@ namespace ProjectUAS_AZHUU
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void butInvoice_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // delete di table 
+                sqlConnect = new MySqlConnection(connectString);
+                sqlQuery = "delete from azhuu_report";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlConnect.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnect.Close();
+
+                //insert di table
+                sqlQuery = "insert into azhuu_report (select p.p_nik as `NIK`, p.P_NAMA as `Nama`, pt.rute_id as `ID Rute`,pt.TP_TANGGALBOOKING as `Tanggal Booking`, pt.TP_BOOKINGID as `Booking ID`,pt.TP_TOTALPRICE as `Harga` from penumpang p, pesan_transaksi pt, transaksi_penumpang tp, promo pr where p.p_nik = tp.p_nik and pr.promo_id = pt.promo_id and tp.tp_bookingid = pt.tp_bookingid and user_nik = '"+HomePage.nikkk+"')";
+                sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
+                sqlConnect.Open();
+                sqlCommand.ExecuteNonQuery();
+                sqlConnect.Close();
+
+                var aaaa = new Report();
+                aaaa.ShowDialog();
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
