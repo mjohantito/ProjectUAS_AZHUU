@@ -149,118 +149,106 @@ namespace ProjectUAS_AZHUU
             {
                 if(DaftarPenumpang.counterPenumpang == 1)
                 {
-                    DataTable dtPenumpang = new DataTable();
+                    //DataTable dtPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang1 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang1 + "' as `Telepon`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPenumpang;
                     sqlConnect.Open();
-                    DataPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtPesanTrans = new DataTable();
+                    //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPesanTrans;
                     sqlConnect.Open();
-                    DataPesanTrans = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtTransPenumpang = new DataTable();
+                    //DataTable dtTransPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into transaksi_penumpang select '" + DaftarPenumpang.KTPPenumpang1 +"' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataTransPenumpang;
                     sqlConnect.Open();
-                    DataTransPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
                 }
                 else if (DaftarPenumpang.counterPenumpang == 2)
                 {
-                    DataTable dtPenumpang = new DataTable();
+                    //DataTable dtPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang1 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang1 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang2 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang2 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang2 + "' as `Telepon`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPenumpang;
-                    sqlConnect.Open();
-                    DataPenumpang = sqlCommand.ExecuteReader();
+                    sqlConnect.Open(); 
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtPesanTrans = new DataTable();
+                    //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPesanTrans;
                     sqlConnect.Open();
-                    DataPesanTrans = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtTransPenumpang = new DataTable();
+                    //DataTable dtTransPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into transaksi_penumpang select '" +DaftarPenumpang.KTPPenumpang1 +"' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID` union select '" + DaftarPenumpang.KTPPenumpang2+ "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataTransPenumpang;
                     sqlConnect.Open();
-                    DataTransPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
                 }
                 else if (DaftarPenumpang.counterPenumpang == 3)
                 {
-                    DataTable dtPenumpang = new DataTable();
+                    //DataTable dtPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang1 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang1 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang2 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang2 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang2 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang3 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang3 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang3 + "' as `Telepon`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPenumpang;
                     sqlConnect.Open();
-                    DataPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtPesanTrans = new DataTable();
+                    //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPesanTrans;
                     sqlConnect.Open();
-                    DataPesanTrans = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtTransPenumpang = new DataTable();
+                    //DataTable dtTransPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into transaksi_penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID` union select '" + DaftarPenumpang.KTPPenumpang2 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID` union select '" + DaftarPenumpang.KTPPenumpang3 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataTransPenumpang;
                     sqlConnect.Open();
-                    DataTransPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
                 }
                 else if (DaftarPenumpang.counterPenumpang == 4)
                 {
-                    DataTable dtPenumpang = new DataTable();
+                    //DataTable dtPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang1 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang1 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang2 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang2 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang2 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang3 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang3 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang3 + "' as `Telepon`, '0' as `Delete` union select '" + DaftarPenumpang.KTPPenumpang4 + "' as `NIK`, '" + DaftarPenumpang.NamaPenumpang4 + "' as `Nama Penumpang`, '" + DaftarPenumpang.TlpnPenumpang4 + "' as `Telepon`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPenumpang;
                     sqlConnect.Open();
-                    DataPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtPesanTrans = new DataTable();
+                    //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataPesanTrans;
                     sqlConnect.Open();
-                    DataPesanTrans = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
 
-                    DataTable dtTransPenumpang = new DataTable();
+                    //DataTable dtTransPenumpang = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
                     sqlQuery = "insert into transaksi_penumpang select '" + DaftarPenumpang.KTPPenumpang1 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID` union select '" + DaftarPenumpang.KTPPenumpang2 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID` union select '" + DaftarPenumpang.KTPPenumpang3 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID` union select '" + DaftarPenumpang.KTPPenumpang4 + "' as `NIK Penumpang`, '" + BookingID + "' as `Booking ID`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
-                    MySqlDataReader DataTransPenumpang;
                     sqlConnect.Open();
-                    DataTransPenumpang = sqlCommand.ExecuteReader();
+                    sqlCommand.ExecuteNonQuery();
                     sqlConnect.Close();
                 }
 
