@@ -10,22 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjectUAS_AZHUU
 {
-    public partial class Promo : Form
+    public partial class azhuu_crystalreport : Form
     {
-        public Promo()
+        public azhuu_crystalreport()
         {
             InitializeComponent();
-        }
-
-        private void back_Click(object sender, EventArgs e)
-        {
-            var pwnotelp = new HomePage();
-            pwnotelp.ShowDialog();
-        }
-
-        private void Promo_Load(object sender, EventArgs e)
-        {
-          
         }
     }
 }

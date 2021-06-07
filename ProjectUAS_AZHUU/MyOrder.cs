@@ -80,7 +80,7 @@ namespace ProjectUAS_AZHUU
 
                 DataTable dtPenumpang = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
-                sqlQuery = "select p_nik as `NIK`, p_nama as `Nama`, p_telp as `Telepon` from  penumpang p, transaksi_penumpang tp where tp.tp_bookingid = '" + dgvMyOrder.Rows[e.RowIndex].Cells["Booking ID"].Value.ToString() + "' and p.p_nik = tp.p_nik;";
+                sqlQuery = "select p.p_nik as `NIK`, p_nama as `Nama`, p_telp as `Telepon` from  penumpang p, transaksi_penumpang tp where tp.tp_bookingid = '" + dgvMyOrder.Rows[e.RowIndex].Cells["Booking ID"].Value.ToString() + "' and p.p_nik = tp.p_nik;";
                 sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                 sqlAdapter = new MySqlDataAdapter(sqlCommand);
                 sqlAdapter.Fill(dtPenumpang);

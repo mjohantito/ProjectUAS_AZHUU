@@ -103,5 +103,11 @@ namespace ProjectUAS_AZHUU
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void butBack_Click(object sender, EventArgs e)
+        {
+            var homepage = new HomePage();
+            homepage.ShowDialog();
+        }
     }
 }

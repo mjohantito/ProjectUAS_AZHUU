@@ -30,8 +30,9 @@
         {
             this.Invoicee1 = new ProjectUAS_AZHUU.Invoicee();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.sudahpagiiii1 = new ProjectUAS_AZHUU.sudahpagiiii();
             this.sudahpagiiii2 = new ProjectUAS_AZHUU.sudahpagiiii();
+            this.sudahpagiiii1 = new ProjectUAS_AZHUU.sudahpagiiii();
+            this.CrystalReport31 = new ProjectUAS_AZHUU.CrystalReport3();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -41,17 +42,20 @@
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.sudahpagiiii2;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.ReportSource = this.CrystalReport31;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1067, 554);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 267;
             // 
             // Report
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Report";
             this.Text = "Report";
             this.ResumeLayout(false);
@@ -63,5 +67,6 @@
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private sudahpagiiii sudahpagiiii1;
         private sudahpagiiii sudahpagiiii2;
+        private CrystalReport3 CrystalReport31;
     }
 }
