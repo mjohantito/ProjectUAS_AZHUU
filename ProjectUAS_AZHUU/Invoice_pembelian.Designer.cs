@@ -30,6 +30,7 @@
         {
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
             this.CrystalReport51 = new ProjectUAS_AZHUU.CrystalReport5();
+            this.CrystalReport61 = new ProjectUAS_AZHUU.CrystalReport6();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -39,10 +40,12 @@
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(2);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport51;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.crystalReportViewer1.ReportSource = this.CrystalReport61;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(1042, 578);
             this.crystalReportViewer1.TabIndex = 0;
+            this.crystalReportViewer1.ToolPanelWidth = 150;
             // 
             // CrystalReport51
             // 
@@ -50,10 +53,11 @@
             // 
             // Invoice_pembelian
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1042, 578);
             this.Controls.Add(this.crystalReportViewer1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Invoice_pembelian";
             this.Text = "Invoice_pembelian";
             this.Load += new System.EventHandler(this.Invoice_pembelian_Load);
@@ -65,5 +69,6 @@
 
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
         private CrystalReport5 CrystalReport51;
+        private CrystalReport6 CrystalReport61;
     }
 }
