@@ -159,7 +159,7 @@ namespace ProjectUAS_AZHUU
 
                     //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
-                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
+                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  curdate() as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
@@ -185,7 +185,7 @@ namespace ProjectUAS_AZHUU
 
                     //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
-                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
+                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  curdate() as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
@@ -211,7 +211,7 @@ namespace ProjectUAS_AZHUU
 
                     //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
-                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
+                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  curdate() as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
@@ -237,7 +237,7 @@ namespace ProjectUAS_AZHUU
 
                     //DataTable dtPesanTrans = new DataTable();
                     sqlConnect = new MySqlConnection(connectString);
-                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  '" + DaftarPenumpang.Tanggal + "' as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
+                    sqlQuery = "insert into pesan_transaksi select '" + BookingID + "' as `Booking ID`, '" + Search.ruteidd + "' as `Rute ID`, '" + PromoID + "' as `Promo ID`, '" + HomePage.nikkk + "' as `NIK User`,  curdate() as `Tanggal Transaksi`, '" + Homepagebelumlogin.dateee + "' as `Tanggal Booking`, 'O' as `Booking Status`, '" + jumlahtotal + "' as `Total Price`, '0' as `Delete`;";
                     sqlCommand = new MySqlCommand(sqlQuery, sqlConnect);
                     sqlConnect.Open();
                     sqlCommand.ExecuteNonQuery();
