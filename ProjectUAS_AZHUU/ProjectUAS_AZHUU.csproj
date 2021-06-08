@@ -66,6 +66,18 @@
       <DependentUpon>CrystalReport3.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="CrystalReport4.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport5.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport5.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="DaftarPenumpang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,6 +113,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Invoicee.rpt</DependentUpon>
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Invoice_pembelian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Invoice_pembelian.Designer.cs">
+      <DependentUpon>Invoice_pembelian.cs</DependentUpon>
     </Compile>
     <Compile Include="MyOrder.cs">
       <SubType>Form</SubType>
@@ -171,6 +189,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>CrystalReport3.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport5.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport5.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="DaftarPenumpang.resx">
       <DependentUpon>DaftarPenumpang.cs</DependentUpon>
     </EmbeddedResource>
@@ -189,6 +215,9 @@
     <EmbeddedResource Include="Invoicee.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>Invoicee.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Invoice_pembelian.resx">
+      <DependentUpon>Invoice_pembelian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MyOrder.resx">
       <DependentUpon>MyOrder.cs</DependentUpon>

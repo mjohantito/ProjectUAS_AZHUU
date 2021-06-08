@@ -1,6 +1,6 @@
 ﻿namespace ProjectUAS_AZHUU
 {
-    partial class Report
+    partial class Invoice_pembelian
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Invoicee1 = new ProjectUAS_AZHUU.Invoicee();
             this.crystalReportViewer1 = new CrystalDecisions.Windows.Forms.CrystalReportViewer();
-            this.sudahpagiiii2 = new ProjectUAS_AZHUU.sudahpagiiii();
-            this.sudahpagiiii1 = new ProjectUAS_AZHUU.sudahpagiiii();
-            this.CrystalReport41 = new ProjectUAS_AZHUU.CrystalReport4();
+            this.CrystalReport51 = new ProjectUAS_AZHUU.CrystalReport5();
             this.SuspendLayout();
             // 
             // crystalReportViewer1
@@ -42,31 +39,31 @@
             this.crystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default;
             this.crystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.crystalReportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.crystalReportViewer1.Margin = new System.Windows.Forms.Padding(4);
             this.crystalReportViewer1.Name = "crystalReportViewer1";
-            this.crystalReportViewer1.ReportSource = this.CrystalReport41;
-            this.crystalReportViewer1.Size = new System.Drawing.Size(1123, 554);
+            this.crystalReportViewer1.ReportSource = this.CrystalReport51;
+            this.crystalReportViewer1.Size = new System.Drawing.Size(800, 450);
             this.crystalReportViewer1.TabIndex = 0;
-            this.crystalReportViewer1.ToolPanelWidth = 267;
             // 
-            // Report
+            // CrystalReport51
+            // 
+            this.CrystalReport51.InitReport += new System.EventHandler(this.CrystalReport51_InitReport);
+            // 
+            // Invoice_pembelian
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1123, 554);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.crystalReportViewer1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Report";
-            this.Text = "Report";
+            this.Name = "Invoice_pembelian";
+            this.Text = "Invoice_pembelian";
+            this.Load += new System.EventHandler(this.Invoice_pembelian_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Invoicee Invoicee1;
+
         private CrystalDecisions.Windows.Forms.CrystalReportViewer crystalReportViewer1;
-        private sudahpagiiii sudahpagiiii1;
-        private sudahpagiiii sudahpagiiii2;
-        private CrystalReport4 CrystalReport41;
+        private CrystalReport5 CrystalReport51;
     }
 }

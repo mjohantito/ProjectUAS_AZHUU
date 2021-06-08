@@ -66,6 +66,7 @@ namespace ProjectUAS_AZHUU
                 labelFromTo.Visible = true;
                 labelPenumpang.Visible = true;
                 dgvPenumpang.Visible = true;
+                butInvoice.Visible = true;
 
                 DataTable dtPesanan = new DataTable();
                 sqlConnect = new MySqlConnection(connectString);
@@ -115,7 +116,7 @@ namespace ProjectUAS_AZHUU
                 sqlCommand.ExecuteNonQuery();
                 sqlConnect.Close();
 
-                var aaaa = new Report();
+                var aaaa = new Invoice_pembelian();
                 aaaa.ShowDialog();
 
 
